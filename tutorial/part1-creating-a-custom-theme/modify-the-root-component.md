@@ -1,0 +1,3 @@
+# Modify the `<Root>` component
+
+Lorem ipsum...

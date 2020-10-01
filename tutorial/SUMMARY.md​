@@ -1,13 +1,19 @@
 # Table of contents
 
-* [Welcome to the Frontity step-by-step tutorial](README.md)
-* [Creating a custom theme](Part 1 - Creating a custom theme/README.md)
-* [Adding a menu](Part 2 - Adding a menu/README.md)
-* [Displaying posts](Part 3 - Displaying posts/README.md)
-* [Adding styling](Part 4 - Adding styling/README.md)
-* [Adding behaviour](Part 5 - Adding behaviour/README.md)
-* [Custom Post Types](Part 6 - Custom Post Types/README.md)
-* [Taking care of the SEO](Part 7 - Taking care of the SEO/README.md)
-* [Deploying the project](Part 8 - Deploying the project/README.md)
-* [Next Steps](Part 9 - Next Steps/README.md)
+* [0️⃣ Welcome to the Frontity step-by-step tutorial](README.md)
+* [1️⃣ Creating a custom theme](part1-creating-a-custom-theme/README.md)
+  * [Start a Frontity Project](part1-creating-a-custom-theme/start-a-frontity-project.md)
+  * [Create a custom theme](part1-creating-a-custom-theme/create-a-custom-theme.md)
+  * [Modify the `<Root>` component](part1-creating-a-custom-theme/modify-the-root-component.md)
+  * [Connect the `<Root>` component to the state](part1-creating-a-custom-theme/connect-the-root-component-to-the-state.md)
+* [2️⃣ Adding a menu](part2-adding-a-menu/README.md)
+* [3️⃣ Displaying posts](part3-displaying-posts/README.md)
+* [4️⃣ Adding styling](part4-adding-styling/README.md)
+* [5️⃣ Adding behaviour](part5-adding-behaviour/README.md)
+* [6️⃣ Custom Post Types](part6-custom-post-types/README.md)
+* [7️⃣ Taking care of the SEO](part7-taking-care-of-the-seo/README.md)
+* [8️⃣ Deploying the project](part8-deploying-the-project/README.md)
+* [9️⃣ Next Steps](part9-next-steps/README.md)
+
+
 
