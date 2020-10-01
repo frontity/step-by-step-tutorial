@@ -1,7 +1,13 @@
 # Table of contents
 
 * [Welcome to the Frontity step-by-step tutorial](README.md)
-* [Create a Frontity Project](lesson1.md)
-* [Create a custom theme from scratch](lesson2.md)
-* [Modify the  component](lesson3.md)
+* [Creating a custom theme](Part 1 - Creating a custom theme/README.md)
+* [Adding a menu](Part 2 - Adding a menu/README.md)
+* [Displaying posts](Part 3 - Displaying posts/README.md)
+* [Adding styling](Part 4 - Adding styling/README.md)
+* [Adding behaviour](Part 5 - Adding behaviour/README.md)
+* [Custom Post Types](Part 6 - Custom Post Types/README.md)
+* [Taking care of the SEO](Part 7 - Taking care of the SEO/README.md)
+* [Deploying the project](Part 8 - Deploying the project/README.md)
+* [Next Steps](Part 9 - Next Steps/README.md)
 
