@@ -3,6 +3,7 @@
 ---
 
 **[TO DO]** modify this text to suit new context.
+
 **[TO DO]** add a brief explanation of the project structure.
 
 ---

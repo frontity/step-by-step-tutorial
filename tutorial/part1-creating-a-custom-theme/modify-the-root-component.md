@@ -3,6 +3,7 @@
 ---
 
 **[TO DO]** modify this text to suit new context.
+
 **[TO DO]** change folder from 'theme-files' to 'components' - de facto standard for React projects.
 
 ---

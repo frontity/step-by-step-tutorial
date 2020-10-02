@@ -3,6 +3,7 @@
 ---
 
 **[TO DO]** modify this text to suit new context.
+
 **[TO DO]** explain `connect` and how it's used to pass the Frontity state to the React components via props.
 
 ---
