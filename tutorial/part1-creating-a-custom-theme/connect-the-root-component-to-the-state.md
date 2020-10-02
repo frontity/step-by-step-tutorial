@@ -1,8 +1,10 @@
 # Connect the `<Root>` component to the state
 
 ---
+
 **[TO DO]** modify this text to suit new context.
 **[TO DO]** explain `connect` and how it's used to pass the Frontity state to the React components via props.
+
 ---
 
 Let’s connect the `<Root>` component to the Frontity state using `connect`. This allows us to access data stored in the state.

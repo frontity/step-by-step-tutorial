@@ -1,8 +1,10 @@
 # Start a Frontity Project
 
 ---
+
 **[TO DO]** modify this text to suit new context.
 **[TO DO]** add a brief explanation of the project structure.
+
 ---
 
 The first thing we are going to do is create a new Frontity project.
