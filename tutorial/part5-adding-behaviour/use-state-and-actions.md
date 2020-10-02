@@ -1,3 +1,3 @@
-# Use `state` and `actions`
+# Use 'state' and 'actions'
 
 Lorem ipsum...
