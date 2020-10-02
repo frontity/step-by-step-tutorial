@@ -1,3 +1,3 @@
 # Create a custom component for showing individual CPT's
 
-Lorem ipsum...
+> *__[TO DO]__ new content to be written.*

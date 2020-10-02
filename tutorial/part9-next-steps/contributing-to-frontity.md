@@ -1,3 +1,3 @@
 # Contributing to Frontity
 
-Lorem ipsum...
+> *__[TO DO]__ new content to be written.*

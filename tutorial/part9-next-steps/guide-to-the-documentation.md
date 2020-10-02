@@ -1,3 +1,5 @@
 # Guide to the documentation
 
-Lorem ipsum...
+> *__[TO DO]__ new content to be written.*
+
+What to do next...
