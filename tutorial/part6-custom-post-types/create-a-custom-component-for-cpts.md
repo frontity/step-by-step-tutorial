@@ -1,0 +1,3 @@
+# Create a custom component for showing individual CPT's
+
+Lorem ipsum...

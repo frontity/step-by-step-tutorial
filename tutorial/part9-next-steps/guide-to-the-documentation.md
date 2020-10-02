@@ -1,0 +1,3 @@
+# Guide to the documentation
+
+Lorem ipsum...

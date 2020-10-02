@@ -17,10 +17,17 @@
   * [Styling the components](part4-adding-styling/styling-the-components.md))
   * [Add dynamic styling](part4-adding-styling/add-dynamic-styling.md))
 * [5️⃣ Adding behaviour](part5-adding-behaviour/README.md)
+  * [Use `state` and `actions`](part5-adding-behaviour/use-state-and-actions.md))
+  * [Add pagination](part5-adding-behaviour/add-pagination.md))
 * [6️⃣ Custom Post Types](part6-custom-post-types/README.md)
+  * [Add support for custom post types](part6-custom-post-types/add-support-for-cpts.md)
+  * [Add destinations page](part6-custom-post-types/add-destinations-page.md)
+  * [Create a custom component for showing individual CPT's](part6-custom-post-types/create-a-custom-component-for-cpts.md)
 * [7️⃣ Taking care of the SEO](part7-taking-care-of-the-seo/README.md)
+  * [Add tags to the `head` element](part7-taking-care-of-the-seo/add-tags-to-the-head-element.md)
 * [8️⃣ Deploying the project](part8-deploying-the-project/README.md)
+  * [Deploy to Vercel](part8-deploying-the-project/deploy-to-vercel.md)
 * [9️⃣ Next Steps](part9-next-steps/README.md)
-
-
-
+  * [Guide to the documentation](part9-next-steps/guide-to-the-documentation.md)
+  * [Getting help and support](part9-next-steps/getting-help-and-support.md)
+  * [Contributing to Frontity](part9-next-steps/contributing-to-frontity.md)

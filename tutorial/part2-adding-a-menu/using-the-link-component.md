@@ -1,3 +1,3 @@
-# Using the <Link> component
+# Using the `<Link>` component
 
 Lorem ipsum...
