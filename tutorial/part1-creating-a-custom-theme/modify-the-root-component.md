@@ -1,6 +1,7 @@
 # Modify the `<Root>` component
 
 > **[TO DO]** modify this text to suit new context.
+
 > **[TO DO]** change folder from 'theme-files' to 'components' - de facto standard for React projects.
 
 Let's start by modifying the `<Root>` component in the `/packages/jsnation-theme/src/index.js` file so that it returns a `<h1>` containing the text “Frontity Workshop”.
