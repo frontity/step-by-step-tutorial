@@ -2,6 +2,8 @@
 
 > *__[TO DO]__ modify this text to suit new context.*
 
+> *__[TO DO]__ images may need updating.*
+
 Click on the `More posts` link in the menu to navigate to `/page/2` and examine `frontity.state` in the console. You will notice that the data for the page has both `previous` and `next` properties.
 
 <p>
