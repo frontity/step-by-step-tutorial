@@ -1,8 +1,8 @@
 # Create a custom theme
 
-> **[TO DO]** modify this text to suit new context.
+> ***[TO DO]** modify this text to suit new context.*
 
-> **[TO DO]** add a brief explanation of the structure of a package.
+> ***[TO DO]** add a brief explanation of the structure of a package.*
 
 Instead of using the default starter theme (@frontity/mars-theme) we are going to create a new package for our theme's code.
 
