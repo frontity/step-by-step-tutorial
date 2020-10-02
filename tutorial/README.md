@@ -1,8 +1,22 @@
-# Building a Blog with Frontity
+# Frontity step-by-step tutorial
 
 ## Welcome to the Frontity step-by-step tutorial
 
-Explain what we'l build in the tutorial and more or less the topic that will be covered in the tutorial.
+Explain what we'll build in the tutorial and more or less the topics that will be covered in the tutorial.
+
+Brief explanation of Frontity - React-based framework for building themes for headless/decoupled WordPress.
+
+We'll be building a blog site
+
+We'll create a custom theme from scratch
+ - learn about Frontity state, actions and source
+ - create a list component
+ - create components for pages and posts
+ - navigation/menu
+ - styling - CSS in JS
+ - custom post types
+ - SEO and head tags
+ - deploying the finished site
 
 ----
 

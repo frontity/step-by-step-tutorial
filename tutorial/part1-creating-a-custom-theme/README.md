@@ -1,5 +1,9 @@
 # Creating a custom theme
 
+---
+**[TO DO]** add an introduction to this section.
+---
+
 - Start a Frontity Project
 
     *This step will show the use of `npx frontity create` and a brief explanation of the structure*
