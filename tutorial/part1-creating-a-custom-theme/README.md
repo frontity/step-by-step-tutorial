@@ -1,10 +1,6 @@
 # Creating a custom theme
 
----
-
-**[TO DO]** add an introduction to this section.
-
----
+> **[TO DO]** add an introduction to this section.
 
 - Start a Frontity Project
 
