@@ -1,5 +1,7 @@
 # Displaying posts
 
+> *__[TO DO]__ add an introduction to this section.*
+
 - Understanding the Frontity `state` - using data from the current URL → The “two-step” access to data
 - Display the list of posts → The “two-step” access to data
 - Display the post content → The “two-step” access to data
