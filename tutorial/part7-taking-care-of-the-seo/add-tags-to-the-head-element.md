@@ -4,6 +4,8 @@
 
 > *__[TO DO]__ add more explanation here.*
 
+> *__[TO DO]__ image needs updating.*
+
 You can use React to add tags to the `<head>` of your document. Tags such as a title and a description can be important for SEO so it's good practice if your theme includes them.
 
 Import the `<Head>` component, and everything you include within `<Head>...</Head>` tags will be inluded in the `<head>` section of your document.
