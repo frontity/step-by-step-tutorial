@@ -1,0 +1,3 @@
+# Style the components
+
+Lorem ipsum...

@@ -1,3 +1,0 @@
-# Using the `<Link>` component
-
-Lorem ipsum...
