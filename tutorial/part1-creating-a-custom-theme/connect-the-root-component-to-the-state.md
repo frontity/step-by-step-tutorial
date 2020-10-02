@@ -2,7 +2,7 @@
 
 > *__[TO DO]__ modify this text to suit new context.*
 
-> * __[TO DO]__ explain `connect` and how it's used to pass the Frontity state to the React components via props.*
+> *__[TO DO]__ explain `connect` and how it's used to pass the Frontity state to the React components via props.*
 
 Let’s connect the `<Root>` component to the Frontity state using `connect`. This allows us to access data stored in the state.
 

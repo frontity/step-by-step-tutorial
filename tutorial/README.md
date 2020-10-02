@@ -2,9 +2,9 @@
 
 ## Welcome to the Frontity step-by-step tutorial
 
-> ***[TO DO]** Explain what we'll build in the tutorial and more or less the topics that will be covered in the tutorial.*
+> *__[TO DO]__ Explain what we'll build in the tutorial and more or less the topics that will be covered in the tutorial.*
 
-> ***[TO DO]** Brief explanation of Frontity - React-based framework for building themes for headless/decoupled WordPress.*
+> *__[TO DO]__ Brief explanation of Frontity - React-based framework for building themes for headless/decoupled WordPress.*
 
 Explain what we'll build in the tutorial and more or less the topics that will be covered in the tutorial.
 
