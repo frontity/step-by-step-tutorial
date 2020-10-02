@@ -61,5 +61,5 @@ npx frontity dev
 You will see this in your browser:
 
 <p>
-  <img alt="Frontity in the console" src="assets/browser-1.png" width="400">
+  <img alt="Frontity in the console" src="../assets/browser-1.png" width="400">
 </p>
