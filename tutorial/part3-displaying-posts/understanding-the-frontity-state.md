@@ -49,7 +49,7 @@ To wrap up this section let's use all of this in our code.
 In this next step we **`get`** the information about the current link (`state.router.link`) and use it to see if it’s a `list`, a `post`, or a `page`.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 const Root = ({ state }) => {
   const data = state.source.get(state.router.link);

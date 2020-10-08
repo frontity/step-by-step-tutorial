@@ -7,7 +7,7 @@
 In order to display the list of posts, create a component called `<List>` in a new file `list.js`.  This will show the information in `state.source.data`, namely the `type`, `id` and `link` of each post.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/list.js
+// File: /packages/my-first-theme/src/theme-files/list.js
 
 import React from "react";
 import { connect } from "frontity";
@@ -34,7 +34,7 @@ export default connect(List);
 We need to import it into our root component and use it.
 
 ```jsx
-// File:  /packages/jsnation-theme/src/theme-files/index.js
+// File:  /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 import List from "./list";
@@ -58,7 +58,7 @@ const Root = ({ state }) => {
 And now let's change the `<List>` component to use the information about each of the posts to show the title and turn it into a link. Remember to import the `<Link>` component into `list.js`!
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/list.js
+// File: /packages/my-first-theme/src/theme-files/list.js
 
 import  React  from  " react " ;
 import { connect } from  " frontity " ;

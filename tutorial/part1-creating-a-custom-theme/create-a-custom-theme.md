@@ -9,14 +9,14 @@ Instead of using the default starter theme (@frontity/mars-theme) we are going t
 To do so, stop the previous process (CONTROL + C), and then run this command in your terminal:
 
 ```bash
-npx frontity create-package jsnation-theme
+npx frontity create-package my-first-theme
 ```
 
 You will be asked what namespace to use. Since you are creating a theme, you can use `theme`.
 
-When the process is complete you will have a new folder called `/packages/jsnation-theme`. This is where we will be doing most of our work to build the theme.
+When the process is complete you will have a new folder called `/packages/my-first-theme`. This is where we will be doing most of our work to build the theme.
 
-The first thing to do is to remove `@frontity/mars-theme` from your settings and replace it with `jsnation-theme`.
+The first thing to do is to remove `@frontity/mars-theme` from your settings and replace it with `my-first-theme`.
 
 Remove the following from the file `frontity.settings.js`:
 
@@ -45,7 +45,7 @@ And replace it with:
 
 ```js
 {
-  "name": "jsnation-theme"
+  "name": "my-first-theme"
 },
 ```
 

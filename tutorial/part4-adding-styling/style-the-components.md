@@ -22,7 +22,7 @@ Frontity uses CSS-in-JS for styling components. This has a number of advantages:
 The first thing we will do is create global styles. These apply site-wide and should be added to the root component of your theme. We'll change the font to be sans-serif. To do this import the `<Global>` component and the `css` function from Frontity into our root component.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 import { connect, Global, css } from "frontity";
@@ -53,7 +53,7 @@ Now let's create some CSS components. These components are created using `styled
 As a basic example let's start by creating a `<Header>` component and give it a background colour, though first we need to import `styled` from Frontity.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 import { connect, Global, css, styled } from "frontity";
@@ -67,7 +67,7 @@ const Header = styled.header`
 Once the `<Header>` component has been created let's use it in our root component to wrap all the elements that we want contained in the header section of our site.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 const Root = ({ state, actions }) => {
@@ -105,7 +105,7 @@ const Root = ({ state, actions }) => {
 Now our header is contained within a nice light grey background. But notice the rather ugly white border around it. Let's fix that by applying a basic CSS reset to our `<Global>` component.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 <Global
@@ -128,7 +128,7 @@ This simple CSS reset will make styling our elements going forward much simpler 
 Let's continue styling our header by adding a border to the bottom.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 
@@ -143,7 +143,7 @@ const Header = styled.header`
 We also want to constrain our page width to 800px. To do that we will need to add a couple of extra components, `<HeaderContent>` and `<Main>`. Let's add these, and we'll also style some elements within Main.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 const Header = styled.header`
@@ -178,7 +178,7 @@ const Main = styled.main`
 And again we'll use those elements in our root component.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 const Root = ({ state, actions }) => {
@@ -220,7 +220,7 @@ Incidentally, this is where the [WordPress Theme Unit Test](https://github.com/W
 For now though we'll turn our attention back to the header section and style the menu...
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 const Menu = styled.nav`
@@ -236,7 +236,7 @@ const Menu = styled.nav`
 ...and replace the `nav` element in our `Root` component with the new `Menu` component.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
  <Header>
@@ -258,7 +258,7 @@ We now have a pleasing looking header.
 Let's improve the appearance of our `<List>` component. Open `list.js` and add an `<Items>` component and use it with `<List>`. Remember also to import `styled` from `frontity`.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/list.js
+// File: /packages/my-first-theme/src/theme-files/list.js
 
 import React from "react"
 import { connect, styled } from "frontity"
@@ -292,7 +292,7 @@ const Items = styled.div`
 Now let's make all our links a consistent colour.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/link.js
+// File: /packages/my-first-theme/src/theme-files/link.js
 
 import React from "react"
 import { connect, styled } from "frontity"
@@ -324,7 +324,7 @@ const Anchor = styled.a`
 And finally for this section we'll highlight the author and date info in our `<Post>` component. Import `styled` into `post.js` and create and use a `<PostInfo>` component.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/post.js
+// File: /packages/my-first-theme/src/theme-files/post.js
 
 import React from "react"
 import { connect, styled } from "frontity"

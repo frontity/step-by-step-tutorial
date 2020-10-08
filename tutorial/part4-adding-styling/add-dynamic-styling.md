@@ -11,7 +11,7 @@ You will recall that we added an 8px wide border to the bottom of our header. We
 To do this we add a prop to the `<Header>` component.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 <Header isPostType={data.isPostType}>
@@ -21,7 +21,7 @@ To do this we add a prop to the `<Header>` component.
 This prop gets passed to a function that we add to our CSS that conditionally checks the boolean value passed in to determine what colour the border should be, i.e. either green in the case of a `post` or `page`, or maroon in the case of a `list`. We're no longer using JSX here so we need to prepend the function with a $ sign, and we also need to use the ternary operator - we cannot use `if...then...else` in JavaScript embedded within a template literal.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 const Header = styled.header`
@@ -35,7 +35,7 @@ const Header = styled.header`
 Let's extend this to get a different colour for pages.
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 // ...
 <Header isPostType={data.isPostType} isPage={data.isPage}>

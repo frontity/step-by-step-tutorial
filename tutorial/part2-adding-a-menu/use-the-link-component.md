@@ -10,7 +10,7 @@ Will also point out that pre-fetching strategies can be applied with this compon
 Now let's create a `<Link>` component in a new file `link.js`:
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/link.js
+// File: /packages/my-first-theme/src/theme-files/link.js
 
 import React from "react";
 import { connect } from "frontity";
@@ -38,7 +38,7 @@ We now have to import the `Link` component into our `Root` component. Then we ad
 
 
 ```jsx
-// File: /packages/jsnation-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/theme-files/index.js
 
 import React from "react";
 import { connect } from "frontity";

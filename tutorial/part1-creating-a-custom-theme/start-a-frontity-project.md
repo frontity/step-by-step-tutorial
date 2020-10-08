@@ -9,17 +9,17 @@ The first thing we are going to do is create a new Frontity project.
 To do so, open up your terminal, navigate to the folder where you want to install your new project, and run this command:
 
 ```bash
-npx frontity create jsnation-frontity
+npx frontity create hello-frontity
 ```
 
 Select the `mars-theme` - it's the basic starter theme that we recommend for beginners.
 
-When the install process finishes, you will have a new sub-folder called `jsnation-frontity` containing your project’s code.
+When the install process finishes, you will have a new sub-folder called `hello-frontity` containing your project’s code.
 
 Start a development server to check that everything is working:
 
 ```bash
-cd jsnation-frontity
+cd hello-frontity
 npx frontity dev
 ```
 
