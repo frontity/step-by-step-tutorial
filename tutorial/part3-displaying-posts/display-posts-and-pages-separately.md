@@ -15,7 +15,7 @@ Let's distinguish between the two now.
 Create a new file and call it `page.js`. Copy the contents of `post.js` into `page.js` and rename the component.
 
 ```jsx
-// File: /packages/my-first-theme/src/theme-files/page.js
+// File: /packages/my-first-theme/src/components/page.js
 
 import React from "react"
 import { connect } from "frontity"
@@ -38,7 +38,7 @@ export default connect(Page)
 At the moment `page.js` and `post.js` are pretty much identical, so let's now distinguish between them by adding author and date info to `post.js`.
 
 ```jsx
-// File: /packages/my-first-theme/src/theme-files/post.js
+// File: /packages/my-first-theme/src/components/post.js
 
 import React from "react";
 import { connect } from "frontity";
@@ -64,7 +64,7 @@ export default connect(Post);
 Finally in this section let's change the root component to import and use the `<Page>` component.
 
 ```jsx
-// File: /packages/my-first-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/components/index.js
 
 // ...
 import Page from "./page"

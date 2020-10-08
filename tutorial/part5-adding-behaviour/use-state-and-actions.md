@@ -9,7 +9,7 @@ Open `index.js` at the root of our theme and add a new field called `isMenuOpen`
 ```jsx
 // File: /packages/my-first-theme/src/index.js
 
-import Root from "./theme-files";
+import Root from "./components";
 
 const jsNation = {
   name: "my-first-theme",
@@ -36,7 +36,7 @@ Then add two actions to change the value of this field. One of them will set the
 ```jsx
 // File: /packages/my-first-theme/src/index.js
 
-import Root from "./theme-files";
+import Root from "./components";
 
 const jsNation = {
   name: "my-first-theme",
@@ -66,7 +66,7 @@ export default jsNation
 Now in the root component we'll add some conditional logic to check the value of `isMenuOpen` and either display the menu or not. Again we have to use the ternary conditional operator here.
 
 ```jsx
-// File: /packages/my-first-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/components/index.js
 
 // ...
 { state.theme.isMenuOpen ? (
@@ -82,7 +82,7 @@ Now in the root component we'll add some conditional logic to check the value of
 You will find that the menu has disappeared, but if you change the value of `isMenuOpen` in `index.js` to `true` it will reappear. So let's add some buttons that use the actions we added earlier to change the value from the front end.
 
 ```jsx
-// File: /packages/my-first-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/components/index.js
 
 // ...
 
@@ -110,7 +110,7 @@ Note that we have to wrap the `button` element and `<Menu>` component in enclosi
 Finally let's create a styled `Button` component and use it in order to improve the appearance.
 
 ```jsx
-// File: /packages/my-first-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/components/index.js
 
 // ...
 {state.theme.isMenuOpen ? (

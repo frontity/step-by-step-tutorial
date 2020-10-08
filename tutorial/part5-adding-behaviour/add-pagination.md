@@ -15,7 +15,7 @@ We can use these properties to add pagination to our `<List>` component. We will
 Change `list.js` as follows.
 
 ```jsx
-// File: /packages/my-first-theme/src/theme-files/list.js
+// File: /packages/my-first-theme/src/components/list.js
 
 import React from "react"
 import { connect, styled } from "frontity"

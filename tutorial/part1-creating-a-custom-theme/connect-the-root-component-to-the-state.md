@@ -11,7 +11,7 @@ We need to `import {connect} from "frontity"`, pass `state` as a prop to our com
 Then we add a `<p>` element to our component to display the URL we are currently in using `state.router.link`.
 
 ```jsx
-// File: /packages/my-first-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/components/index.js
 
 import React from "react";
 import { connect } from "frontity";

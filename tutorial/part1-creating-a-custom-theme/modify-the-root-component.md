@@ -2,9 +2,9 @@
 
 > *__[TO DO]__ modify this text to suit new context.*
 
-> *__[TO DO]__ change folder from 'theme-files' to 'components' - de facto standard for React projects.*
+> *__[TO DO]__ change folder from 'components' to 'components' - de facto standard for React projects.*
 
-Let's start by modifying the `<Root>` component in the `/packages/my-first-theme/src/index.js` file so that it returns a `<h1>` containing the text “Frontity Workshop”.
+Let's start by modifying the `<Root>` component in the `/packages/my-first-theme/src/index.js` file so that it returns a `<h1>` containing the text “Hello Frontity".
 
 ```jsx
 // File: /packages/my-first-theme/src/index.js
@@ -12,7 +12,7 @@ Let's start by modifying the `<Root>` component in the `/packages/my-first-theme
 const Root = () => {
   return (
     <>
-      <h1>Frontity Workshop</h1>
+      <h1>Hello Frontity</h1>
     </>
   );
 };
@@ -22,19 +22,19 @@ The content in the browser should automatically update as we have changed a file
 
 Now, let's move the <Root> component into its own file.
 
-Create a new folder called `theme-files` inside `/packages/my-first-theme/src`. This is where we will create all the component files for our theme. Then, inside `/packages/my-first-theme/src/theme-files` create a new file called `index.js`.
+Create a new folder called `components` inside `/packages/my-first-theme/src`. This is where we will create all the component files for our theme. Then, inside `/packages/my-first-theme/src/components` create a new file called `index.js`.
 
 Add the following code to the new file *(which we will henceforth refer to as the 'root component' file)*.
 
 ```jsx
-// File: /packages/my-first-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/components/index.js
 
 import React from "react";
 
 const Root = () => {
   return (
     <>
-      <h1>Frontity Workshop</h1>
+      <h1>Hello Frontity</h1>
     </>
   );
 };
@@ -47,7 +47,7 @@ We now need to import it into the file `/packages/my-first-theme/src/index.js` w
 ```jsx
 // File: /packages/my-first-theme/src/index.js
 
-import Root from "./theme-files";
+import Root from "./components";
 
 const myFirstTheme = {
   name: "my-first-theme",

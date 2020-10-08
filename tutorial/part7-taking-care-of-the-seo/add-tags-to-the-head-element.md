@@ -11,7 +11,7 @@ You can use React to add tags to the `<head>` of your document. Tags such as a t
 Import the `<Head>` component, and everything you include within `<Head>...</Head>` tags will be inluded in the `<head>` section of your document.
 
 ```jsx
-// File: /packages/my-first-theme/src/theme-files/index.js
+// File: /packages/my-first-theme/src/components/index.js
 
 import { ..., Head } from "frontity";
 
