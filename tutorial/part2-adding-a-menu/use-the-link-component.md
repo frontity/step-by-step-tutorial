@@ -15,7 +15,7 @@ Frontity provides a `<Link>` component. The simplest way to use it is to just pr
 <Link link="/">Home</Link>
 ```
 
-We also provide the string that want displayed as a clickable link, here that is 'Home'.
+We also provide the string that we want to be displayed as a clickable link. In the example above that is 'Home'.
 
 Before we can use the `<Link>` component we first need to import it into our `Root` component. Add this as the third line:
 
@@ -50,4 +50,4 @@ const Root = ({ state }) => {
 export default connect(Root);
 ```
 
-> Here've used the `<Link>` component in the simplest way, but you can learn more about what you can do with the `<Link>` component [in our docs](https://docs.frontity.org/api-reference-1/frontity-components#link).
+> Here we've used the `<Link>` component in the simplest possible way. To learn more about what you can do with the `<Link>` component [see this page](https://docs.frontity.org/api-reference-1/frontity-components#link) in our documentation.
