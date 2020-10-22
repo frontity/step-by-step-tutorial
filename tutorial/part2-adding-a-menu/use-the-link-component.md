@@ -41,7 +41,7 @@ const Root = ({ state }) => {
       <nav>
         <Link link="/">Home</Link><br />
         <Link link="/page/2">More posts</Link><br />
-        <Link link="/lorem-ipsum">Lorem Ipsum</Link>
+        <Link link="/about-us">About Us</Link>
       </nav>
     </>
   );
