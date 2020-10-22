@@ -44,7 +44,7 @@ Please note that instead of using `state.source.data[url]` it’s better to use 
 So now let’s inspect the homepage using state.source.get("/"):
 
 <p>
-  <img alt="Frontity in the console" src="../assets/console-5.png" width="700">
+  <img alt="Frontity in the console" src="../assets/console-5.png">
 </p>
 
 As you can see, it has several interesting properties such as `isHome`, `isArchive`, and an array of `items`. If the homepage were a category it would have an `isCategory` property. If it were a post it would have an `isPost` property, etc...
@@ -57,6 +57,7 @@ In this next step we **`get`** the information about the current link (`state.ro
 // File: /packages/my-first-theme/src/components/index.js
 
 const Root = ({ state }) => {
+
   const data = state.source.get(state.router.link);
 
   return (
