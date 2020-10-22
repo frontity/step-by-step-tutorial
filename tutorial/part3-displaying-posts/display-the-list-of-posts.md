@@ -13,6 +13,7 @@ import React from "react";
 import { connect } from "frontity";
 
 const List = ({ state }) => {
+
   const data = state.source.get(state.router.link);
 
   return (
@@ -26,6 +27,7 @@ const List = ({ state }) => {
       })}
     </div>
   );
+
 };
 
 export default connect(List);
@@ -40,6 +42,7 @@ We need to import it into our root component and use it.
 import List from "./list";
 
 const Root = ({ state }) => {
+
   const data = state.source.get(state.router.link);
 
   return (
@@ -52,6 +55,7 @@ const Root = ({ state }) => {
       </main>
     </>
   );
+
 };
 ```
 
@@ -60,24 +64,26 @@ And now let's change the `<List>` component to use the information about each of
 ```jsx
 // File: /packages/my-first-theme/src/components/list.js
 
-import  React  from  " react " ;
-import { connect } from  " frontity " ;
-import  Link  from  " ./link " ;
+import React from "react";
+import { connect } from "frontity";
+import Link from "@frontity/components/link";
 
-const  List  = ({ state }) => {
-   const  data  =  state.source.get(state.router.link );
+const List = ({ state }) => {
+
+  const data = state.source.get(state.router.link);
 
   return (
-    < div >
-       { data.items.map( item => {
-         const post = state.source.post[item.id]
-         return (
-           <Link key={item.id} href={post.link}>
-              {post.title.rendered}
-           </Link>
-         );
-      }) }
-    </ div >
+    <div>
+      {data.items.map(item => {
+        const post = state.source.post[item.id]
+        return (
+          <Link key={item.id} link={post.link}>
+            {post.title.rendered}<br/>
+          </Link>
+        );
+      })}
+    </div>
   );
+
 };
 ```
