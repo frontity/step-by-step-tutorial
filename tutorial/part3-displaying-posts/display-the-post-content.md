@@ -13,6 +13,7 @@ import React from "react";
 import { connect } from "frontity";
 
 const Post = ({ state }) => {
+
   const data = state.source.get(state.router.link);
   const post = state.source[data.type][data.id];
 
@@ -22,6 +23,7 @@ const Post = ({ state }) => {
       <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
     </div>
   );
+
 };
 
 export default connect(Post);
@@ -36,6 +38,7 @@ And, as before, import it into the root component file and use it to display pos
 import Post from "./post";
 
 const Root = ({ state }) => {
+
   const data = state.source.get(state.router.link);
 
   return (
@@ -48,5 +51,6 @@ const Root = ({ state }) => {
       </main>
     </>
   );
+
 };
 ```

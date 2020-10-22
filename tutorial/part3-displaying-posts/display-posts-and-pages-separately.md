@@ -12,7 +12,7 @@ At the moment posts and pages both use the same component. But normally posts wi
 
 Let's distinguish between the two now.
 
-Create a new file and call it `page.js`. Copy the contents of `post.js` into `page.js` and rename the component.
+Create a new file and call it `page.js`. Copy the contents of `post.js` into `page.js` and rename the component. Remember to change the `export` line as well - line 18 in the code sample below.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/page.js
@@ -21,6 +21,7 @@ import React from "react"
 import { connect } from "frontity"
 
 const Page = ({ state }) => {
+
     const data = state.source.get(state.router.link)
     const page = state.source[data.type][data.id]
 
@@ -29,7 +30,8 @@ const Page = ({ state }) => {
             <h2>{page.title.rendered}</h2>
             <div dangerouslySetInnerHTML={{ __html: page.content.rendered}} />
         </div>
-    )
+    );
+
 }
 
 export default connect(Page)
@@ -44,6 +46,7 @@ import React from "react";
 import { connect } from "frontity";
 
 const Post = ({ state }) => {
+
   const data = state.source.get(state.router.link);
   const post = state.source[data.type][data.id];
   const author = state.source.author[post.author]
@@ -56,6 +59,7 @@ const Post = ({ state }) => {
       <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
     </div>
   );
+
 };
 
 export default connect(Post);
@@ -70,6 +74,7 @@ Finally in this section let's change the root component to import and use the `<
 import Page from "./page"
 
 const Root = ({ state }) => {
+
   const data = state.source.get(state.router.link);
 
   return (
@@ -82,7 +87,8 @@ const Root = ({ state }) => {
       </main>
     </>
   );
+
 };
 ```
 
-Now as you navigate around the site and view posts and pages you 'll notice that posts have the author and date info but pages do not.
+Now as you navigate around the site and view posts and pages you 'll notice that posts, e.g. "The Beauties of Gullfoss", have the author and date info, but pages, e.g. "About Us", do not.
