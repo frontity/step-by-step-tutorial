@@ -112,7 +112,7 @@ This means that we only need one component to display both posts and pages, and 
 <main>
     {data.isArchive && <List />}
     {data.isPost && <Post />}
-    {data.isPage && <Page />}
+    {data.isPage && <Post />}
 </main>
 // ...
 ```
