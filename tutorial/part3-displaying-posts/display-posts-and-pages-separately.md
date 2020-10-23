@@ -99,7 +99,7 @@ Now as you navigate around the site and view posts and pages you'll notice that 
 
 So far we've created a separate `<Post>` and `<Page>` components in separate `post.js` and `page.js` files so that posts and pages can be displayed differently.
 
-Instead of doing that we could have the `<Post>` component conditionally check the `isPost` property and display the posted date and author information if it is true.
+Instead of doing that we could have the `<Post>` component conditionally check the `isPost` property and display the posted date and author information only if it is true.
 
 If it is not true but `isPage` is true then this additional information will not be displayed.
 
