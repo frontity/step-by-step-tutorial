@@ -95,7 +95,7 @@ Now as you navigate around the site and view posts and pages you'll notice that 
 
 ## Using a single component for both posts and pages
 
-> **Note**: This section is optional and can be safely skipped without affecting the learning experience
+> * **Note**: This section is optional and can be safely skipped without affecting the learning experience *
 
 So far we've created a separate `<Post>` and `<Page>` components in separate `post.js` and `page.js` files so that posts and pages can be displayed differently.
 
