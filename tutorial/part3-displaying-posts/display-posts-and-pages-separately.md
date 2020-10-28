@@ -93,6 +93,8 @@ const Root = ({ state }) => {
 
 Now as you navigate around the site and view posts and pages you'll notice that posts, e.g. *"The Beauties of Gullfoss"*, have the author and date info, but pages, e.g. *"About Us"*, do not.
 
+![](../assets/part3img6.png)
+
 <p>
   <img alt="Frontity in the browser" src="../assets/part3img6.png" width="400">
 </p>
@@ -101,7 +103,7 @@ Now as you navigate around the site and view posts and pages you'll notice that 
 
 > *__Note:__ This section is optional and can be safely skipped without affecting the learning experience*
 
-So far we've created a separate `<Post>` and `<Page>` components in separate `post.js` and `page.js` files so that posts and pages can be displayed differently.
+So far we've created separate `<Post>` and `<Page>` components in separate `post.js` and `page.js` files so that posts and pages can be displayed differently.
 
 Instead of doing that we could have the `<Post>` component conditionally check the `isPost` property and display the posted date and author information only if it is true.
 
