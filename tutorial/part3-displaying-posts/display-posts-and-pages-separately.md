@@ -149,4 +149,4 @@ const Post = ({ state }) => {
 export default connect(Post);
 ```
 
-> __Please note:__ for the rest of this tutorial we will assume that you have gone for separate `post.js` and `page.js` files each with their own component. If you have elected to use the single component with conditionals option you may need to adapt some of the subsequent steps.
+> *__Please note:__ for the rest of this tutorial we will assume that you have gone for separate `post.js` and `page.js` files each with their own component. If you have elected to use the single component with conditionals option you may need to adapt some of the subsequent steps.*
