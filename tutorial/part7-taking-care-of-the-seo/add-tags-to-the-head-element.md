@@ -37,5 +37,5 @@ Check your document with the browser devtools and you should see these showing u
 
 
 <p>
-  <img alt="Frontity in the console" src="../assets/console-7.png" width="800">
+  <img alt="Frontity in the console" src="../assets/part7img1.png" width="800">
 </p>

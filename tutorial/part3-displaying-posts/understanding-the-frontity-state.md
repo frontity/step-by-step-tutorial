@@ -9,7 +9,7 @@ In order to gain a better understanding of Frontity, let’s dig a little deeper
 To do so, access `http://localhost:3000/about-us/` in the browser and open the console. In the console type `frontity.state` to see the Frontity state. This is the same state that the components and actions have access to.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/console-1.png">
+  <img alt="Frontity in the console" src="../assets/part3img1.png">
 </p>
 
 > Frontity uses [ES2015 Proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy), so you have to open the property [[Target]] in order to see the state.
@@ -19,13 +19,13 @@ You will see Frontity's global state, including the general properties of your F
 Let’s take a look at `state.source.data`. This is where the information for each URL is stored. If you inspect `/about-us/`, you can see that it’s a page, and that it has the ID 184.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/console-2.png" width="600">
+  <img alt="Frontity in the console" src="../assets/part3img2.png" width="600">
 </p>
 
 With that information, we can access the data (title, content, etc) of that page with `state.source.page[184]`:
 
 <p>
-  <img alt="Frontity in the console" src="../assets/console-3.png">
+  <img alt="Frontity in the console" src="../assets/part3img3.png">
 </p>
 
 As you navigate from one URL to another, the package `@frontity/wp-source` automatically fetches everything you need and stores it in `state.source`.
@@ -33,7 +33,7 @@ As you navigate from one URL to another, the package `@frontity/wp-source` autom
 If we open the Network tab (in the browser's devtools) and click on the menu to go to Home (Homepage), you will see that a call to the REST API is made to get the latest posts.
 
 <p>
-  <img alt="Browser developer tools network tab showing fetch" src="../assets/console-4.png" width="700">
+  <img alt="Browser developer tools network tab showing fetch" src="../assets/part3img4.png" width="700">
 </p>
 
 
@@ -44,7 +44,7 @@ Please note that instead of using `state.source.data[url]` it’s better to use 
 So now let’s inspect the homepage using state.source.get("/"):
 
 <p>
-  <img alt="Frontity in the console" src="../assets/console-5.png">
+  <img alt="Frontity in the console" src="../assets/part3img5.png">
 </p>
 
 As you can see, it has several interesting properties such as `isHome`, `isArchive`, and an array of `items`. If the homepage were a category it would have an `isCategory` property. If it were a post it would have an `isPost` property, etc...

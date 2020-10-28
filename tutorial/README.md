@@ -6,6 +6,19 @@
 
 > *__[TO DO]__ Brief explanation of Frontity - React-based framework for building themes for headless/decoupled WordPress.*
 
+---
+
+Welcome to the Frontity step-by-step tutorial.
+
+This tutorial is a progressive sequence of lessons that will take you from first steps to mastery.
+
+It will set you up to better understand the rest of the Frontity documentation so that you can get the most out of it by starting from a foundation of a solid understanding of Frontity.
+
+Being a step-by-step tutorial we recommend that you follow the lessons in sequence, as each lesson builds on what you learned earlier.
+
+---
+
+
 Explain what we'll build in the tutorial and more or less the topics that will be covered in the tutorial.
 
 Brief explanation of Frontity - React-based framework for building themes for headless/decoupled WordPress.

@@ -12,7 +12,7 @@ At the moment posts and pages both use the same component. But normally posts wi
 
 Let's distinguish between the two now.
 
-Create a new file and call it `page.js`. Copy the contents of `post.js` into `page.js` and rename the component. Remember to change the `export` line as well - line 18 in the code sample below.
+Create a new file and call it `page.js`. Copy the contents of `post.js` into `page.js` and rename the component. Remember to change the `export` line as well - line 20 in the code sample below.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/page.js
@@ -49,7 +49,7 @@ const Post = ({ state }) => {
 
   const data = state.source.get(state.router.link);
   const post = state.source[data.type][data.id];
-  const author = state.source.author[post.author]
+  const author = state.source.author[post.author];
 
   return (
     <div>
@@ -92,6 +92,10 @@ const Root = ({ state }) => {
 ```
 
 Now as you navigate around the site and view posts and pages you'll notice that posts, e.g. *"The Beauties of Gullfoss"*, have the author and date info, but pages, e.g. *"About Us"*, do not.
+
+<p>
+  <img alt="Frontity in the browser" src="../assets/part3img6.png" width="400">
+</p>
 
 ## Using a single component for both posts and pages
 
@@ -144,3 +148,5 @@ const Post = ({ state }) => {
 
 export default connect(Post);
 ```
+
+> *Please note:* for the rest of this tutorial we will assume that you have gone for separate `post.js` and `page.js` files each with their own component. If you have elected to use the single component with conditionals option you may need to adapt some of the subsequent steps.

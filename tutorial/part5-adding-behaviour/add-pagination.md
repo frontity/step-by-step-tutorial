@@ -7,7 +7,7 @@
 Click on the `More posts` link in the menu to navigate to `/page/2` and examine `frontity.state` in the console. You will notice that the data for the page has both `previous` and `next` properties.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/console-6.png" width="700">
+  <img alt="Frontity in the console" src="../assets/part5img1.png" width="700">
 </p>
 
 We can use these properties to add pagination to our `<List>` component. We will add a `<PrevNextNav>` component to style two buttons that enable us to page through the lists of posts.
