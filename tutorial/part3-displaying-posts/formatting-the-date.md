@@ -3,7 +3,7 @@
 You will have noticed that the date is not formatted in an easy to read way.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part3img7.png" width="400">
+  <img alt="Frontity in the browser" src="../assets/part3img7.png">
 </p>
 
 Let's fix that now. Doing this gives us the opportunity to use an external library with Frontity. This is something that you're likely to need to do in real-world project development, so it's well worth covering here.
@@ -19,7 +19,7 @@ npm install dayjs
 If you check the `package.json` file in the root of your project folder you will now see that `dayjs` has been added as a dependency.
 
 <p>
-  <img alt="Dependencies in package.json" src="../assets/part3img8.png" width="400">
+  <img alt="Dependencies in package.json" src="../assets/part3img8.png">
 </p>
 
 Next, let's import Day.js into our `post.js` file:
@@ -79,5 +79,5 @@ export default connect(Post);
 Our date is now formatted in a much more pleasing way.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part3img9.png" width="400">
+  <img alt="Frontity in the browser" src="../assets/part3img9.png">
 </p>
