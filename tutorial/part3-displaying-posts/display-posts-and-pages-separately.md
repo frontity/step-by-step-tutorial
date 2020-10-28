@@ -93,10 +93,8 @@ const Root = ({ state }) => {
 
 Now as you navigate around the site and view posts and pages you'll notice that posts, e.g. *"The Beauties of Gullfoss"*, have the author and date info, but pages, e.g. *"About Us"*, do not.
 
-![](../assets/part3img6.png)
-
 <p>
-  <img alt="Frontity in the browser" src="../assets/part3img6.png" width="400">
+  <img alt="Frontity in the browser" src="../assets/part3img6.png" width="565" height="161">
 </p>
 
 ## Using a single component for both posts and pages
