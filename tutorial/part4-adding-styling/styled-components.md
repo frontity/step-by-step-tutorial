@@ -4,50 +4,6 @@
 
 > *__[TO DO]__ this section is long - consider splitting it into 2 or more sections.*
 
-Awesome, we now have a fully functioning website! But you're probably looking at it and thinking "I've seen prettier warthogs!" 🐗
-
-Let's fix that.
-
-Frontity uses CSS-in-JS for styling components. This has a number of advantages:
-
-- it only loads the CSS needed for each page which improves the performance
-- you don't have to worry about classes and problems with duplication, typos, etc
-- you don't have to worry about vendor prefixing so you can write your CSS based on the current standard and Frontity handles the rest for you
-- you can use all the power of JavaScript to style your components and create dynamic styles with much less code
-
-> You can learn more about styling your Frontity app [here](https://docs.frontity.org/learning-frontity/styles).
-
-> Frontity uses Emotion for CSS-in-JS. Find out more [here](https://emotion.sh/docs/introduction).
-
-The first thing we will do is create global styles. These apply site-wide and should be added to the root component of your theme. We'll change the font to be sans-serif. To do this import the `<Global>` component and the `css` function from Frontity into our root component.
-
-```jsx
-// File: /packages/my-first-theme/src/components/index.js
-
-// ...
-import { connect, Global, css } from "frontity";
-
-const Root = ({ state }) => {
-
-  const data = state.source.get(state.router.link);
-
-  return (
-    <>
-      <Global
-        styles={css`
-          html {
-            font-family: sans-serif;
-          }
-        `}
-      />
-      {/* ... */}
-    </>
-  );
-};
-```
-
-The `css` function takes as it's argument a template literal, which in this case consists of standard CSS contained within backticks. These styles are applied to the `styles` attribute on the `Global` component. When you save the file you should notice that the fonts on your site have changed automatically.
-
 Now let's create some CSS components. These components are created using `styled`, which like `css` is a function. However the HTML tag that you want to style is appended with dot notation and then, again like `css`, the function takes a template literal containing CSS as it's argument.
 
 As a basic example let's start by creating a `<Header>` component and give it a background colour, though first we need to import `styled` from Frontity.
