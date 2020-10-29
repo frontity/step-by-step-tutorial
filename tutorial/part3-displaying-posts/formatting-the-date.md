@@ -1,6 +1,6 @@
 # Formatting the date
 
-You will have noticed that the date is not formatted in an easy to read way.
+When you view a post you may notice that the date is not formatted in an easy to read way.
 
 <p>
   <img alt="Frontity in the browser" src="../assets/part3img7.png">
@@ -34,7 +34,7 @@ import dayjs from 'dayjs'
 
 We now need to create a Day.js object and we pass in `post.date`, which is the date string that is currently displaying in our post. We can do that with `dayjs(post.date)`, and we then call the `format` function of the `dayjs` object passing it a formatting string.
 
-We'll store the result in a variable (`formattedDate`) for later use.
+We'll store the result in a variable (which we'll call `formattedDate`) for later use.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/post.js
@@ -44,7 +44,7 @@ We'll store the result in a variable (`formattedDate`) for later use.
 // ...
 ```
 
-See the [Day.js documentation](https://day.js.org/docs/en/display/format) for other possible formatting strings. For example, try replacing `DD MMMM YYYY` above with `MMM DD, YYYY` or `DD-MM-YY`.
+See the [Day.js documentation](https://day.js.org/docs/en/display/format) for other possible formatting strings. For example, try replacing `DD MMMM YYYY` above with `MMM DD, YYYY` or `DD-MM-YY` to see how the appearance of the date changes.
 
 Your `post.js` file should now look like this:
 
