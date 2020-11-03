@@ -1,10 +1,10 @@
-# Style the components
+# Styled components
 
 > *__[TO DO]__ modify this text to suit new context.*
 
 > *__[TO DO]__ this section is long - consider splitting it into 2 or more sections.*
 
-Now let's create some CSS components. These components are created using `styled`, which like `css` is a function. However the HTML tag that you want to style is appended with dot notation and then, again like `css`, the function takes a template literal containing CSS as it's argument.
+In this section we're going to create some CSS components, also known as styled components. These components are created using `styled`, which like `css` is a function. However the HTML tag that you want to style is appended with dot notation and then, again like `css`, the function takes a template literal containing CSS as it's argument.
 
 As a basic example let's start by creating a `<Header>` component and give it a background colour, though first we need to import `styled` from Frontity.
 
@@ -26,7 +26,7 @@ Once the `<Header>` component has been created let's use it in our root componen
 // File: /packages/my-first-theme/src/components/index.js
 
 // ...
-const Root = ({ state, actions }) => {
+const Root = ({ state }) => {
 
   const data = state.source.get(state.router.link)
 
@@ -35,7 +35,7 @@ const Root = ({ state, actions }) => {
       <Global
         styles={css`
         html {
-            font-family: sans-serif;
+            font-family:  system-ui, Verdana, Arial, sans-serif;
         }
       `}
       />
@@ -45,7 +45,7 @@ const Root = ({ state, actions }) => {
         <nav>
           <Link href="/">Home</Link>
           <Link href="/page/2">More posts</Link>
-          <Link href="/lorem-ipsum">Lorem Ipsum</Link>
+          <Link link="/about-us">About Us</Link>
         </nav>
       </Header>
       <main>
@@ -65,21 +65,21 @@ Now our header is contained within a nice light grey background. But notice the 
 
 // ...
 <Global
-        styles={css`
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-family: sans-serif;
-        }
-      `}
-      />
+  styles={css`
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html {
+        font-family: system-ui, Verdana, Arial, sans-serif;
+    }
+  `}
+/>
 // ...
 ```
 
-This simple CSS reset will make styling our elements going forward much simpler with more consistent behaviour.
+CSS reset can be [much more elaborate](https://meyerweb.com/eric/tools/css/reset/) than this, but this simple CSS reset will give us more control over the styling of our elements going forward, and enable us to have more consistent and predictable behaviour.
 
 Let's continue styling our header by adding a border to the bottom.
 
@@ -131,7 +131,9 @@ const Main = styled.main`
 `
 ```
 
-And again we'll use those elements in our root component.
+Since all post and page content is going to appear within the `<Main>` component you can keep adding elements to the definition of that component and styling them as you wish. Thus far we've only applied some minimal styling to the `img`, `h2`, and `p` elements.
+
+Now let's use those styled components in our root component.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -145,8 +147,13 @@ const Root = ({ state, actions }) => {
     <>
       <Global
         styles={css`
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
         html {
-            font-family: sans-serif;
+            font-family: system-ui, Arial, sans-serif;
         }
       `}
       />
@@ -157,7 +164,7 @@ const Root = ({ state, actions }) => {
           <nav>
             <Link href="/">Home</Link>
             <Link href="/page/2">More posts</Link>
-            <Link href="/lorem-ipsum">Lorem Ipsum</Link>
+            <Link link="/about-us">About Us</Link>
           </nav>
         </HeaderContent>
       </Header>
@@ -171,9 +178,9 @@ const Root = ({ state, actions }) => {
 };
 ```
 
-Incidentally, this is where the [WordPress Theme Unit Test](https://github.com/WPTT/theme-unit-test) really starts to come into it's own. Since all post and page content is going to appear within the `<Main>` component you can keep adding elements to the definition of that component and styling them until all the unit tests pass. This will ensure that your theme is robust and will properly render any content that gets thrown at it. So far we've only minimally styled `img`, `h2`, and `p`.
 
-For now though we'll turn our attention back to the header section and style the menu...
+
+Next we'll turn our attention back to the header section and style the menu...
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -183,7 +190,7 @@ const Menu = styled.nav`
     display: flex;
     flex-direction: row;
     margin-top: 1em;
-    & > div {
+    & > a {
         margin-right: 1em;
     }
 `
@@ -202,7 +209,7 @@ const Menu = styled.nav`
     <Menu>
       <Link href="/">Home</Link>
       <Link href="/page/2">More posts</Link>
-      <Link href="/lorem-ipsum">Lorem Ipsum</Link>
+      <Link link="/about-us">About Us</Link>
     </Menu>
   </HeaderContent>
 </Header>
@@ -238,14 +245,17 @@ const List = ({ state }) => {
 };
 
 const Items = styled.div`
-  & > div {
-      margin: 12px 0;
-      font-size: 1.2em;
+  & > a {
+    display: block;
+    margin: 6px 0;
+    font-size: 1.2em;
+    color: steelblue;
+    text-decoration: none;
   }
 `
 ```
 
-Now let's make all our links a consistent colour.
+Now let's make all our links a consistent colour and remove the underlines so that everything looks a bit cleaner.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/link.js

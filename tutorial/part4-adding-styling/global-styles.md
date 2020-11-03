@@ -17,7 +17,7 @@ const Root = ({ state }) => {
       <Global
         styles={css`
           html {
-            font-family: system-ui, Arial, sans-serif;
+            font-family: system-ui, Verdana, Arial, sans-serif;
           }
         `}
       />
@@ -28,3 +28,5 @@ const Root = ({ state }) => {
 ```
 
 The `css` function takes as it's argument a template literal, which in this case consists of standard CSS contained within backticks. These styles are applied to the `styles` attribute on the `Global` component. When you save the file you should notice that the fonts on your site have changed automatically.
+
+Next we'll look at the power and flexibility that styled components give us.
