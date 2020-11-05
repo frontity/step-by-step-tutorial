@@ -192,6 +192,8 @@ const Menu = styled.nav`
     margin-top: 1em;
     & > a {
         margin-right: 1em;
+        color: steelblue;
+        text-decoration: none;
     }
 `
 ```
@@ -255,39 +257,7 @@ const Items = styled.div`
 `
 ```
 
-Now let's make all our links a consistent colour and remove the underlines so that everything looks a bit cleaner.
-
-```jsx
-// File: /packages/my-first-theme/src/components/link.js
-
-import React from "react"
-import { connect, styled } from "frontity"
-
-const Link = ({href, actions, children}) => {
-  return (
-    <div>
-      <Anchor
-        href={href}
-        onClick={e => {
-          e.preventDefault()
-          actions.router.set(href)
-        }}
-      >
-        {children}
-      </Anchor>
-    </div>
-  )
-}
-
-export default connect(Link)
-
-const Anchor = styled.a`
-    color: steelblue;
-    text-decoration: none;
-`
-```
-
-And finally for this section we'll highlight the author and date info in our `<Post>` component. Import `styled` into `post.js` and create and use a `<PostInfo>` component.
+Finally for this section we'll highlight the author and date info in our `<Post>` component. Import `styled` into `post.js` and create and use a `<PostInfo>` component.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/post.js
