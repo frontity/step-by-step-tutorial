@@ -180,7 +180,7 @@ const Root = ({ state, actions }) => {
 
 
 
-Next we'll turn our attention back to the header section and style the menu...
+Next we'll turn our attention back to the header section and style the menu. We'll make our links a consistent colour and remove the underlines so that it looks a bit cleaner.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -198,7 +198,7 @@ const Menu = styled.nav`
 `
 ```
 
-...and replace the `nav` element in our `Root` component with the new `Menu` component.
+It remains for us to replace the `nav` element in our `Root` component with the new `Menu` component.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -220,7 +220,7 @@ const Menu = styled.nav`
 
 We now have a pleasing looking header.
 
-Let's improve the appearance of our `<List>` component. Open `list.js` and add an `<Items>` component and use it with `<List>`. Remember also to import `styled` from `frontity`.
+Let's improve the appearance of our `<List>` component by having our links in the same style as the menu. Open `list.js` and add an `<Items>` component and use it with `<List>`. Remember also to import `styled` from `frontity`.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/list.js
