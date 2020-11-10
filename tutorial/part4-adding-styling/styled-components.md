@@ -16,7 +16,7 @@ import { connect, Global, css, styled } from "frontity";
 // ...
 
 const Header = styled.header`
-  background-color: #eee;
+  background-color: #E5EDEE;
 `
 ```
 
@@ -81,7 +81,7 @@ Now our header is contained within a nice light grey background. But notice the 
 
 CSS reset can be [much more elaborate](https://meyerweb.com/eric/tools/css/reset/) than this, but this simple CSS reset will give us more control over the styling of our elements going forward, and enable us to have more consistent and predictable behaviour.
 
-Let's continue styling our header by adding a border to the bottom.
+Let's continue styling our header by adding a border to the bottom, and making the `<h1>` element within it a little less starkly black!
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -89,10 +89,14 @@ Let's continue styling our header by adding a border to the bottom.
 // ...
 
 const Header = styled.header`
-  background-color: #eee;
+  background-color: #E5EDEE;
   border-width: 0 0 8px 0;
   border-style: solid;
   border-color: maroon;
+
+  h1 {
+    color: #4a4a4a;
+  }
 `
 ```
 
@@ -103,7 +107,7 @@ We also want to constrain our page width to 800px. To do that we will need to ad
 
 // ...
 const Header = styled.header`
-  background-color: #eee;
+  background-color: #E5EDEE;
   border-width: 0 0 8px 0;
   border-style: solid;
   border-color: maroon;
@@ -177,8 +181,6 @@ const Root = ({ state, actions }) => {
   );
 };
 ```
-
-
 
 Next we'll turn our attention back to the header section and style the menu. We'll make our links a consistent colour and remove the underlines so that it looks a bit cleaner.
 
@@ -296,3 +298,13 @@ const PostInfo = styled.div`
     }
 `
 ```
+
+For reference, this is how your site should be looking like now:
+
+<p>
+  <img alt="Frontity in the browser" src="../assets/part4img1.png">
+</p>
+
+<p>
+  <img alt="Frontity in the browser" src="../assets/part4img2.png">
+</p>

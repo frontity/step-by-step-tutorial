@@ -4,9 +4,9 @@
 
 > *__[TO DO]__ add more explanation and another example here.*
 
-CSS-in-JS allows us to modify the styling of elements dynamically. Let's take a look at how we can do this.
+One of the great features of CSS-in-JS is that it allows us to modify the styling of elements dynamically. Let's take a look at how we can do this.
 
-You will recall that we added an 8px wide border to the bottom of our header. We'll use that to indicate whether we're on a `list` page, a `post` page, or a `page`, erm..., page 🤷🏻‍♂️ by changing the colour of the border.
+You will recall that in the previous section we added an 8px wide border to the bottom of our header. We'll use that to indicate whether we're on a `list` page, a `post` page, or a `page`, erm..., page 🤷🏻‍♂️ by changing the colour of the border.
 
 To do this we add a prop to the `<Header>` component.
 
@@ -25,14 +25,14 @@ This prop gets passed to a function that we add to our CSS that conditionally ch
 
 // ...
 const Header = styled.header`
-  background-color: #eee;
+  background-color: #E5EDEE;
   border-width: 0 0 8px 0;
   border-style: solid;
-  border-color: ${ props => props.isPostType ? : 'lightseagreen' : 'maroon'};
+  border-color: ${ props => props.isPostType ? 'lightseagreen' : 'maroon'};
 `
 ```
 
-Let's extend this to get a different colour for pages.
+Let's extend this to get a different colour for pages. __Note__ that here we have a ternary operator as the _ifTrue_ expression within our original ternary operator!!!
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -43,11 +43,13 @@ Let's extend this to get a different colour for pages.
 
 // ...
 const Header = styled.header`
-  background-color: #eee;
+  background-color: #E5EDEE;
   border-width: 0 0 8px 0;
   border-style: solid;
-  border-color: ${ props => props.isPostType ? props.isPage ? 'lightsteelblue' : 'lightseagreen' : 'maroon'};
+  border-color: ${ props => props.isPostType ? ( props.isPage ? 'lightsteelblue' : 'lightseagreen' ) : 'maroon'};
 `
 ```
+
+Now if we navigate to `Home` the header has a marroon border (as it's a listing page), if we click on one of the posts the post page has a green border, and if we navigate to `About Us`, (which is a page rather than a post) the header has a blue border.
 
 Awesome, our site is starting to look pretty good now! 👌
