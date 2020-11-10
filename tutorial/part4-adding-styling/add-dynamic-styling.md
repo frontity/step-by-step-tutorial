@@ -50,7 +50,7 @@ const Header = styled.header`
 `
 ```
 
-Now if we navigate to `Home` the header has a marroon border (as it's a listing page), if we click on one of the posts the post page has a green border, and if we navigate to `About Us`, (which is a page rather than a post) the header has a blue border.
+Now if we navigate to `Home` the header has a maroon border (as it's a listing page), if we click on one of the posts the post page has a green border, and if we navigate to `About Us`, (which is a page rather than a post) the header has a blue border.
 
 Awesome, our site is starting to look pretty good now! 👌
 
