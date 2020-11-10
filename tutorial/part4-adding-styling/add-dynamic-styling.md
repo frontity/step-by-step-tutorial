@@ -55,6 +55,10 @@ Now if we navigate to `Home` the header has a maroon border (as it's a listing p
 Awesome, our site is starting to look pretty good now! 👌
 
 <p>
+  <img alt="Frontity in the browser - listing" src="../assets/part4img1.png">
+</p>
+
+<p>
   <img alt="Frontity in the browser - post" src="../assets/part4img3.png">
 </p>
 
