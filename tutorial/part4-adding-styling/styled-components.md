@@ -302,9 +302,9 @@ const PostInfo = styled.div`
 For reference, this is what your site should be looking like now:
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part4img1.png">
+  <img alt="Frontity in the browser - listing" src="../assets/part4img1.png">
 </p>
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part4img2.png">
+  <img alt="Frontity in the browser - post" src="../assets/part4img2.png">
 </p>
