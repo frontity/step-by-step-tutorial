@@ -132,10 +132,15 @@ const Main = styled.main`
         line-height: 1.25em;
         margin-bottom: 0.75em;
     }
+    figcaption {
+      color: #828282;
+      font-size: 0.8em;
+      margin-bottom: 1em;
+    }
 `
 ```
 
-Since all post and page content is going to appear within the `<Main>` component you can keep adding elements to the definition of that component and styling them as you wish. Thus far we've only applied some minimal styling to the `img`, `h2`, and `p` elements.
+Since all post and page content is going to appear within the `<Main>` component you can keep adding elements to the definition of that component and styling them as you wish. Thus far we've only applied some minimal styling to the `img`, `h2`, and `p` elements, and also to `figcaption` as a number of images in our content have captions.
 
 Now let's use those styled components in our root component.
 

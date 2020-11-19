@@ -2,23 +2,25 @@
 
 > *__[TO DO]__ modify this text to suit new context.*
 
-Now let's learn how we can use `state` and `actions` within our theme to develop a bit of interactivity. We're going to add the option to show/hide the menu.
+Now let's learn how we can use `state` and `actions` within our theme to develop a bit of interactivity.
 
-Open `index.js` at the root of our theme and add a new field called `isMenuOpen` in `state.theme`. We'll set it to default to `false`.
+We're going to add the option to show/hide the URL that sits just under our main header. We originally used this to display the value of `state.router.link` when we first connected our `<Root>` component to the state in an [earlier lesson](part1-creating-a-custom-theme/connect-the-root-component-to-the-state.md).
+
+Open `index.js` at the root of our theme and add a new field called `isUrlVisible` in `state.theme`. We'll set its default value to `false`.
 
 ```jsx
 // File: /packages/my-first-theme/src/index.js
 
 import Root from "./components";
 
-const jsNation = {
+const myFirstTheme = {
   name: "my-first-theme",
   roots: {
     theme: Root
   },
   state: {
     theme: {
-      isMenuOpen: false
+      isUrlVisible: false
     }
   },
   actions: {
@@ -26,10 +28,10 @@ const jsNation = {
   }
 };
 
-export default jsNation
+export default myFirstTheme
 ```
 
-Then add two actions to change the value of this field. One of them will set the value to `true`, the other will set it to `false`. We'll use the state of this variable to determine whether the menu should be open or closed.
+Then we'll add an action - this is a function that will toggle the value of `isUrlVisible`. We'll use the state of this variable to determine whether the URL is visible or not.
 
 > This is the proper way to mutate state. You should never mutate the state directly from your components. You should, instead, create actions to mutate state and call those actions from your components.
 
@@ -45,16 +47,13 @@ const jsNation = {
   },
   state: {
     theme: {
-      isMenuOpen: false
+      isUrlVisible: false
     }
   },
   actions: {
     theme: {
-      openMenu: ({state}) => {
-        state.theme.isMenuOpen = true
-      },
-      closeMenu: ({state}) => {
-        state.theme.isMenuOpen = false
+      toggleUrl: ({state}) => {
+        state.theme.isUrlVisible = !state.theme.isUrlVisible
       }
     }
   }
@@ -63,23 +62,27 @@ const jsNation = {
 export default jsNation
 ```
 
-Now in the root component we'll add some conditional logic to check the value of `isMenuOpen` and either display the menu or not. Again we have to use the ternary conditional operator here.
+Now in the root component we'll add some conditional logic to check the value of `isUrlVisible` and either display the URL or not. Again we have to use the ternary conditional operator here.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
 
 // ...
-{ state.theme.isMenuOpen ? (
+<Header isPostType={data.isPostType} isPage={data.isPage}>
+  <HeaderContent>
+    <h1>Hello Frontity</h1>
+    { state.theme.isUrlVisible ? <p>Current URL: {state.router.link}</p> : null }
     <Menu>
-      <Link href="/">Home</Link>
-      <Link href="/page/2">More posts</Link>
-      <Link href="/lorem-ipsum">Lorem Ipsum</Link>
+      // ...
     </Menu>
-  ) : null
-}
+  </HeaderContent>
+</Header>
+<Main>
+  // ...
+</Main>
 ```
 
-You will find that the menu has disappeared, but if you change the value of `isMenuOpen` in `index.js` to `true` it will reappear. So let's add some buttons that use the actions we added earlier to change the value from the front end.
+You will find that the URL has disappeared, but if you change the value of `isUrlVisible` in `index.js` to `true` it will reappear. So let's add some buttons that use the `toggleUrl` action we added earlier to change the value from the front end.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -89,50 +92,34 @@ You will find that the menu has disappeared, but if you change the value of `isM
 const Root = ({ state, actions }) => {
 
 // ...
-
-{state.theme.isMenuOpen ? (
-  <>
-    <button onClick={actions.theme.closeMenu}>Close</button>
-    <Menu>
-      <Link href="/">Home</Link>
-      <Link href="/page/2">More posts</Link>
-      <Link href="/lorem-ipsum">Lorem Ipsum</Link>
-    </Menu>
-  </>
-  ) : (
-      <button onClick={actions.theme.openMenu}>Menu</button>
-  )
+{ state.theme.isUrlVisible
+  ? <>Current URL: {state.router.link} <button onClick={actions.theme.toggleUrl}>&#x3c; Hide URL</button></>
+  : <Button onClick={actions.theme.toggleUrl}>Show URL &#x3e;</Button>
 }
 ```
 
-Note that we have to wrap the `button` element and `<Menu>` component in enclosing empty tags `<> ... </>`. Remember too that we need to pass `actions` to the `Root` component.
+Note that we have to wrap the `button` element and "Current URL" string in enclosing empty tags `<> ... </>`. Remember too that we need to pass `actions` to the `Root` component.
 
-Finally let's create a styled `Button` component and use it in order to improve the appearance.
+Finally let's create a styled `<Button>` component and use it in order to improve the appearance.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
 
 // ...
-{state.theme.isMenuOpen ? (
-  <>
-    <Button onClick={actions.theme.closeMenu}>Close</Button>
-    <Menu>
-      <Link href="/">Home</Link>
-      <Link href="/page/2">More posts</Link>
-      <Link href="/lorem-ipsum">Lorem Ipsum</Link>
-    </Menu>
-  </>
-  ) : (
-      <Button onClick={actions.theme.openMenu}>Menu</Button>
-  )
+{ state.theme.isUrlVisible
+  ? <>Current URL: {state.router.link} <button onClick={actions.theme.toggleUrl}>&#x3c; Hide URL</button></>
+  : <Button onClick={actions.theme.toggleUrl}>Show URL &#x3e;</Button>
 }
 // ...
 const Button = styled.button`
-  width: 92px;
-  margin: 1em 0 0;
-  padding: 0.5em;
-  background: white;
-  border: 1px solid #aaa;
-  color: #888;
+  padding: 0 0.25em;
+  background: transparent;
+  border: none;
+  color: #aaa;
+
+  :hover {
+    cursor: pointer;
+    color: #888;
+  }
 `
 ```
