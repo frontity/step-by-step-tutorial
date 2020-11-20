@@ -8,7 +8,7 @@
 
 You can use React to add tags to the `<head>` of your document. Tags such as a title and a description can be important for SEO so it's good practice if your theme includes them.
 
-Import the `<Head>` component, and everything you include within `<Head>...</Head>` tags will be inluded in the `<head>` section of your document.
+Import the `<Head>` component, and everything you include within `<Head>...</Head>` tags will be included in the `<head>` section of your document.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
