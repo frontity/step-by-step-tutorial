@@ -1,7 +1,5 @@
 # Use 'state' and 'actions'
 
-> *__[TO DO]__ modify this text to suit new context.*
-
 Now let's learn how we can use `state` and `actions` within our theme to develop a bit of interactivity.
 
 We're going to add the option to show/hide the URL that sits just under our main header. We originally used this to display the value of `state.router.link` when we first connected our `<Root>` component to the state in an [earlier lesson](part1-creating-a-custom-theme/connect-the-root-component-to-the-state.md).
@@ -82,7 +80,9 @@ Now in the root component we'll add some conditional logic to check the value of
 </Main>
 ```
 
-You will find that the URL has disappeared, but if you change the value of `isUrlVisible` in `index.js` to `true` it will reappear. So let's add some buttons that use the `toggleUrl` action we added earlier to change the value from the front end.
+You will find that the URL has disappeared, but if you change the value of `isUrlVisible` in `index.js` to `true` it will reappear. Try it now!
+
+Let's add some buttons that use the `toggleUrl` action we added earlier to change the value of `isUrlVisible` from the front end.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -94,7 +94,7 @@ const Root = ({ state, actions }) => {
 // ...
 { state.theme.isUrlVisible
   ? <>Current URL: {state.router.link} <button onClick={actions.theme.toggleUrl}>&#x3c; Hide URL</button></>
-  : <Button onClick={actions.theme.toggleUrl}>Show URL &#x3e;</Button>
+  : <button onClick={actions.theme.toggleUrl}>Show URL &#x3e;</button>
 }
 ```
 
