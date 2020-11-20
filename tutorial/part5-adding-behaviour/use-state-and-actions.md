@@ -107,7 +107,7 @@ Finally let's create a styled `<Button>` component and use it in order to improv
 
 // ...
 { state.theme.isUrlVisible
-  ? <>Current URL: {state.router.link} <button onClick={actions.theme.toggleUrl}>&#x3c; Hide URL</button></>
+  ? <>Current URL: {state.router.link} <Button onClick={actions.theme.toggleUrl}>&#x3c; Hide URL</Button></>
   : <Button onClick={actions.theme.toggleUrl}>Show URL &#x3e;</Button>
 }
 // ...
