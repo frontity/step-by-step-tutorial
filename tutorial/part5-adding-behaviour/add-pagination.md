@@ -12,14 +12,14 @@ Click on the `More posts` link in the menu to navigate to `/page/2` and examine 
 
 We can use these properties to add pagination to our `<List>` component. We will add a `<PrevNextNav>` component to style two buttons that enable us to page through the lists of posts.
 
-Change `list.js` as follows.
+Change `list.js` as follows. Note that we need to pass `actions` into the `<List>` component.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/list.js
 
-import React from "react"
-import { connect, styled } from "frontity"
-import Link from "./link"
+import React from "react";
+import { connect, styled } from "frontity";
+import Link from "@frontity/components/link";
 
 const List = ({ state, actions }) => {
     const data = state.source.get(state.router.link)
@@ -29,7 +29,7 @@ const List = ({ state, actions }) => {
             { data.items.map( item => {
                 const post = state.source.post[item.id]
                 return (
-                    <Link key={item.id} href={post.link}>
+                    <Link key={item.id} link={post.link}>
                         {post.title.rendered}
                     </Link>
                 )
@@ -57,10 +57,13 @@ const List = ({ state, actions }) => {
 export default connect(List)
 
 const Items = styled.div`
-    & > div {
-        margin: 12px 0;
-        font-size: 1.2em;
-    }
+  & > a {
+    display: block;
+    margin: 6px 0;
+    font-size: 1.2em;
+    color: steelblue;
+    text-decoration: none;
+  }
 `
 const PrevNextNav = styled.div`
 
@@ -81,4 +84,4 @@ const PrevNextNav = styled.div`
 `
 ```
 
-We've included conditional checks so that the 'Previous' button doesn't show on the first page and the 'Next' button doesn't show on the last page, as they're not needed in those locations.
+We've included conditional checks so that the 'Previous' button doesn't show on the first page and the 'Next' button doesn't show on the last page, as they're not needed in those locations. To do this we've used ["short-circuit" evaluation](https://en.wikipedia.org/wiki/Short-circuit_evaluation).

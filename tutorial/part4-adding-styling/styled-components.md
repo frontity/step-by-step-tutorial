@@ -4,7 +4,7 @@
 
 > *__[TO DO]__ this section is long - consider splitting it into 2 or more sections.*
 
-In this section we're going to create some CSS components, also known as styled components. These components are created using `styled`, which like `css` is a function. However the HTML tag that you want to style is appended with dot notation and then, again like `css`, the function takes a template literal containing CSS as it's argument.
+In this section we're going to create some CSS components, also known as styled components. These components are created using `styled`, which like `css` is a function. However the HTML tag that you want to style is appended with dot notation and then, again like `css`, the function takes a tagged template literal containing CSS as it's argument.
 
 As a basic example let's start by creating a `<Header>` component and give it a background colour, though first we need to import `styled` from Frontity.
 
@@ -49,9 +49,11 @@ const Root = ({ state }) => {
         </nav>
       </Header>
       <main>
-        {data.isArchive && <List />}
-        {data.isPost && <Post />}
-        {data.isPage && <Page />}
+        <Switch>
+          <List when={data.isArchive} />
+          <Post when={data.isPost} />
+          <Page when={data.isPage} />
+        </Switch>
       </main>
     </>
   );
@@ -79,7 +81,7 @@ Now our header is contained within a nice light grey background. But notice the 
 // ...
 ```
 
-CSS reset can be [much more elaborate](https://meyerweb.com/eric/tools/css/reset/) than this, but this simple CSS reset will give us more control over the styling of our elements going forward, and enable us to have more consistent and predictable behaviour.
+CSS reset can be [much more elaborate](https://meyerweb.com/eric/tools/css/reset/) than this, but this simple CSS reset will give us more control over the styling of our elements going forward, and enable us to have more consistent and predictable behaviour as we add CSS to style our site.
 
 Let's continue styling our header by adding a border to the bottom, and making the `<h1>` element within it a little less starkly black!
 
@@ -95,7 +97,7 @@ const Header = styled.header`
   border-color: maroon;
 
   h1 {
-    color: #4a4a4a;
+    color: #4A4A4A;
   }
 `
 ```
@@ -111,6 +113,10 @@ const Header = styled.header`
   border-width: 0 0 8px 0;
   border-style: solid;
   border-color: maroon;
+
+  h1 {
+    color: #4A4A4A;
+  }
 `
 const HeaderContent = styled.div`
     max-width: 800px;
@@ -178,138 +184,15 @@ const Root = ({ state, actions }) => {
         </HeaderContent>
       </Header>
       <Main>
-        {data.isArchive && <List />}
-        {data.isPost && <Post />}
-        {data.isPage && <Page />}
+        <Switch>
+          <List when={data.isArchive} />
+          <Post when={data.isPost} />
+          <Page when={data.isPage} />
+        </Switch>
       </Main>
     </>
   );
 };
 ```
 
-Next we'll turn our attention back to the header section and style the menu. We'll make our links a consistent colour and remove the underlines so that it looks a bit cleaner.
-
-```jsx
-// File: /packages/my-first-theme/src/components/index.js
-
-// ...
-const Menu = styled.nav`
-    display: flex;
-    flex-direction: row;
-    margin-top: 1em;
-    & > a {
-        margin-right: 1em;
-        color: steelblue;
-        text-decoration: none;
-    }
-`
-```
-
-It remains for us to replace the `nav` element in our `Root` component with the new `Menu` component.
-
-```jsx
-// File: /packages/my-first-theme/src/components/index.js
-
-// ...
- <Header>
-  <HeaderContent>
-    <h1>Frontity Workshop</h1>
-    <p>Current URL: {state.router.link}</p>
-    <Menu>
-      <Link href="/">Home</Link>
-      <Link href="/page/2">More posts</Link>
-      <Link link="/about-us">About Us</Link>
-    </Menu>
-  </HeaderContent>
-</Header>
-// ...
-```
-
-We now have a pleasing looking header.
-
-Let's improve the appearance of our `<List>` component by having our links in the same style as the menu. Open `list.js` and add an `<Items>` component and use it with `<List>`. Remember also to import `styled` from `frontity`.
-
-```jsx
-// File: /packages/my-first-theme/src/components/list.js
-
-import React from "react"
-import { connect, styled } from "frontity"
-import Link from "./link"
-
-const List = ({ state }) => {
-  const data = state.source.get(state.router.link);
-
-  return (
-    <Items>
-      {data.items.map(item => {
-        const post = state.source.post[item.id];
-        return (
-          <Link href={post.link} key={post.id}>
-            {post.title.rendered}
-          </Link>
-        );
-      })}
-    </Items>
-  );
-};
-
-const Items = styled.div`
-  & > a {
-    display: block;
-    margin: 6px 0;
-    font-size: 1.2em;
-    color: steelblue;
-    text-decoration: none;
-  }
-`
-```
-
-Finally for this section we'll highlight the author and date info in our `<Post>` component. Import `styled` into `post.js` and create and use a `<PostInfo>` component.
-
-```jsx
-// File: /packages/my-first-theme/src/components/post.js
-
-import React from "react"
-import { connect, styled } from "frontity"
-
-const Post = ({ state }) => {
-    const data = state.source.get(state.router.link)
-    const post = state.source[data.type][data.id]
-    const author = state.source.author[post.author]
-
-    return (
-        <div>
-            <h2>{post.title.rendered}</h2>
-            <PostInfo>
-                <p><strong>Posted: </strong>{post.date}</p>
-                <p><strong>Author: </strong>{author.name}</p>
-            </PostInfo>
-            <div dangerouslySetInnerHTML={{ __html: post.content.rendered}} />
-        </div>
-    )
-}
-
-export default connect(Post)
-
-const PostInfo = styled.div`
-    background-image: linear-gradient(to right, #f4f4f4, #fff);
-    margin-bottom: 1em;
-    padding: 0.5em;
-    border-left: 4px solid lightseagreen;
-    font-size: 0.8em;
-
-    & > p {
-        margin: 0;
-    }
-`
-```
-
-For reference, this is what your site should be looking like now:
-
-<p>
-  <img alt="Frontity in the browser - listing" src="../assets/part4img1.png">
-</p>
-
-<p>
-  <img alt="Frontity in the browser - post" src="../assets/part4img2.png">
-</p>
+Our layout is looking quite pleasing now, but the links in our menu and on our listing pages could do with a bit more work. We'll address this in our next section.

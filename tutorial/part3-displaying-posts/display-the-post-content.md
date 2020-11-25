@@ -4,7 +4,9 @@
 
 > *__[TO DO]__ explain the “two-step” access to data.*
 
-Create a new file called `post.js`. This will contain the `<Post>` component which we will use to display the title and the content of the posts.
+Create a new file called `post.js` inside the `components` folder. This will contain the `<Post>` component which we will use to display the title and the content of the posts.
+
+Note that in this code we use `state.source.get` to get the relevant item from `state.source.data` and then we use the `data.type` property to determine where in the state we should fetch the item from, i.e. whether it's a post or a page.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/post.js
@@ -44,13 +46,15 @@ const Root = ({ state }) => {
   return (
     <>
       {/* ... */}
-      <main>
-        {data.isArchive && <List />}
-        {data.isPost && <Post />}
-        {data.isPage && <Post />}
-      </main>
+      <Switch>
+        <List when={data.isArchive} />
+        <Post when={data.isPost} />
+        <Post when={data.isPage} />
+      </Switch>
     </>
   );
 
 };
 ```
+
+Now we can see the post title and the content. 🙌

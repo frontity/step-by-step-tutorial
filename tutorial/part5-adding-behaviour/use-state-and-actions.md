@@ -38,7 +38,7 @@ Then we'll add an action - this is a function that will toggle the value of `isU
 
 import Root from "./components";
 
-const jsNation = {
+const myFirstTheme = {
   name: "my-first-theme",
   roots: {
     theme: Root
@@ -50,14 +50,14 @@ const jsNation = {
   },
   actions: {
     theme: {
-      toggleUrl: ({state}) => {
+      toggleUrl: ({ state }) => {
         state.theme.isUrlVisible = !state.theme.isUrlVisible
       }
     }
   }
 };
 
-export default jsNation
+export default myFirstTheme
 ```
 
 Now in the root component we'll add some conditional logic to check the value of `isUrlVisible` and either display the URL or not. Again we have to use the ternary conditional operator here.
@@ -80,7 +80,7 @@ Now in the root component we'll add some conditional logic to check the value of
 </Main>
 ```
 
-You will find that the URL has disappeared, but if you change the value of `isUrlVisible` in `index.js` to `true` it will reappear. Try it now!
+You will find that the URL has disappeared, but if you change the value of `isUrlVisible` in `index.js` to `true` it will reappear. Try it now! *(note: you may have to manually refresh the browser)*
 
 Let's add some buttons that use the `toggleUrl` action we added earlier to change the value of `isUrlVisible` from the front end.
 
@@ -112,7 +112,6 @@ Finally let's create a styled `<Button>` component and use it in order to improv
 }
 // ...
 const Button = styled.button`
-  padding: 0 0.25em;
   background: transparent;
   border: none;
   color: #aaa;

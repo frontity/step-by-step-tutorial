@@ -3,10 +3,10 @@
 When you view a post you may notice that the date is not formatted in an easy to read way.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part3img7.png">
+  <img alt="Frontity in the browser" src="../assets/part3img10.png">
 </p>
 
-Let's fix that now. Doing this gives us the opportunity to use an external library with Frontity. This is something that you're likely to need to do in real-world project development, so it's well worth covering here.
+Let's fix that now. Doing this gives us the opportunity to use an external library with Frontity. Installing and using external JavaScript libraries is something that you're likely to need to do in real-world project development, so it's well worth covering here.
 
 We're going to use [Day.js](https://day.js.org/) to format our date string.
 
@@ -19,7 +19,7 @@ npm install dayjs
 If you check the `package.json` file in the root of your project folder you will now see that `dayjs` has been added as a dependency.
 
 <p>
-  <img alt="Dependencies in package.json" src="../assets/part3img8.png">
+  <img alt="Dependencies in package.json" src="../assets/part3img11.png">
 </p>
 
 Next, let's import Day.js into our `post.js` file:
@@ -28,7 +28,7 @@ Next, let's import Day.js into our `post.js` file:
 // File: /packages/my-first-theme/src/components/post.js
 import React from "react";
 import { connect } from "frontity";
-import dayjs from 'dayjs'
+import dayjs from "dayjs"
 // ...
 ```
 
@@ -45,6 +45,8 @@ We'll store the result in a variable (which we'll call `formattedDate`) for late
 ```
 
 See the [Day.js documentation](https://day.js.org/docs/en/display/format) for other possible formatting strings. For example, try replacing `DD MMMM YYYY` above with `MMM DD, YYYY` or `DD-MM-YY` to see how the appearance of the date changes.
+
+We'll also use the `formattedDate` in our display by replacing `post.date`.
 
 Your `post.js` file should now look like this:
 
@@ -79,5 +81,5 @@ export default connect(Post);
 Our date is now formatted in a much more pleasing way.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part3img9.png">
+  <img alt="Frontity in the browser" src="../assets/part3img12.png">
 </p>

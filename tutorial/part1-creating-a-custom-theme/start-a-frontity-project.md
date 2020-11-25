@@ -27,17 +27,20 @@ npx frontity dev
 
 Now open `http://localhost:3000` in your browser (if it didn't open automatically) to see your first Frontity project. At the moment it's using the "starter theme" that comes with Frontity, i.e. `@frontity/mars-theme`, and it is connected to a test WordPress site (https://test.frontity.org).
 
+> *__[TO DO]__ Should we be showing how to change the URL? If so should we set up a separate site for the step-by-step tutorial to connect to?
+
 The next step is to change the project’s settings to point to the REST API of our own website (https://jsnation2020.frontity.org).
+> *__[TO DO]__ ☝️ this url needs to change
 
 - Open the file `frontity.settings.js` file. This file contains the configuration for the Frontity packages that you are using in your project.
 
-- Change the value of the `api` field of the `@frontity/wp-source` package.
+- Change the value of the `url` field of the `@frontity/wp-source` package.
 
 Replace this:
 ```js
 state: {
   source: {
-    api: "https://test.frontity.org/wp-json"
+    api: "https://test.frontity.org"
   }
 }
 ```
@@ -45,7 +48,7 @@ With this:
 ```js
 state: {
   source: {
-    api: "https://jsnation2020.frontity.org/wp-json"
+    api: "https://jsnation2020.frontity.org"
   }
 }
 ```

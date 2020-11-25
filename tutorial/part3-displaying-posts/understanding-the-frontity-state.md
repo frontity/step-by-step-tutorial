@@ -6,13 +6,15 @@
 
 In order to gain a better understanding of Frontity, let’s dig a little deeper and investigate how it works below the surface.
 
-To do so, access `http://localhost:3000/about-us/` in the browser and open the console. In the console type `frontity.state` to see the Frontity state. This is the same state that the components and actions have access to.
+To do so, access `http://localhost:3000/about-us/` in the browser. The simplest way is to  click the link in the menu we've just created. We recommend that you then refresh the page to clear out the state.
+
+When you've done that open the browser console. In the console type `frontity.state` to see the Frontity state. This is the same state that the components and actions have access to.
 
 <p>
   <img alt="Frontity in the console" src="../assets/part3img1.png">
 </p>
 
-> Frontity uses [ES2015 Proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy), so you have to open the property [[Target]] in order to see the state.
+> Frontity uses [ES2015 Proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy), so you have to open the property `[[Target]]` in order to see the state.
 
 You will see Frontity's global state, including the general properties of your Frontity project. You can also see information about the `router`, including the `state.router.link` that we used earlier, and `source`, the package that connects Frontity to your WordPress site.
 
@@ -47,14 +49,17 @@ So now let’s inspect the homepage using state.source.get("/"):
   <img alt="Frontity in the console" src="../assets/part3img5.png">
 </p>
 
-As you can see, it has several interesting properties such as `isHome`, `isArchive`, and an array of `items`. If the homepage were a category it would have an `isCategory` property. If it were a post it would have an `isPost` property, etc...
+As you can see, it has several interesting properties such as `isHome`, `isArchive`, and an array of `items`. If the homepage were a category it would have an `isCategory` property. If it were a post it would have an `isPost` property, etc... These are boolean values so we just need to check for their truthiness.
 
 To wrap up this section let's use all of this in our code.
 
-In this next step we **`get`** the information about the current link (`state.router.link`) and use it to see if it’s a `list`, a `post`, or a `page`.
+In this next step we **`get`** the information about the current link (`state.router.link`) and use it inside a `<main>` element to see whether it’s a `list`, a `post`, or a `page`.
+
+To do this we'll use the `<Switch>` component. This acts like the 'switch' statement in any programming language, the first matching condition is the one that is executed. But first we need to import the `<Switch>` component. You can learn more about the `<Switch>` component [in our docs](https://docs.frontity.org/api-reference-1/frontity-components#switch).
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
+import Switch from "@frontity/components/switch";
 
 const Root = ({ state }) => {
 
@@ -71,11 +76,15 @@ const Root = ({ state }) => {
       </nav>
       <hr />
       <main>
-        {data.isArchive && <div>This is a list</div>}
-        {data.isPost && <div>This is a post</div>}
-        {data.isPage && <div>This is a page</div>}
+        <Switch>
+          <div when={data.isArchive}>This is a list</div>
+          <div when={data.isPost}>This is a post</div>
+          <div when={data.isPage}>This is a page</div>
+        </Switch>
       </main>
     </>
   );
 };
 ```
+
+Since we don't yet have any links to any posts the second condition will never be satisfied, so we won't ever see the text "This is a post" come up. Let's go on to address that.

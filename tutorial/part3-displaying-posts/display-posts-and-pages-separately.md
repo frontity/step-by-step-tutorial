@@ -22,15 +22,15 @@ import { connect } from "frontity"
 
 const Page = ({ state }) => {
 
-    const data = state.source.get(state.router.link)
-    const page = state.source[data.type][data.id]
+  const data = state.source.get(state.router.link)
+  const page = state.source[data.type][data.id]
 
-    return (
-        <div>
-            <h2>{page.title.rendered}</h2>
-            <div dangerouslySetInnerHTML={{ __html: page.content.rendered}} />
-        </div>
-    );
+  return (
+    <div>
+      <h2>{page.title.rendered}</h2>
+      <div dangerouslySetInnerHTML={{ __html: page.content.rendered}} />
+    </div>
+  );
 
 }
 
@@ -80,11 +80,11 @@ const Root = ({ state }) => {
   return (
     <>
       {/* ... */}
-      <main>
-        {data.isArchive && <List />}
-        {data.isPost && <Post />}
-        {data.isPage && <Page />}
-      </main>
+      <Switch>
+        <List when={data.isArchive} />
+        <Post when={data.isPost} />
+        <Page when={data.isPage} />
+      </Switch>
     </>
   );
 
@@ -94,7 +94,7 @@ const Root = ({ state }) => {
 Now as you navigate around the site and view posts and pages you'll notice that posts, e.g. *"The Beauties of Gullfoss"*, have the author and date info, but pages, e.g. *"About Us"*, do not.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part3img6.png" width="565" height="161">
+  <img alt="Frontity in the browser" src="../assets/part3img9.png" width="565" height="161">
 </p>
 
 ## Using a single component for both posts and pages
@@ -114,9 +114,11 @@ This means that we only need one component to display both posts and pages, and 
 
 // ...
 <main>
-    {data.isArchive && <List />}
-    {data.isPost && <Post />}
-    {data.isPage && <Post />}
+    <Switch>
+        <List when={data.isArchive} />
+        <Post when={data.isPost} />
+        <Post when={data.isPage} />
+      </Switch>
 </main>
 // ...
 ```
