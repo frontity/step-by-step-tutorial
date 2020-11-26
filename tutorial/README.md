@@ -6,7 +6,7 @@
 
 This tutorial is still a work in progress. Much of it is still incomplete, and what does already exist is liable to change.
 
-If you'd like to know when this tutorial is finally published please [subscribe to our newsletter](https://frontity.org/#newsletter)and we'll keep you up to date. Otherwise [follow us on twitter](https://twitter.com/Frontity), we'll announce it there.
+If you'd like to know when this tutorial is finally published please [subscribe to our newsletter](https://frontity.org/#newsletter) and we'll keep you up to date. Otherwise [follow us on twitter](https://twitter.com/Frontity), we'll announce it there.
 
 Meanwhile, if you want an introductory guide to Frontity please follow [this tutorial](https://github.com/frontity-demos/2020-06-jsnation-workshop) until the one here is completed and published.
 
