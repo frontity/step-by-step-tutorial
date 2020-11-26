@@ -18,6 +18,8 @@
 
 > *__[TO DO]__ Brief explanation of Frontity - React-based framework for building themes for headless/decoupled WordPress.*
 
+> *__[TO DO]__ Remove redirect banner above.*
+
 ---
 
 Welcome to the Frontity step-by-step tutorial.
