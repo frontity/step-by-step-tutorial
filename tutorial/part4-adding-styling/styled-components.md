@@ -81,7 +81,7 @@ Now our header is contained within a nice light grey background. But notice the 
 // ...
 ```
 
-CSS reset can be [much more elaborate](https://meyerweb.com/eric/tools/css/reset/) than this, but this simple CSS reset will give us more control over the styling of our elements going forward, and enable us to have more consistent and predictable behaviour as we add CSS to style our site.
+CSS reset can be [much more elaborate](https://meyerweb.com/eric/tools/css/reset/) than this, but even this simple CSS reset will give us more control over the styling of our elements going forward, and enable us to have more consistent and predictable behaviour as we add CSS to style our site.
 
 Let's continue styling our header by adding a border to the bottom, and making the `<h1>` element within it a little less starkly black!
 

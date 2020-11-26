@@ -1,4 +1,16 @@
 # Frontity step-by-step tutorial
+---
+---
+
+> ## Oops, you're here by mistake!
+
+> This tutorial is still a work on progress. Much of it is still incomplete, and what does already exist is liable to change.
+
+> If you want an introductory guide to Frontity please follow [this tutorial](https://github.com/frontity-demos/2020-06-jsnation-workshop) until the one here is completed and published.
+
+---
+---
+
 
 ## Welcome to the Frontity step-by-step tutorial
 

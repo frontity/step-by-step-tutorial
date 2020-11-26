@@ -8,7 +8,7 @@ One of the great features of CSS-in-JS is that it allows us to modify the stylin
 
 You will recall that in the previous section we added an 8px wide border to the bottom of our header. We'll use that to indicate whether we're on a `list` page, a `post` page, or a `page`, erm..., page 🤷🏻‍♂️ by changing the colour of the border.
 
-To do this we add a prop to the `<Header>` component.
+To do this we add a `isPostType` prop to the `<Header>` component.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -32,7 +32,7 @@ const Header = styled.header`
 `
 ```
 
-Let's extend this to get a different colour for pages. __Note__ that here we have a ternary operator as the _ifTrue_ expression within our original ternary operator!!!
+Let's extend this to get a different colour for pages. We'll add the `isPage` prop to our header, and extend our conditional. __Note__ that here we have a ternary operator as the _ifTrue_ expression within our original ternary operator!!!
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js

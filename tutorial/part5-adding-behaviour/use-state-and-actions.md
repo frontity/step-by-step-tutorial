@@ -31,7 +31,7 @@ export default myFirstTheme
 
 Then we'll add an action - this is a function that will toggle the value of `isUrlVisible`. We'll use the state of this variable to determine whether the URL is visible or not.
 
-> This is the proper way to mutate state. You should never mutate the state directly from your components. You should, instead, create actions to mutate state and call those actions from your components.
+> **NOTE:** This is the proper way to mutate state. You should never mutate the state directly from your components. You should, instead, create actions to mutate state and call those actions from your components.
 
 ```jsx
 // File: /packages/my-first-theme/src/index.js

@@ -29,7 +29,7 @@
 * [7️⃣ Finishing touches](part7-finishing-touches/README.md)
   * [Add a loading component](part7-finishing-touches/add-a-loading-component.md)
   * [Add a 404 page](part7-finishing-touches/add-a-404-page.md)
-  * [Use the `<html2react` component](part7-finishing-touches/use-the-html2react-component.md)
+  * [Use the `<html2react>` component](part7-finishing-touches/use-the-html2react-component.md)
   * [SEO and head tags](part7-finishing-touches/seo-and-head-tags.md)
 * [8️⃣ Deploying the project](part8-deploying-the-project/README.md)
   * [Deploy to Vercel](part8-deploying-the-project/deploy-to-vercel.md)
