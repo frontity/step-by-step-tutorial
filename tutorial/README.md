@@ -1,6 +1,6 @@
 # Frontity step-by-step tutorial
 
-{% hint style="info" %}
+{% hint style="warning" %}
 ## Oops, you're here by mistake!
 
 This tutorial is still a work on progress. Much of it is still incomplete, and what does already exist is liable to change.
