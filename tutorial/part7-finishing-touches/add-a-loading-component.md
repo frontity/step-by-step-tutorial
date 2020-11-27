@@ -67,7 +67,7 @@ Now we need to display it. Let's add it as the first item in the `<Switch>` comp
 Now as we transition between pages our loading spinner is displayed whenever data is being fetched in the background. Sweet! 👌
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part7img1.png" width="800">
+  <img alt="Frontity in the browser" src="../assets/part7img1.png" width="800">
 </p>
 
 {% hint style="info" %}
