@@ -25,7 +25,7 @@
 * [6️⃣ Custom Post Types](part6-custom-post-types/README.md)
   * [Add support for Custom Post Types](part6-custom-post-types/add-support-for-cpts.md)
 * [7️⃣ Finishing touches](part7-finishing-touches/README.md)
-  * [Add a loading component](part7-finishing-touches/add-a-loading-component.md)
+  * [Add a `<Loading>` component](part7-finishing-touches/add-a-loading-component.md)
   * [Add a 404 page](part7-finishing-touches/add-a-404-page.md)
   * [Use the `<html2react>` component](part7-finishing-touches/use-the-html2react-component.md)
   * [SEO and head tags](part7-finishing-touches/seo-and-head-tags.md)
