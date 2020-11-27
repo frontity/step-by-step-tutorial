@@ -10,7 +10,7 @@ The properties of this object are:
 
 - `type` - the CPT name, defined by the WordPress function `register_post_type()`;
 - `endpoint` - this will usually be the same as `type` unless the `args` array passed to `register_post_type()` specifies something different;
-- `archive` - this is needed if you want to list all the posts of that post type, note that the `args` array passed to `register_post_type()` must include `'has_archive'b=> true` for this to work.
+- `archive` - this is needed if you want to list all the posts of that post type, note that the `args` array passed to `register_post_type()` must include `'has_archive' => true` for this to work.
 
 ```jsx
 // File: /frontity.settings.js
