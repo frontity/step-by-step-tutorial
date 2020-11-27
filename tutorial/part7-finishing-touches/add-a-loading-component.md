@@ -25,11 +25,11 @@ const spin = keyframes`
     100% { transform: rotate(360deg); }
 `
 
-const Loading = () => <Loader />
+const Loading = () => <Spinner />
 
 export default Loading;
 
-const Loader = styled.div`
+const Spinner = styled.div`
     border: 12px solid #eee;
     border-top: 12px solid steelblue;
     border-radius: 50%;
@@ -41,7 +41,7 @@ const Loader = styled.div`
 
 As well as `styled` we also import `keyframes` from `frontity`. This function works in a similar way to `styled` and takes a tagged template literal as it's argument. See [our docs](https://docs.frontity.org/api-reference-1/frontity#keyframes) for more info.
 
-Here we're passing in the animation frames that we want, and assigning it to a variable `spin` which we then go on to use in the `animation` property of our `<Loader>` component.
+Here we're passing in the animation frames that we want, and assigning it to a variable `spin` which we then go on to use in the `animation` property of our `<Spinner>` component.
 
 Note that the `<Loading>` component doesn't need to access the state so we don't need to pass it to the `connect` higher order component when we export it.
 
