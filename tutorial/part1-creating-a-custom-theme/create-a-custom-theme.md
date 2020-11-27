@@ -21,6 +21,8 @@ The first thing to do is to remove `@frontity/mars-theme` from your settings and
 Remove the following from the file `frontity.settings.js`:
 
 ```js
+// File: /frontity.settings.js
+
 {
   name: "@frontity/mars-theme",
   state: {
@@ -44,6 +46,8 @@ Remove the following from the file `frontity.settings.js`:
 And replace it with:
 
 ```js
+// File: /frontity.settings.js
+
 {
   "name": "my-first-theme"
 },

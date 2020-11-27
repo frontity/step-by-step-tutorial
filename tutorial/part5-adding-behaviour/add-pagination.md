@@ -27,7 +27,7 @@ const List = ({ state, actions }) => {
     return (
         <Items>
             { data.items.map( item => {
-                const post = state.source.post[item.id]
+                const post = state.source[item.type][item.id]
                 return (
                     <Link key={item.id} link={post.link}>
                         {post.title.rendered}
@@ -85,3 +85,31 @@ const PrevNextNav = styled.div`
 ```
 
 We've included conditional checks so that the 'Previous' button doesn't show on the first page and the 'Next' button doesn't show on the last page, as they're not needed in those locations. To do this we've used ["short-circuit" evaluation](https://en.wikipedia.org/wiki/Short-circuit_evaluation).
+
+---
+
+Now that we have pagination we no longer need the 'More posts' option in the menu. Let's remove it.
+
+```jsx
+// File: /packages/my-first-theme/src/components/index.js
+
+// ...
+const Root = ({ state, actions }) => {
+
+  // ...
+      <Header isPostType={data.isPostType} isPage={data.isPage}>
+        <HeaderContent>
+          // ...
+          <Menu>
+            <Link link="/">Home</Link>
+            <Link link="/about-us">About Us</Link>
+          </Menu>
+        </HeaderContent>
+      </Header>
+      <Main>
+       // ...
+      </Main>
+    </>
+  );
+};
+```

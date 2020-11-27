@@ -85,7 +85,7 @@ const List = ({ state }) => {
   return (
     <div>
       {data.items.map(item => {
-        const post = state.source.post[item.id]
+        const post = state.source[item.type][item.id]
         return (
           <Link key={item.id} link={post.link}>
             {post.title.rendered}<br/>

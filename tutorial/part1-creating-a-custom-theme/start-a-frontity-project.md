@@ -40,7 +40,7 @@ Replace this:
 ```js
 state: {
   source: {
-    api: "https://test.frontity.org"
+    url: "https://test.frontity.org"
   }
 }
 ```
@@ -48,7 +48,7 @@ With this:
 ```js
 state: {
   source: {
-    api: "https://jsnation2020.frontity.org"
+    url: "https://jsnation2020.frontity.org"
   }
 }
 ```
