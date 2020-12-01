@@ -36,5 +36,5 @@ As it’s a React component, you can include it wherever you like. There’s no 
 Check your document with the browser devtools and you should see these showing up.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part7img2.png" width="800">
+  <img alt="Frontity in the console" src="../assets/part7img3.png" width="800">
 </p>
