@@ -1,8 +1,12 @@
 # Use the `<html2react>` component
 
-At the moment we have a problem with internal links in our content. For example, look at the post entitled "Latest Trip to India". The link to "New7Wonders of the World" at the bottom of the post forces SSR and a page reload. Another example can be found in the post entitled "Shinjuku Gyoen National Garden". The link "post about the Banff National Park" also forces SSR and a page reload. More examples can be found on the "About Us" page.
+At the moment we have a problem with internal links in our content. For example, look at the post entitled _"Latest Trip to India"_. The link to _"New7Wonders of the World"_ at the bottom of the post forces SSR and a page reload.
 
-Frontity provides a number of components, one of which is `<html2react>`. This enables us to process our content and replace HTML elements with React components. We can use `<html2react>` to replace any `<a href="...">` links in our content with the `<Link>` component. You'll remember that we've previously used the `<Link>` component directly in our menu and in our list page.
+Another example can be found in the post entitled _"Shinjuku Gyoen National Garden"_. The link _"post about the Banff National Park"_ also forces SSR and a page reload. More examples can be found on the _"About Us"_ page.
+
+Frontity provides a number of components, one of which is `<html2react>`. This enables us to process our content and replace HTML elements with React components.
+
+We can use `<html2react>` to replace any `<a href="...">` links in our content with the `<Link>` component. You'll remember that we've previously used the `<Link>` component directly in our menu and in our list page.
 
 Check the file `frontity.settings.js`. You should find that `"@frontity/html2react"` is already included in the `packages` array of our project.
 
@@ -26,7 +30,7 @@ libraries: {
 }
 ```
 
-Now, inside our `<Post>` component in `post.js` let's pass `libraries` in as a prop and get the component ready for use.
+Now, for our `<Post>` component in `post.js` let's pass `libraries` in as a prop and get the component ready for use.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/post.js
@@ -80,6 +84,6 @@ const Page = ({ state, libraries }) => {
 export default connect(Page);
 ```
 
-And now the links on the `About Us` page should work as expected as well.
+And now the links on the _"About Us"_ page should work as expected as well.
 
 See [our docs here](https://docs.frontity.org/api-reference-1/frontity-html2react) for more on the `@frontity/html2react` package.
