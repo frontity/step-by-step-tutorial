@@ -12,12 +12,13 @@ import { connect } from "frontity";
 
 const Error = ({state}) => {
 
-    return(
-        <>
-            <h2>404 Error</h2>
-            <p>The path <em>{state.router.link}</em> cannot be found.</p>
-        </>
-    )
+  return(
+    <>
+      <h2>404 Error</h2>
+      <p>The path <em>{state.router.link}</em> cannot be found.</p>
+    </>
+  )
+
 }
 
 export default connect(Error)
@@ -35,12 +36,12 @@ import Error from "./error";
 
 // ...
 <Switch>
-    <Loading when={data.isFetching} />
-    <List when={data.isArchive} />
-    <Page when={data.isPage} />
-    <Post when={data.isPost} />
-    <Page when={data.isDestinations} />
-    <Error when={data.isError} />
+  <Loading when={data.isFetching} />
+  <List when={data.isArchive} />
+  <Page when={data.isPage} />
+  <Post when={data.isPost} />
+  <Page when={data.isDestinations} />
+  <Error when={data.isError} />
 </Switch>
 // ...
 ```

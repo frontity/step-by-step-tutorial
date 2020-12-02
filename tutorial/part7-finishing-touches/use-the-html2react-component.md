@@ -13,10 +13,10 @@ import link from "@frontity/html2react/processors/link";
 
 // ...
 libraries: {
-    html2react: {
-      processors: [link]
-    }
+  html2react: {
+    processors: [link]
   }
+}
 ```
 
 In post.js and page.js change

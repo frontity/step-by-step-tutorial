@@ -114,11 +114,11 @@ This means that we only need one component to display both posts and pages, and 
 
 // ...
 <main>
-    <Switch>
-        <List when={data.isArchive} />
-        <Post when={data.isPost} />
-        <Post when={data.isPage} />
-      </Switch>
+  <Switch>
+    <List when={data.isArchive} />
+    <Post when={data.isPost} />
+    <Post when={data.isPage} />
+  </Switch>
 </main>
 // ...
 ```
