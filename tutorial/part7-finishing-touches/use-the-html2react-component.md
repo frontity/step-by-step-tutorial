@@ -62,6 +62,8 @@ And now the internal links in our posts will update from the state and not force
 You should also do the same for the `<Page>` component in `page.js`, which should ultimately look like this:
 
 ```jsx
+// File: /packages/my-first-theme/src/components/page.js
+
 import React from "react";
 import { connect } from "frontity";
 
