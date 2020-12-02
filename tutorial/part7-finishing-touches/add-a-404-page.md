@@ -7,18 +7,18 @@ First create a new file in the `components` folder. Call it `error.js` and put t
 ```jsx
 // File: /packages/my-first-theme/src/components/error.js
 
-import React from "react";
-import { connect } from "frontity";
+import React from "react"
+import { connect } from "frontity"
 
-const Error = ({state}) => {
-
-  return(
+const Error = ({ state }) => {
+  return (
     <>
       <h2>404 Error</h2>
-      <p>The path <em>{state.router.link}</em> cannot be found.</p>
+      <p>
+        The path <em>{state.router.link}</em> cannot be found.
+      </p>
     </>
   )
-
 }
 
 export default connect(Error)
@@ -32,10 +32,10 @@ It remains for us to use it in our `<Root>` component. First we import the `<Err
 // File: /packages/my-first-theme/src/components/index.js
 
 // ...
-import Error from "./error";
+import Error from "./error"
 
 // ...
-<Switch>
+;<Switch>
   <Loading when={data.isFetching} />
   <List when={data.isArchive} />
   <Page when={data.isPage} />

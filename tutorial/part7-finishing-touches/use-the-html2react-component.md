@@ -88,4 +88,4 @@ export default connect(Page);
 
 And now the links on the _"About Us"_ page should work as expected as well.
 
-See [our docs here](https://docs.frontity.org/api-reference-1/frontity-html2react) for more on the `@frontity/html2react` package.
+> See [our docs here](https://docs.frontity.org/api-reference-1/frontity-html2react) for more on the `@frontity/html2react` package.

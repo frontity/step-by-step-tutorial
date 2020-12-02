@@ -20,14 +20,14 @@ Create a new file in the `components` folder and call it `loading.js`. Add the f
 import React from "react";
 import { styled, keyframes } from "frontity";
 
+const Loading = () => <Spinner />
+
+export default Loading;
+
 const spin = keyframes`
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 `
-
-const Loading = () => <Spinner />
-
-export default Loading;
 
 const Spinner = styled.div`
   border: 12px solid #eee;
