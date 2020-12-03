@@ -43,7 +43,7 @@ Once the file is created you can deploy your project from the command line using
 You'll be asked a short series of questions about your project:
 
 <p>
-  <img alt="Deploying to Vercel" src="../assets/part8img1.png" width="659">
+  <img alt="Deploying to Vercel" src="../assets/part8img1.png">
 </p>
 
 Then, after a brief build process your deployed site will be ready. The address that you can use in your browser's address bar to reach the site will be displayed in the output from the command, and also in the Vercel console in your browser (which you kept open, didn't you?!).
