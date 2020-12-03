@@ -45,6 +45,7 @@ Let's put the post title in the `<title>` element and the post excerpt in the `m
 
 ```jsx
 // File: /packages/my-first-theme/src/components/post.js
+
 import { connect, styled, Head } from "frontity"
 // ...
 

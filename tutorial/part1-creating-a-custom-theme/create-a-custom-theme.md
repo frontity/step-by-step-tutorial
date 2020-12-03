@@ -1,15 +1,15 @@
 # Create a custom theme
 
-> *__[TO DO]__ modify this text to suit new context.*
+> _**[TO DO]** modify this text to suit new context._
 
-> *__[TO DO]__ add a brief explanation of the structure of a package.*
+> _**[TO DO]** add a brief explanation of the structure of a package._
 
 Instead of using the default starter theme (@frontity/mars-theme) we are going to create a new package for our theme's code.
 
 To do so, stop the previous process (CONTROL + C), and then run this command in your terminal:
 
 ```bash
-npx frontity create-package my-first-theme
+> npx frontity create-package my-first-theme
 ```
 
 You will be asked what namespace to use. Since you are creating a theme, you can use `theme`.
@@ -56,7 +56,7 @@ And replace it with:
 Save the file and then, run this command again:
 
 ```bash
-npx frontity dev
+> npx frontity dev
 ```
 
 You will see this in your browser:
