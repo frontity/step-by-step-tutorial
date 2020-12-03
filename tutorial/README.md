@@ -26,10 +26,12 @@ Since this is a progressive tutorial we recommend that you follow the lessons in
 
 ### The project
 
-Frontity provides two themes to get you started, `mars-theme` and `twentytwenty`, and there are a host of third party themes on [_npmjs.com_](https://www.npmjs.com/) that you can install into your Frontity project. One of these could well fit your needs, but the best way to really understand Frontity and how it works is build your own theme.
+Frontity provides two themes to get you started, `mars-theme` and `twentytwenty`, and there are a host of third party themes on [_npmjs.com_](https://www.npmjs.com/) that you can install into your Frontity project. One of these could well fit your needs, but the best way to really understand Frontity and how it works is to build your own theme.
 
 That is what we're going to do in this step-by-step tutorial. We'll start by installing Frontity, then go on to create a theme package and then develop a fully working and functional theme from scratch.
 
-Along the way we'll cover a number of different topics, from listing posts, to displaying posts and pages, to styling your project and adding interactivity. We'll even make our project SEO friendly, refine it with some finishing touches, and make it work with Custom Post Types.
+Along the way we'll cover a number of different topics, from listing posts, to displaying posts and pages, to styling our project and adding interactivity. We'll even make our project SEO friendly, refine it with some finishing touches, and make it work with Custom Post Types.
+
+By the end you'll be a Frontity ninja! 🥷
 
 Let's go! 👉
