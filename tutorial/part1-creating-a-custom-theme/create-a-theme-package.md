@@ -55,7 +55,7 @@ And replace it with:
 // File: /frontity.settings.js
 
 {
-  "name": "my-first-theme"
+  name: "my-first-theme"
 },
 ```
 
