@@ -14,7 +14,7 @@ Select the `mars-theme` - it's the basic starter theme that we recommend for beg
 We won't be using `mars-theme`, we will instead be using the custom theme that we will build over the course of this tutorial, but you need to select a theme during the setup process.
 {% endhint %}
 
-When the install process finishes, you will have a new sub-folder called `hello-frontity` containing your project’s code. The structure of the project should look like this:
+When the install process finishes, you will have a new sub-folder called `hello-frontity` containing your project’s code. The structure of the project will look something like this:
 
 <p>
   <img alt="Frontity project structure" src="../assets/part1img1.png">
@@ -48,7 +48,7 @@ Change directory into the project folder and start a development server:
 ```
 
 {% hint style="info" %}
-`npx` downloads an npm package to run just this one time and then removes it from your computer. [learn more here](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b).
+`npx` downloads an npm package to run just this one time and then removes it from your computer - [earn more here](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b).
 {% endhint %}
 
 A new browser tab should open automatically for you. If it didn't then open `http://localhost:3000` in your browser.

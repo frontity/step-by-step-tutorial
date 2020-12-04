@@ -1,20 +1,26 @@
 # Create a Theme Package
 
-> _**[TO DO]** modify this text to suit new context._
+As stated previously, rather than using the default starter theme that we selected during the setup process (i.e.@frontity/mars-theme) we are instead going to develop a custom theme from scratch. To do this we need to create a new package for our theme's code. As it's our first ever theme let's call our theme "my-first-theme".
 
-> _**[TO DO]** add a brief explanation of the structure of a package._
+> **NOTE:** Before continuing you may need to stop the previous process with _CONTROL + C_.
 
-Instead of using the default starter theme (@frontity/mars-theme) we are going to create a new package for our theme's code.
-
-To do so, stop the previous process (CONTROL + C), and then run this command in your terminal:
+To create a package run the following command in the terminal:
 
 ```bash
 > npx frontity create-package my-first-theme
 ```
 
-You will be asked what namespace to use. Since you are creating a theme, you can use `theme`.
+You will be prompted to specify the namespace to use. Since you are creating a theme you can use the default `theme`, so you can just press _Enter_ at this point.
+
+<p>
+  <img alt="Creating a package" src="../assets/part1img2.png">
+</p>
 
 When the process is complete you will have a new folder called `/packages/my-first-theme`. This is where we will be doing most of our work to build the theme.
+
+<p>
+  <img alt="Structure of a newly created package" src="../assets/part1img3.png">
+</p>
 
 The first thing to do is to remove `@frontity/mars-theme` from your settings and replace it with `my-first-theme`.
 
@@ -53,7 +59,7 @@ And replace it with:
 },
 ```
 
-Save the file and then, run this command again:
+We've now told Frontity to use our new theme rather than "mars-theme". Save the file and then run this command again:
 
 ```bash
 > npx frontity dev
@@ -62,5 +68,5 @@ Save the file and then, run this command again:
 You will see this in your browser:
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part1img2.png" width="400">
+  <img alt="Frontity in the browser" src="../assets/part1img4.png">
 </p>
