@@ -20,7 +20,7 @@ Welcome to the Frontity step-by-step tutorial.
 
 This tutorial is a progressive sequence of lessons that will take you from first steps to mastery.
 
-It will provide you with a solid foundation in developing websites with Frontity and will set you up to better understand the rest of the Frontity documentation.
+It will provide you with a solid foundation in developing websites with Frontity and will prepare you to better understand the rest of the Frontity documentation.
 
 Since this is a progressive tutorial we recommend that you follow the lessons in sequence, as each lesson builds on what was learned earlier.
 

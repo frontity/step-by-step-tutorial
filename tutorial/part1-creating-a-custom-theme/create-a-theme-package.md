@@ -1,4 +1,4 @@
-# Create a custom theme
+# Create a Theme Package
 
 > _**[TO DO]** modify this text to suit new context._
 
@@ -62,5 +62,5 @@ Save the file and then, run this command again:
 You will see this in your browser:
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part1img1.png" width="400">
+  <img alt="Frontity in the browser" src="../assets/part1img2.png" width="400">
 </p>

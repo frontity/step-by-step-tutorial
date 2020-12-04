@@ -2,8 +2,8 @@
 
 * [0️⃣ Frontity step-by-step tutorial](README.md)
 * [1️⃣ Creating a custom theme](part1-creating-a-custom-theme/README.md)
-  * [Start a Frontity Project](part1-creating-a-custom-theme/start-a-frontity-project.md)
-  * [Create a custom theme](part1-creating-a-custom-theme/create-a-custom-theme.md)
+  * [Create a Frontity Project](part1-creating-a-custom-theme/create-a-frontity-project.md)
+  * [Create a Theme Package](part1-creating-a-custom-theme/create-a-theme-package.md)
   * [Modify the `<Root>` component](part1-creating-a-custom-theme/modify-the-root-component.md)
   * [Connect the `<Root>` component to the state](part1-creating-a-custom-theme/connect-the-root-component-to-the-state.md)
 * [2️⃣ Adding a menu](part2-adding-a-menu/README.md)
