@@ -28,7 +28,7 @@ Since this is a progressive tutorial we recommend that you follow the lessons in
 
 Frontity is built on React. You should therefore feel comfortable working with JavaScript and have at least some familiarity with React.
 
-If you need to get up to speed, or if you need a refresher, we have introductions to the basics of both **[JavaScript](https://docs.frontity.org/guides/javascript-basics)** and **[React](https://docs.frontity.org/guides/react-basic)** in our [documentation](https://docs.frontity.org/).
+If you need to get up to speed, or if you need a refresher, we have introductions to the basics of both **[JavaScript](https://docs.frontity.org/guides/javascript-basics)** and **[React](https://docs.frontity.org/guides/react-basic)** in our [documentation](https://docs.frontity.org/). If you've worked through those guides, or if you're already comfortable with the concepts explained there then you're good to go. 👍
 
 An understanding of HTML and CSS is also assumed, as is a familiarity with the command line.
 
