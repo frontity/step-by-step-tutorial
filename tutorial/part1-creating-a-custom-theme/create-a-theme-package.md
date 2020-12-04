@@ -2,7 +2,7 @@
 
 As stated previously, rather than using the default starter theme that we selected during the setup process (i.e.@frontity/mars-theme) we are instead going to develop a custom theme from scratch. To do this we need to create a new package for our theme's code. As it's our first ever theme let's call our theme "my-first-theme".
 
-> **NOTE:** Before continuing you may need to stop the previous process with _CONTROL + C_.
+> **NOTE:** Before continuing you may need to stop the previous process with _CONTROL+C_.
 
 To create a package run the following command in the terminal:
 
@@ -22,7 +22,7 @@ When the process is complete you will have a new folder called `/packages/my-fir
   <img alt="Structure of a newly created package" src="../assets/part1img3.png">
 </p>
 
-The first thing to do is to remove `@frontity/mars-theme` from your settings and replace it with `my-first-theme`.
+The first thing we'll do is to remove `@frontity/mars-theme` from our settings and replace it with `my-first-theme`.
 
 Remove the following from the file `frontity.settings.js`:
 
