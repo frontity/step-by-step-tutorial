@@ -20,7 +20,7 @@ Allow us to welcome you to the Frontity step-by-step tutorial. We're thrilled th
 
 This tutorial is a progressive sequence of lessons that will take you from first steps to mastery.
 
-It will provide you with a solid foundation in developing websites with Frontity and will prepare you to better understand the rest of the Frontity documentation.
+It will provide you with a solid foundation in developing websites with Frontity and will prepare you to better understand the rest of the [Frontity documentation](https://docs.frontity.org/).
 
 Since this is a progressive tutorial we recommend that you follow the lessons in sequence, as each lesson builds on what was learned earlier.
 
@@ -28,7 +28,7 @@ Since this is a progressive tutorial we recommend that you follow the lessons in
 
 Frontity is built on React. You should therefore feel comfortable working with JavaScript and have at least some familiarity with React.
 
-If you need to get up to speed, or if you need a refresher, we have introductions to the basics of both **[JavaScript](https://docs.frontity.org/guides/javascript-basics)** and **[React](https://docs.frontity.org/guides/react-basic)** in our [documentation](https://docs.frontity.org/). If you've worked through those guides, or if you're already comfortable with the concepts explained there then you're good to go. 👍
+If you need to get up to speed, or if you need a refresher, we have introductions to the basics of both **[JavaScript](https://docs.frontity.org/guides/javascript-basics)** and **[React](https://docs.frontity.org/guides/react-basic)** in our documentation. If you've worked through those guides, or if you're already comfortable with the concepts explained there, then you're good to go. 👍
 
 An understanding of HTML and CSS is also assumed, as is a familiarity with the command line.
 
