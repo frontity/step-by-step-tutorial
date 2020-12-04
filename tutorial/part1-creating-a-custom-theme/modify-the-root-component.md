@@ -22,7 +22,7 @@ It would be convenient, and make our codebase cleaner and more logical, if all o
 
 Create a new directory called `components` inside `/packages/my-first-theme/src`. This is where we will create all the component files for our theme. Then, inside `/packages/my-first-theme/src/components` create a new file called `index.js`.
 
-Add the following code to the new file _(which we will henceforth refer to as the 'root component' file to distinguish it from the other `index.js` file in the `src` folder one level below in the structure)_. You will see that this is the same `<Root>` component as before but moved into the new file and then exported. We also need to import React into our new file.
+Add the following code to the new file _(which we will henceforth refer to as the 'root component' file to distinguish it from the other `index.js` file in the `src` folder one level below in the structure)_.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -39,6 +39,8 @@ const Root = () => {
 
 export default Root
 ```
+
+You will see that this is the same `<Root>` component as before but moved into the new file and then exported. We also need to import React into our new file.
 
 We now need to import the component into the file `/packages/my-first-theme/src/index.js` which you can modify as follows:
 
