@@ -1,5 +1,0 @@
-Here's a toast to congratulate you on the amazing progress you've made so far, and to wish you every success in your future endeavours with Frontity. Cheers! 🥂 🍾
-
-{% hint style="info" %}
-stuff Here
-{% endhint %}
