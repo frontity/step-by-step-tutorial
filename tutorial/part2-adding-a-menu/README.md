@@ -1,6 +1,9 @@
 # Adding a menu
 
-> *__[TO DO]__ add an introduction to this section.*
+We've now got the beginnings of our project up and running and we've created the directory structure that we're going to work in going forward.
 
-> *__[TO DO]__ This step will explain how to use components from `frontity/components` and how you can work with links in a frontity project
-Will also point out that pre-fetching strategies can be applied with this component (link to further explanations)*
+We've also seen how we can change the value stored in `state.router.link` by manually changing the URL in the browser's address bar.
+
+In this second section we will create a basic menu consisting of a series of links that ultimately will enable us to navigate around our site, but for now will change the URL (and hence the value stored in `state.router.link`) for us.
+
+To do so we will learn about and use one of the built-in components that Frontity provides, i.e. the `<Link>` component.
