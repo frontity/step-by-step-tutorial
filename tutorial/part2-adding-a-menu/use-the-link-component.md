@@ -1,6 +1,8 @@
 # Use the `<Link>` component
 
-In the last lesson we saw that `state.router.link` stores the current URL. We demonstrated this by manually changing the URL in the browser's address bar. In this lesson we will create a menu-based navigation to change the URL for us.
+In the last lesson we saw that `state.router.link` stores the current URL. We demonstrated this by manually changing the URL in the browser's address bar and saw how the URL in our `<p>` element changed as the component reacted to the data change.
+
+In this lesson we will create a menu-based navigation to change the URL for us.
 
 Frontity provides a number of useful components for us, amongst which is the `<Link>` component. The simplest way to use it is to just provide a `link` attribute with the URL as it's value:
 
