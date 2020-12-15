@@ -2,13 +2,19 @@
 
 In the last lesson we saw that `state.router.link` stores the current URL. We demonstrated this by manually changing the URL in the browser's address bar. In this lesson we will create a menu-based navigation to change the URL for us.
 
-Frontity provides a `<Link>` component. The simplest way to use it is to just provide a `link` attribute with the URL as it's value:
+Frontity provides a number of useful components for us, amongst which is the `<Link>` component. The simplest way to use it is to just provide a `link` attribute with the URL as it's value:
 
 ```jsx
 <Link link="/">Home</Link>
 ```
 
 We also provide the string that we want to be displayed as a clickable link. In the example above that is 'Home'.
+
+The `<Link>` component simply outputs an `<a>` element into the resulting HTML, but without forcing a page reload which is what would occur if you simply added an `<a>` element instead of using the `<Link>` component.
+
+```html
+<a href="/" target="_self">Home</a>
+```
 
 Before we can use any of Frontity's built-in components we first need to import it. Frontity's built-in components are imported from `@frontity/components`.
 
