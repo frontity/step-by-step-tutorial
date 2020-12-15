@@ -4,11 +4,13 @@ Let’s now connect the `<Root>` component to the Frontity state using `connect`
 
 `connect` is a higher order component that takes a React component as an argument. It passes the Frontity state to the React component specified in the argument via props, and so enables a component in our theme to access data stored in the state.
 
-> We'll be covering the Frontity state in detail shortly in the section entitled [Understanding the Frontity state](../part3-displaying-posts/understanding-the-frontity-state.md).
+{% hint style="info" %}
+We'll be covering the Frontity state in detail shortly in the section entitled [Understanding the Frontity state](../part3-displaying-posts/understanding-the-frontity-state.md).
+{% endhint %}
 
 We need to `import { connect } from "frontity"`, pass `state` as a prop to our component, and finally export the connected component with `export default connect(Root)`.
 
-We can check that our `<Root>` component is connected to the state by adding a `<p>` element to our component to display the URL we are currently in using `state.router.link`.
+We can check that our `<Root>` component is connected to the state by adding a `<p>` element to our component to display the URL we are currently in. We can do this by using `state.router.link`.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js

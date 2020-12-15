@@ -26,7 +26,7 @@ Since this is a progressive tutorial we recommend that you follow the lessons in
 
 ### Prerequisites
 
-Frontity is built on React. You should therefore feel comfortable working with JavaScript and have at least some familiarity with React.
+Frontity is built on React. You should therefore feel comfortable working with JavaScript, and have at least some familiarity with React and also with ES6.
 
 If you need to get up to speed, or if you need a refresher, we have introductions to the basics of both **[JavaScript](https://docs.frontity.org/guides/javascript-basics)** and **[React](https://docs.frontity.org/guides/react-basic)** in our documentation. If you've worked through those guides, or if you're already comfortable with the concepts explained there, then you're good to go. 👌
 
@@ -34,7 +34,7 @@ An understanding of HTML and CSS is also assumed, as is a familiarity with the c
 
 ### The project
 
-Frontity provides two themes to get you started, `mars-theme` and `twentytwenty`, and there are a host of third party themes on [_npmjs.com_](https://www.npmjs.com/) that you can install into your Frontity project. One of these could well fit your needs, but the best way to really understand Frontity and how it works is to build your own theme.
+Frontity provides two themes to get you started, `mars-theme` and `twentytwenty`, and there are a host of third party themes on [_npmjs.com_](https://www.npmjs.com/) that you can install into your Frontity project. One of these could well fit your needs, but the best way to really gain an understanding of Frontity and how it works is to build your own theme.
 
 That is what we're going to do in this step-by-step tutorial. We'll start by installing Frontity, then go on to create a theme package and then develop a fully working and functional theme from scratch.
 

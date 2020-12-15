@@ -1,6 +1,6 @@
 # Modify the `<Root>` component
 
-Let's continue by seeing how we can get Frontity to display our own content.
+Let's continue by taking our initial baby steps in getting Frontity to display the content we want.
 
 Modify the `<Root>` component in the `/packages/my-first-theme/src/index.js` file so that it returns an `<h1>` element containing the text “Hello Frontity".
 
@@ -16,13 +16,15 @@ const Root = () => {
 }
 ```
 
-> Webpack watches for changes in the `/packages` directory and refreshes the browser if it detects any changes. Since we have changed the content of a file within the `/packages` directory the content in the browser should automatically update.
+{% hint style="info" %}
+Webpack watches for changes in the `/packages` directory and refreshes the browser if it detects any changes. Since we have changed the content of a file within the `/packages` directory the content in the browser should automatically update.
+{% endhint %}
 
-It would be convenient, and make our codebase cleaner and more logical, if all our React components were placed together in a single directory, so let's move the `<Root>` component into its own file.
+It would be convenient, and make our codebase cleaner and more logical, and hence our future development much easier, if all our React components were placed together in a single directory. So, let's move the `<Root>` component into its own file which we'll put in a separate directory.
 
 Create a new directory called `components` inside `/packages/my-first-theme/src`. This is where we will create all the component files for our theme. Then, inside `/packages/my-first-theme/src/components` create a new file called `index.js`.
 
-Add the following code to the new file _(which we will henceforth refer to as the 'root component' file to distinguish it from the other `index.js` file in the `src` folder one level below in the structure)_.
+Add the following code to the new file _(which we will henceforth refer to as the 'root component' file to distinguish it from the other `index.js` file in the `src` directory one level below in the structure)_.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -65,4 +67,4 @@ const myFirstTheme = {
 export default myFirstTheme
 ```
 
-Save both files and check that everything is still working in the browser.
+Save both files and make a quick check to see that everything is still working in the browser.

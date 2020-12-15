@@ -1,8 +1,8 @@
 # Create a Theme Package
 
-As stated previously, rather than using the default starter theme that we selected during the setup process (i.e.@frontity/mars-theme) we are instead going to develop a custom theme from scratch. To do this we need to create a new package for our theme's code. As it's our first ever theme let's call our theme "my-first-theme".
+As stated previously, rather than using the default starter theme that we selected during the setup process (i.e. `@frontity/mars-theme`) we are instead going to develop a custom theme from scratch. To do this we need to create a new package for our theme's code. As it's our first ever theme let's call our theme "my-first-theme".
 
-> **NOTE:** Before continuing you may need to stop the previous process with _CONTROL+C_.
+> **NOTE:** Before continuing you may need to stop the dev server process that we ran previously with _CONTROL+C_.
 
 To create a package run the following command in the terminal:
 
@@ -65,7 +65,7 @@ We've now told Frontity to use our new theme rather than "mars-theme". Save the 
 > npx frontity dev
 ```
 
-You will see this in your browser:
+If you see this in your browser then everything is working. Hooray! 🙌
 
 <p>
   <img alt="Frontity in the browser" src="../assets/part1img4.png">
