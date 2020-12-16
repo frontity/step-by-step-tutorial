@@ -2,7 +2,7 @@
 
 In this lesson we're going to look at the structure of Frontity's "state". Understanding how the state is structured is crucial when it comes to developing themes and other packages for Frontity.
 
-Frontity has it's own state manager, which works similarly to Redux or MobX which you may already be familiar with if you already have some experience working with React. All the data and settings associated with our project are stored in the state.
+Frontity has it's own state manager, which works similarly to Redux or MobX which you may already be familiar with if you have already had some experience working with React. All the data and settings associated with our project are stored in the state.
 
 {% hint style="info" %}
 Frontity's state manager is called "Frontity Connect" and it is based on [react-easy-state](https://github.com/RisingStack/react-easy-state).
@@ -22,7 +22,7 @@ Frontity uses [ES2015 Proxies](https://developer.mozilla.org/en-US/docs/Web/Java
 
 You will see Frontity's global state, which as we mentioned earlier includes all the data fetched from WordPress and all the settings and properties of your Frontity project. All the components and actions in our project will have access to this state.
 
-You can see information about the `router`, including the `state.router.link` that we used earlier, which as we now know stores the current URL. You can also see information about `source`, which is the package that connects Frontity to your WordPress site.
+You can see information about the `router`, including the `state.router.link` that we used earlier, which as we now know stores the current URL. You can also see information contained in `source`, which is the package that connects Frontity to your WordPress site.
 
 Let’s take a look at `frontity.state.source.data` in the console. This is where the information for each URL is stored. If you inspect `/about-us/`, you can see that it’s a page, and that it has the ID 184.
 
@@ -32,7 +32,7 @@ Let’s take a look at `frontity.state.source.data` in the console. This is wher
 
 Because Frontity works with the same permalinks that WordPress uses there's a two step process to getting data from the state.
 
-We first get the data about the URL from `state.source.data`. Then armed with the information provided there, crucially the content `type` and the `id` (though we can also check whether the data is ready for retrieval with `isReady`), we can retrieve the actual content.
+We first get the data about the URL from `state.source.data`. Then armed with the information provided there, crucially the content `type` and the `id` (though we can also check whether the data is ready for retrieval with `isReady`, amongst other things), we can retrieve the actual content.
 
 Let's run through an example to better understand this two step process.
 
@@ -58,9 +58,9 @@ Take another look at `frontity.state.source.data`. You will notice that it's now
 
 Frontity provides the `get` helper function to facilitate the first step of the two step data retrieval process. You should use this rather than attempting to access the data in `state.source.data` directly.
 
-So instead of using `state.source.data[url]` you should use the `get` helper function: `state.source.get(url)`. This ensures that URLs always include the final slash (/).
+So, instead of using `state.source.data[url]` you should use the `get` helper function: `state.source.get(url)`. This ensures that URLs always include the final slash (/).
 
-So now let’s inspect the homepage using `state.source.get('/')`:
+So now let’s inspect the information about the homepage using `frontity.state.source.get('/')`:
 
 <p>
   <img alt="Frontity in the console" src="../assets/part3img5.png">
