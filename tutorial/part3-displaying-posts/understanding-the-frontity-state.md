@@ -46,9 +46,9 @@ Now we can get such things as the `title` and the `content` to use in our compon
 
 Let's now take a look at how the state gets populated.
 
-As you navigate from one URL to another, the package `@frontity/wp-source` automatically fetches everything you need and stores it in `state.source`.
+As you navigate from one URL to another, the package `@frontity/wp-source` automatically fetches everything it needs from the WordPres REST API and stores it in `state.source`.
 
-If we open the Network tab (in the browser's devtools) and click on the menu to go to 'Home', you will see that a call to the REST API is made to get the latest posts.
+If we open the Network tab (in the browser's devtools) and click on the menu to go to 'Home', we can see that a call to the REST API is made to get the latest posts.
 
 <p>
   <img alt="Browser developer tools network tab showing fetch" src="../assets/part3img4.png" width="700">
