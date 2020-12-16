@@ -1,12 +1,14 @@
 # Understanding the Frontity state
 
-> *__[TO DO]__ modify this text to suit new context.*
+In this lesson we're going to look at the structure of Frontity's "state". Understanding how the state is structured is crucial to developing themes and other packages for Frontity.
 
-> *__[TO DO]__ new images may be required.*
+Frontity has it's own state manager, which works similarly to Redux or MobX which you may already be familiar with if you already have some experience working with React. All the data and settings associated with our project are stored in the state.
 
-In order to gain a better understanding of Frontity, let’s dig a little deeper and investigate how it works below the surface.
+{% hint style="info" %}
+Frontity's state manager is called "Frontity Connect" and it is based on [react-easy-state](https://github.com/RisingStack/react-easy-state).
+{% endhint %}
 
-To do so, access `http://localhost:3000/about-us/` in the browser. The simplest way is to  click the link in the menu we've just created. We recommend that you then refresh the page to clear out the state.
+To start understanding Frontity's state first access `http://localhost:3000/about-us/` in the browser. The simplest way is to click the link in the menu we've just created. Then refresh the page to clear out the state. This gives us a "blank canvas" version of the state so we can see how it works.
 
 When you've done that open the browser console. In the console type `frontity.state` to see the Frontity state. This is the same state that the components and actions have access to.
 
@@ -14,21 +16,33 @@ When you've done that open the browser console. In the console type `frontity.st
   <img alt="Frontity in the console" src="../assets/part3img1.png">
 </p>
 
-> Frontity uses [ES2015 Proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy), so you have to open the property `[[Target]]` in order to see the state.
+{% hint style="info" %}
+Frontity uses [ES2015 Proxies](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy), so you have to open the property `[[Target]]` in order to see the state.
+{% endhint %}
 
-You will see Frontity's global state, including the general properties of your Frontity project. You can also see information about the `router`, including the `state.router.link` that we used earlier, and `source`, the package that connects Frontity to your WordPress site.
+You will see Frontity's global state, which as we mentioned earlier includes all the data fetched from WordPress and all the settings and properties of your Frontity project. You can see information about the `router`, including the `state.router.link` that we used earlier, which as we now know stores the current URL. You can also see information about `source`, which is the package that connects Frontity to your WordPress site.
 
-Let’s take a look at `state.source.data`. This is where the information for each URL is stored. If you inspect `/about-us/`, you can see that it’s a page, and that it has the ID 184.
+Let’s take a look at `frontity.state.source.data`. This is where the information for each URL is stored. If you inspect `/about-us/`, you can see that it’s a page, and that it has the ID 184.
 
 <p>
   <img alt="Frontity in the console" src="../assets/part3img2.png" width="600">
 </p>
 
-With that information, we can access the data (title, content, etc) of that page with `state.source.page[184]`:
+Because Frontity works with the same permalinks that WordPress uses there's a two step process to getting data from the state.
+
+We first get the data about the URL from `state.source.data`. Then armed with the information provided there, crucially the content `type` and the `id` (though we can also check whether the data is ready for retrieval with `isReady`), we can retrieve the actual content.
+
+Let's look at an example to better understand this two step process.
+
+With the information from the first step that the URL `/about-us/` is a page and has the ID 184, we can take the second step and access the data of that page with `frontity.state.source.page[184]`:
 
 <p>
   <img alt="Frontity in the console" src="../assets/part3img3.png">
 </p>
+
+Now we can get such things as the `title` and the `content` (or the `excerpt`) to use in our components so that they get rendered in the browser. We also have access to the author ID and the post date. We will look at how we can use these in our components in later lessons.
+
+Let's now take a look at how the state gets populated.
 
 As you navigate from one URL to another, the package `@frontity/wp-source` automatically fetches everything you need and stores it in `state.source`.
 
@@ -38,10 +52,11 @@ If we open the Network tab (in the browser's devtools) and click on the menu to 
   <img alt="Browser developer tools network tab showing fetch" src="../assets/part3img4.png" width="700">
 </p>
 
+Take another look at `frontity.state.source.data`. You will notice that it's now populated with rather more data than before.
 
-Take another look at `state.source.data`. You will notice that it's been populated with much more data than before.
+Frontity provides the `get` helper function to facilitate the first step of the two step data retrieval process. You should use this rather than attempting to access the data in `state.source.data` directly.
 
-Please note that instead of using `state.source.data[url]` it’s better to use the `get` helper function: `state.source.get(url)`. This ensures that URLs always include the final slash (/).
+So instead of using `state.source.data[url]` you should use the `get` helper function: `state.source.get(url)`. This ensures that URLs always include the final slash (/).
 
 So now let’s inspect the homepage using state.source.get("/"):
 
@@ -51,27 +66,32 @@ So now let’s inspect the homepage using state.source.get("/"):
 
 As you can see, it has several interesting properties such as `isHome`, `isArchive`, and an array of `items`. If the homepage were a category it would have an `isCategory` property. If it were a post it would have an `isPost` property, etc... These are boolean values so we just need to check for their truthiness.
 
-To wrap up this section let's use all of this in our code.
+That's enough theory for now. To wrap up this section let's use this new knowledge in our code.
 
-In this next step we **`get`** the information about the current link (`state.router.link`) and use it inside a `<main>` element to see whether it’s a `list`, a `post`, or a `page`.
+In this step we will use the `get` helper function to get the information about the current link (stored in `state.router.link`) and use it inside a `<main>` element to see whether it’s a `list`, a `post`, or a `page`.
 
-To do this we'll use the `<Switch>` component. This acts like the 'switch' statement in any programming language, the first matching condition is the one that is executed. But first we need to import the `<Switch>` component. You can learn more about the `<Switch>` component [in our docs](https://docs.frontity.org/api-reference-1/frontity-components#switch).
+To do this we'll use another component provided by Frontity, i.e. the `<Switch>` component. This acts like the 'switch' statement in any programming language, the first matching condition is the one that is executed. But first we need to import the `<Switch>` component which we do in a similar way to the way in which we imported the `<Link>` component previously.
+
+{% hint style="info" %}
+You can learn more about the `<Switch>` component [in our docs](https://docs.frontity.org/api-reference-1/frontity-components#switch).
+{% endhint %}
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
-import Switch from "@frontity/components/switch";
+import Switch from "@frontity/components/switch"
 
 const Root = ({ state }) => {
-
-  const data = state.source.get(state.router.link);
+  const data = state.source.get(state.router.link)
 
   return (
     <>
       <h1>Hello Frontity</h1>
       <p>Current URL: {state.router.link}</p>
       <nav>
-        <Link link="/">Home</Link><br />
-        <Link link="/page/2">More posts</Link><br />
+        <Link link="/">Home</Link>
+        <br />
+        <Link link="/page/2">More posts</Link>
+        <br />
         <Link link="/about-us">About Us</Link>
       </nav>
       <hr />
@@ -83,8 +103,8 @@ const Root = ({ state }) => {
         </Switch>
       </main>
     </>
-  );
-};
+  )
+}
 ```
 
 Since we don't yet have any links to any posts the second condition will never be satisfied, so we won't ever see the text "This is a post" come up. Let's go on to address that.
