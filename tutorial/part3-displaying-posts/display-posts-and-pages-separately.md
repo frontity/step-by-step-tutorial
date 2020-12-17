@@ -1,7 +1,5 @@
 # Display posts and pages separately
 
-> _**[TO DO]** modify this text to suit new context._
-
 > _**[TO DO]** Make use of `isPost` of `isPage` (Frontity Magic in action!)._
 
 > _**[TO DO]** Different component for different content type (Custom component creation)._
