@@ -1,6 +1,6 @@
 # Understanding the Frontity state
 
-In this lesson we're going to look at the structure of Frontity's "state". Understanding how the state is structured is crucial when it comes to developing themes and other packages for Frontity.
+In this lesson we're going to look at the structure of Frontity's "state". An understanding of how the state is structured is crucial when it comes to developing themes and other packages for Frontity.
 
 Frontity has it's own state manager, which works similarly to Redux or MobX which you may already be familiar with if you have already had some experience working with React. All the data and settings associated with our project are stored in the state.
 
@@ -8,9 +8,9 @@ Frontity has it's own state manager, which works similarly to Redux or MobX whic
 Frontity's state manager is called "Frontity Connect" and it is based on [react-easy-state](https://github.com/RisingStack/react-easy-state).
 {% endhint %}
 
-To start understanding Frontity's state first access `http://localhost:3000/about-us/` in the browser. The simplest way is to click the link in the menu we've just created. Then refresh the page to clear out the state. This gives us a "blank canvas" version of the state so we can see how it works.
+To start understanding Frontity's state first access `http://localhost:3000/about-us/` in the browser. The simplest way is to click the link in the menu we've just created. Then, and this is important, refresh the page to clear out the state. This gives us a "blank canvas" version of the state so we can see how it works.
 
-When you've done that open the browser console. In the console type `frontity.state` in order to see the Frontity state.
+When you've done that [open the browser console](https://webmasters.stackexchange.com/a/77337). In the console type `frontity.state` in order to see the Frontity state.
 
 <p>
   <img alt="Frontity in the console" src="../assets/part3img1.png">
@@ -22,9 +22,9 @@ Frontity uses [ES2015 Proxies](https://developer.mozilla.org/en-US/docs/Web/Java
 
 You will see Frontity's global state, which as we mentioned earlier includes all the data fetched from WordPress and all the settings and properties of your Frontity project. All the components and actions in our project will have access to this state.
 
-You can see information about the `router`, including the `state.router.link` that we used earlier, which as we now know stores the current URL. You can also see information contained in `source`, which is the package that connects Frontity to your WordPress site.
+You can see information about the `router`, including the `state.router.link` that we used earlier, which as we now know stores the current URL. You can also see data contained in `state.source`, this is the data fetched by `wp-source` which is the package that connects Frontity to your WordPress site.
 
-Let’s take a look at `frontity.state.source.data` in the console. This is where the information for each URL is stored. If you inspect `/about-us/`, you can see that it’s a page, and that it has the ID 184.
+Let’s take a look at `frontity.state.source.data` in the console. This is where the information for each URL is stored. If you inspect `/about-us/`, you can see that it’s of type `page`, and that it has the `id` 184. Note also that the `isReady` property is set to 'true'. This means the data is ready for use in our application.
 
 <p>
   <img alt="Frontity in the console" src="../assets/part3img2.png" width="600">
@@ -46,7 +46,7 @@ Now we can get such things as the `title` and the `content` to use in our compon
 
 Let's now take a look at how the state gets populated.
 
-As you navigate from one URL to another, the package `@frontity/wp-source` automatically fetches everything it needs from the WordPres REST API and stores it in `state.source`.
+As you navigate from one URL to another, the package `@frontity/wp-source` automatically fetches everything it needs from the WordPress REST API and stores it in `state.source`.
 
 If we open the Network tab (in the browser's devtools) and click on the menu to go to 'Home', we can see that a call to the REST API is made to get the latest posts.
 
