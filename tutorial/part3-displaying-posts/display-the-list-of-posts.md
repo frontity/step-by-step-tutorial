@@ -74,7 +74,7 @@ You will recall that getting data in Frontity is a two step process. Let's illus
 Above we performed the first step and got the data about the URL and worked with each of the items in the `items` array.
 
 <p>
-  <img alt="The list of items stored in 'state.source.data('/')'" src="../assets/part3img7.png">
+  <img alt='The list of items stored in "state.source.data('/')"' src="../assets/part3img7.png">
 </p>
 
 So here we can see that the `items` array for the homepage has a number of posts, the first of which is of type `post` and has the `id` 60.
@@ -82,7 +82,7 @@ So here we can see that the `items` array for the homepage has a number of posts
 We can therefore use this information to perform the second step and access the content at `state.source.post[60]` where we can get the title and the link for that post.
 
 <p>
-  <img alt="the content stored in 'state.source.post[60]'" src="../assets/part3img8.png">
+  <img alt='The content stored in "state.source.post[60]"' src="../assets/part3img8.png">
 </p>
 
 So the second step involves getting the content related to each item in the `items` array, and as we iterate over each item in the array (using `array.map`) we get the post content for each post with:
