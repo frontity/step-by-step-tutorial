@@ -1,9 +1,5 @@
 # Display the list of posts
 
-> _**[TO DO]** modify this text to suit new context._
-
-> _**[TO DO]** explain the “two-step” access to data._
-
 In the last lesson we saw that when we got the data for the homepage with `frontity.state.source.get('/')` that there was an array of `items` which were the posts to display on the homepage. Let's now use that array to display some basic information about each of the posts in our browser.
 
 In order to display the list of posts, let's create a new file in the `components` folder and call it `list.js`.
