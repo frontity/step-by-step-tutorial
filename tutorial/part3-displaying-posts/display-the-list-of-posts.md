@@ -135,7 +135,7 @@ Now our list page is a series of links to individual posts.
   <img alt="Frontity in the browser" src="../assets/part3img9.png">
 </p>
 
-And if we click a link we can see finally see the text "This is a post".
+And if we click a link we can finally see the text "This is a post".
 
 <p>
   <img alt="Frontity in the browser" src="../assets/part3img10.png">
