@@ -4,7 +4,7 @@ In the last lesson we saw that when we got the data for the homepage with `front
 
 In order to display the list of posts, let's create a new file in the `components` folder and call it `list.js`.
 
-This will contain a component called `<List>` which will first get the data for the current URL - remember that this is stored in `state.router.link` - using the `get` helper function. It will then use JavaScript's [`array.map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) method to iterate over the `items` array and display the `type`, `id` and `link` of each post.
+This will contain a component called `<List>` which will first get the data for the current URL (remember that this is stored in `state.router.link`) using the `get` helper function. It will then use JavaScript's [`array.map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) method to iterate over the `items` array and display the `type`, `id` and `link` of each post.
 
 {% hint style="info" %}
 ☝️ Remember that you can inspect this data by running `frontity.state.source.get('/')` in the browser's console.
@@ -97,7 +97,7 @@ You might think that since they're all of type `post` that we could instead use:
 state.source.post[item.id]
 ```
 
-And you'd be right, that would also work. However it's good practice to use the `type` property stored in the data rather than hard code the type. In this case all ten are indeed of type `post`, but that's not always the case.
+And you'd be right, that would also work. However it's good practice to use the `type` property stored in the data rather than hard code the type. In this case all the items are indeed of type `post`, but that's not necessarily always the case - sometimes we'll work with pages, or attachment images, or authors, etc...
 
 So here's what our `list.js` file is going to look like:
 
