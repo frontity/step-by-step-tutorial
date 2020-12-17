@@ -1,12 +1,12 @@
 # Display posts and pages separately
 
-> *__[TO DO]__ modify this text to suit new context.*
+> _**[TO DO]** modify this text to suit new context._
 
-> *__[TO DO]__ Make use of `isPost` of `isPage`  (Frontity Magic in action!).*
+> _**[TO DO]** Make use of `isPost` of `isPage` (Frontity Magic in action!)._
 
-> *__[TO DO]__ Different component for different content type (Custom component creation).*
+> _**[TO DO]** Different component for different content type (Custom component creation)._
 
-> *__[TO DO]__ Maybe use one component but with conditionals to display post and page differently.*
+> _**[TO DO]** Maybe use one component but with conditionals to display post and page differently._
 
 At the moment posts and pages both use the same component. But normally posts will display author and date information as well as tags, categories, etc...
 
@@ -21,17 +21,15 @@ import React from "react"
 import { connect } from "frontity"
 
 const Page = ({ state }) => {
-
   const data = state.source.get(state.router.link)
   const page = state.source[data.type][data.id]
 
   return (
     <div>
       <h2>{page.title.rendered}</h2>
-      <div dangerouslySetInnerHTML={{ __html: page.content.rendered}} />
+      <div dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
     </div>
-  );
-
+  )
 }
 
 export default connect(Page)
@@ -42,27 +40,31 @@ At the moment `page.js` and `post.js` are pretty much identical, so let's now di
 ```jsx
 // File: /packages/my-first-theme/src/components/post.js
 
-import React from "react";
-import { connect } from "frontity";
+import React from "react"
+import { connect } from "frontity"
 
 const Post = ({ state }) => {
-
-  const data = state.source.get(state.router.link);
-  const post = state.source[data.type][data.id];
-  const author = state.source.author[post.author];
+  const data = state.source.get(state.router.link)
+  const post = state.source[data.type][data.id]
+  const author = state.source.author[post.author]
 
   return (
     <div>
       <h2>{post.title.rendered}</h2>
-      <p><strong>Posted: </strong>{post.date}</p>
-      <p><strong>Author: </strong>{author.name}</p>
+      <p>
+        <strong>Posted: </strong>
+        {post.date}
+      </p>
+      <p>
+        <strong>Author: </strong>
+        {author.name}
+      </p>
       <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
     </div>
-  );
+  )
+}
 
-};
-
-export default connect(Post);
+export default connect(Post)
 ```
 
 Finally in this section let's change the root component to import and use the `<Page>` component.
@@ -74,8 +76,7 @@ Finally in this section let's change the root component to import and use the `<
 import Page from "./page"
 
 const Root = ({ state }) => {
-
-  const data = state.source.get(state.router.link);
+  const data = state.source.get(state.router.link)
 
   return (
     <>
@@ -86,20 +87,19 @@ const Root = ({ state }) => {
         <Page when={data.isPage} />
       </Switch>
     </>
-  );
-
-};
+  )
+}
 ```
 
-Now as you navigate around the site and view posts and pages you'll notice that posts, e.g. *"The Beauties of Gullfoss"*, have the author and date info, but pages, e.g. *"About Us"*, do not.
+Now as you navigate around the site and view posts and pages you'll notice that posts, e.g. _"The Beauties of Gullfoss"_, have the author and date info, but pages, e.g. _"About Us"_, do not.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part3img9.png" width="565" height="161">
+  <img alt="Frontity in the browser" src="../assets/part3img11.png" width="565" height="161">
 </p>
 
 ## Using a single component for both posts and pages
 
-> *__Note:__ This section is optional and can be safely skipped without affecting the learning experience*
+> _**Note:** This section is optional and can be safely skipped without affecting the learning experience_
 
 So far we've created separate `<Post>` and `<Page>` components in separate `post.js` and `page.js` files so that posts and pages can be displayed differently.
 
@@ -128,27 +128,35 @@ This means that we only need one component to display both posts and pages, and 
 ```jsx
 // File: /packages/my-first-theme/src/components/post.js
 
-import React from "react";
-import { connect } from "frontity";
+import React from "react"
+import { connect } from "frontity"
 
 const Post = ({ state }) => {
-
-  const data = state.source.get(state.router.link);
-  const post = state.source[data.type][data.id];
+  const data = state.source.get(state.router.link)
+  const post = state.source[data.type][data.id]
   const author = state.source.author[post.author]
 
   return (
     <div>
       <h2>{post.title.rendered}</h2>
-      {data.isPost && <p><strong>Posted: </strong>{post.date}</p>}
-      {data.isPost && <p><strong>Author: </strong>{author.name}</p>}
+      {data.isPost && (
+        <p>
+          <strong>Posted: </strong>
+          {post.date}
+        </p>
+      )}
+      {data.isPost && (
+        <p>
+          <strong>Author: </strong>
+          {author.name}
+        </p>
+      )}
       <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
     </div>
-  );
+  )
+}
 
-};
-
-export default connect(Post);
+export default connect(Post)
 ```
 
-> *__Please note:__ for the rest of this tutorial we will assume that you have gone for separate `post.js` and `page.js` files each with their own component. If you have elected to use the single component with conditionals option you may need to adapt some of the subsequent steps.*
+> _**Please note:** for the rest of this tutorial we will assume that you have gone for separate `post.js` and `page.js` files each with their own component. If you have elected to use the single component with conditionals option you may need to adapt some of the subsequent steps._
