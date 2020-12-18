@@ -1,43 +1,40 @@
 # Styled components
 
-> *__[TO DO]__ modify this text to suit new context.*
-
-> *__[TO DO]__ this section is long - consider splitting it into 2 or more sections.*
+> _**[TO DO]** this section is long - consider splitting it into 2 or more sections._
 
 In this section we're going to create some CSS components, also known as styled components. These components are created using `styled`, which like `css` is a function. However the HTML tag that you want to style is appended with dot notation and then, again like `css`, the function takes a tagged template literal containing CSS as it's argument.
 
-As a basic example let's start by creating a `<Header>` component and give it a background colour, though first we need to import `styled` from Frontity.
+As a basic example let's start by creating a `<Header>` component in our root component file and give it a background colour, though first we need to import `styled` from Frontity.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
 
 // ...
-import { connect, Global, css, styled } from "frontity";
+import { connect, Global, css, styled } from "frontity"
 // ...
 
 const Header = styled.header`
-  background-color: #E5EDEE;
+  background-color: #e5edee;
 `
 ```
 
-Once the `<Header>` component has been created let's use it in our root component to wrap all the elements that we want contained in the header section of our site.
+Once the `<Header>` component has been created let's use it in our `<Root>` component to wrap all the elements that we want contained in the header section of our site.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
 
 // ...
 const Root = ({ state }) => {
-
   const data = state.source.get(state.router.link)
 
   return (
     <>
       <Global
         styles={css`
-        html {
-            font-family:  system-ui, Verdana, Arial, sans-serif;
-        }
-      `}
+          html {
+            font-family: system-ui, Verdana, Arial, sans-serif;
+          }
+        `}
       />
       <Header>
         <h1>Frontity Workshop</h1>
@@ -56,11 +53,11 @@ const Root = ({ state }) => {
         </Switch>
       </main>
     </>
-  );
-};
+  )
+}
 ```
 
-Now our header is contained within a nice light grey background. But notice the rather ugly white border around it. Let's fix that by applying a basic CSS reset to our `<Global>` component.
+Now our header is contained within a nice light grey background. But notice the rather unsightly white border around it. Let's fix that by applying a basic CSS reset to our `<Global>` component. This will ensure that the styles in the reset apply anywhere in the site.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -69,21 +66,25 @@ Now our header is contained within a nice light grey background. But notice the 
 <Global
   styles={css`
     * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
     html {
-        font-family: system-ui, Verdana, Arial, sans-serif;
+      font-family: system-ui, Verdana, Arial, sans-serif;
     }
   `}
 />
 // ...
 ```
 
+{% hint style="info" %}
 CSS reset can be [much more elaborate](https://meyerweb.com/eric/tools/css/reset/) than this, but even this simple CSS reset will give us more control over the styling of our elements going forward, and enable us to have more consistent and predictable behaviour as we add CSS to style our site.
+{% endhint %}
 
 Let's continue styling our header by adding a border to the bottom, and making the `<h1>` element within it a little less starkly black!
+
+Notice how we can use the LESS/SASS type syntax of including child elements. Although this is not valid CSS Emotion will parse this and apply the styles correctly. It enables us to be more concise in defining the styles for our styled components.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -91,13 +92,13 @@ Let's continue styling our header by adding a border to the bottom, and making t
 // ...
 
 const Header = styled.header`
-  background-color: #E5EDEE;
+  background-color: #e5edee;
   border-width: 0 0 8px 0;
   border-style: solid;
   border-color: maroon;
 
   h1 {
-    color: #4A4A4A;
+    color: #4a4a4a;
   }
 `
 ```
@@ -109,40 +110,40 @@ We also want to constrain our page width to 800px. To do that we will need to ad
 
 // ...
 const Header = styled.header`
-  background-color: #E5EDEE;
+  background-color: #e5edee;
   border-width: 0 0 8px 0;
   border-style: solid;
   border-color: maroon;
 
   h1 {
-    color: #4A4A4A;
+    color: #4a4a4a;
   }
 `
 const HeaderContent = styled.div`
-    max-width: 800px;
-    padding: 2em 1em;
-    margin: auto;
+  max-width: 800px;
+  padding: 2em 1em;
+  margin: auto;
 `
 const Main = styled.main`
-    max-width: 800px;
-    padding: 1em;
-    margin: auto;
+  max-width: 800px;
+  padding: 1em;
+  margin: auto;
 
-    img {
-        max-width: 100%;
-    }
-    h2 {
-        margin: 0.5em 0;
-    }
-    p {
-        line-height: 1.25em;
-        margin-bottom: 0.75em;
-    }
-    figcaption {
-      color: #828282;
-      font-size: 0.8em;
-      margin-bottom: 1em;
-    }
+  img {
+    max-width: 100%;
+  }
+  h2 {
+    margin: 0.5em 0;
+  }
+  p {
+    line-height: 1.25em;
+    margin-bottom: 0.75em;
+  }
+  figcaption {
+    color: #828282;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+  }
 `
 ```
 
@@ -155,22 +156,21 @@ Now let's use those styled components in our root component.
 
 // ...
 const Root = ({ state, actions }) => {
-
   const data = state.source.get(state.router.link)
 
   return (
     <>
       <Global
         styles={css`
-        * {
+          * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-        }
-        html {
+          }
+          html {
             font-family: system-ui, Arial, sans-serif;
-        }
-      `}
+          }
+        `}
       />
       <Header>
         <HeaderContent>
@@ -191,8 +191,8 @@ const Root = ({ state, actions }) => {
         </Switch>
       </Main>
     </>
-  );
-};
+  )
+}
 ```
 
 Our layout is looking quite pleasing now, but the links in our menu and on our listing pages could do with a bit more work. We'll address this in our next section.
