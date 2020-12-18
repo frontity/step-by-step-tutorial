@@ -2,11 +2,11 @@
 
 We're making great progress and our theme now has a good deal of useful functionality! 🙌
 
-At the moment posts and pages both use the same component. However, normally posts and pages would be displayed differently from one another. Posts, for example, would display author and date information as well as tags, categories, etc...
+At the moment posts and pages both use the same component. However, normally posts and pages would be displayed differently from one another. Posts, for example, would display author and date information as well as tags, categories, etc..., whereas pages would not.
 
 Let's distinguish between the two now.
 
-Create a new file and call it `page.js`. Copy the contents of `post.js` into `page.js` and rename the component from `<Post>` to `<Page>`. Remember to also change the `export` line - line 20 in the code sample below.
+Create a new file and call it `page.js`. Copy the contents of `post.js` into `page.js` and rename the component from `<Post>` to `<Page>`. Remember to also change the `export` line - line 18 in the code sample below.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/page.js
@@ -47,7 +47,7 @@ We can use this ID to get the actual author information from `state.source.autho
   <img alt="Frontity in the console" src="../assets/part3img12.png">
 </p>
 
-Modify the `<Post>` componenet in `post.js` to get the author information and display both it and the post date.
+Let's modify the `<Post>` component in `post.js` to get the author information and display both it and the post date.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/post.js
@@ -79,7 +79,7 @@ const Post = ({ state }) => {
 export default connect(Post)
 ```
 
-Finally in this section let's change the root component to import the `<Page>` component, and then use it in the `<Switch>` component to conditionally render it if `data.isPage` is true.
+Finally in this section let's change the root component file to import the `<Page>` component, and then use it in the `<Switch>` component to conditionally render it if `data.isPage` is true.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -103,7 +103,7 @@ const Root = ({ state }) => {
 }
 ```
 
-Now as you navigate around the site and view posts and pages you'll notice that posts, e.g. _"The Beauties of Gullfoss"_, have the author and date info, but pages, e.g. _"About Us"_, do not.
+Now as you navigate around the site and view posts and pages a different component is used for each case and you'll notice that posts, e.g. _"The Beauties of Gullfoss"_, have the author and date info, but pages, e.g. _"About Us"_, do not.
 
 <p>
   <img alt="Frontity in the browser" src="../assets/part3img13.png" width="565" height="161">
@@ -111,7 +111,9 @@ Now as you navigate around the site and view posts and pages you'll notice that 
 
 ## Using a single component for both posts and pages
 
-> _**Note:** This section is optional and can be safely skipped without affecting the learning experience_
+{% hint style="info" %}
+**Note:** This section is optional and can be safely skipped without affecting the learning experience
+{% endhint %}
 
 So far we've created separate `<Post>` and `<Page>` components in separate `post.js` and `page.js` files so that posts and pages can be displayed differently.
 
@@ -172,5 +174,5 @@ export default connect(Post)
 ```
 
 {% hint style="info" %}
-_**Please note:** for the rest of this tutorial we will assume that you have gone for separate `post.js` and `page.js` files each with their own component. If you have elected to use the single component with conditionals option you may need to adapt some of the subsequent steps._
+**Please note:** for the rest of this tutorial we will assume that you have gone for separate `post.js` and `page.js` files each with their own component. If you have elected to use the single component with conditionals option you may need to adapt some of the subsequent steps.
 {% endhint %}
