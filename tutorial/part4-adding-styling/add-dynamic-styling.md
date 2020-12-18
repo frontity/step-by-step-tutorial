@@ -1,9 +1,5 @@
 # Add dynamic styling
 
-> _**[TO DO]** modify this text to suit new context._
-
-> _**[TO DO]** add more explanation and another example here._
-
 One of the great features of CSS-in-JS is that it allows us to modify the styling of elements dynamically. Let's take a look at how we can do this.
 
 You will recall that in an earlier lesson in this section we added an 8px wide border to the bottom of our header. We'll use that to indicate whether we're on a `list` page, a `post` page, or a `page`, erm..., page 🤷🏻‍♂️ by changing the colour of the border depending on which type of page we're on.
