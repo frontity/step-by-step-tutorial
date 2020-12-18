@@ -195,6 +195,6 @@ const Root = ({ state, actions }) => {
 }
 ```
 
-Have a browse around the content and take a look at how the styles are being applied.
+Have a browse around the content and notice how the styles are being applied.
 
 Our layout is looking quite pleasing now, but the links in our menu and on our listing pages could do with being spruced up a bit. We'll address this in our next section.
