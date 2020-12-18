@@ -42,9 +42,13 @@ Now we can replace the `nav` element in our `Root` component with the new `Menu`
 
 We now have a more pleasing looking header.
 
-Let's improve the appearance of our `<List>` component by having the links in our list rendered in the same style as the menu.
+Next we'll improve the appearance of our `<List>` component by having the links in our list rendered in the same style as the menu.
 
-So far we've added all our styled components to the `index.js` file for use in the `<Root>` component. Now we'll open `list.js` and add an `<Items>` component and use it within `<List>`. ☝️ Remember also to import `styled` from `frontity` into `list.js`.
+So far we've added all our styled components to the `index.js` file for use in the `<Root>` component. Now we'll open `list.js` and add an `<Items>` component and use it within `<List>`.
+
+{% hint style="info" %}
+☝️ Remember also to import `styled` from `frontity` into `list.js`.
+{% endhint %}
 
 ```jsx
 // File: /packages/my-first-theme/src/components/list.js
