@@ -57,7 +57,7 @@ const Root = ({ state }) => {
 }
 ```
 
-Now our header is contained within a nice light grey background. But notice the rather unsightly white border around it. Let's fix that by applying a basic CSS reset to our `<Global>` component. This will ensure that the styles in the reset apply anywhere in the site.
+Now our header is contained within a nice light grey background. But notice the rather unsightly white border around it. Let's fix that by applying a basic CSS reset to our `<Global>` component back in our root component file. This will ensure that the styles in the reset apply anywhere in the site.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -84,7 +84,7 @@ CSS reset can be [much more elaborate](https://meyerweb.com/eric/tools/css/reset
 
 Let's continue styling our header by adding a border to the bottom, and making the `<h1>` element within it a little less starkly black!
 
-Notice how we can use the LESS/SASS type syntax of including child elements. Although this is not valid CSS Emotion will parse this and apply the styles correctly. It enables us to be more concise in defining the styles for our styled components.
+Notice how we can use the LESS/SASS type syntax of including child elements. Although this is not valid CSS, Emotion will nevertheless parse this and apply the styles correctly. It enables us to be more concise in defining the styles for our styled components.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -195,4 +195,6 @@ const Root = ({ state, actions }) => {
 }
 ```
 
-Our layout is looking quite pleasing now, but the links in our menu and on our listing pages could do with a bit more work. We'll address this in our next section.
+Have a browse around the content and take a look at how the styles are being applied.
+
+Our layout is looking quite pleasing now, but the links in our menu and on our listing pages could do with being spruced up a bit. We'll address this in our next section.
