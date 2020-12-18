@@ -1,6 +1,6 @@
 # Display posts and pages separately
 
-We're making great progress! 🙌
+We're making great progress and our theme now has a good deal of useful functionality! 🙌
 
 At the moment posts and pages both use the same component. However, normally posts and pages would be displayed differently from one another. Posts, for example, would display author and date information as well as tags, categories, etc...
 
