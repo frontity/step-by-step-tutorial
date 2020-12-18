@@ -1,11 +1,5 @@
 # Display posts and pages separately
 
-> _**[TO DO]** Make use of `isPost` of `isPage` (Frontity Magic in action!)._
-
-> _**[TO DO]** Different component for different content type (Custom component creation)._
-
-> _**[TO DO]** Maybe use one component but with conditionals to display post and page differently._
-
 We're making great progress! 🙌
 
 At the moment posts and pages both use the same component. However, normally posts and pages would be displayed differently from one another. Posts, for example, would display author and date information as well as tags, categories, etc...
