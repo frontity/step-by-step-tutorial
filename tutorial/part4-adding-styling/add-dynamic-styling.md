@@ -4,7 +4,7 @@ One of the great features of CSS-in-JS is that it allows us to modify the stylin
 
 You will recall that in an earlier lesson in this section we added an 8px wide border to the bottom of our header. We'll use that to indicate whether we're on a `list` page, a `post` page, or a `page`, erm..., page 🤷🏻‍♂️ by changing the colour of the border depending on which type of page we're on.
 
-To do this we'll add a `isPostType` prop to the `<Header>` component.
+To do this we'll add an `isPostType` prop to the `<Header>` component.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
