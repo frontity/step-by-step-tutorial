@@ -20,7 +20,7 @@ Open your terminal and ensure that you're in the root directory of your project.
 npm install dayjs
 ```
 
-If you check the `package.json` file in the root of your project folder you will now see that `dayjs` has been added as a dependency.
+If you check the `package.json` file in the root of your project directory you will now see that `dayjs` has been added as a dependency.
 
 <p>
   <img alt="Dependencies in package.json" src="../assets/part3img15.png">
@@ -48,9 +48,9 @@ const formattedDate = dayjs(post.date).format("DD MMMM YYYY")
 // ...
 ```
 
-See the [Day.js documentation](https://day.js.org/docs/en/display/format) for other possible formatting strings. For example, try replacing `DD MMMM YYYY` above with `MMM DD, YYYY` or `DD-MM-YY` to see how the appearance of the date changes. Use your preferred formatted version.
+See the [Day.js documentation](https://day.js.org/docs/en/display/format) for other possible formatting strings. For example, try replacing `DD MMMM YYYY` above with `MMM DD, YYYY` or `DD-MM-YY` to see how the appearance of the date changes. Use whichever version of the formatted date that you prefer.
 
-We'll also use the `formattedDate` variable holding our formatted date in our display by replacing `post.date` with it.
+Finally we'll use the `formattedDate` variable holding our formatted date in our component by replacing `post.date` with it.
 
 Your `post.js` file should now look like this:
 
