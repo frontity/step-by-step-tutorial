@@ -2,7 +2,7 @@
 
 First let's turn our attention to the header section and style the menu. We'll make our links a consistent colour and remove the underlines so that it looks a bit cleaner. To do this we'll add a `Menu` component which will be a styled `<nav>` element.
 
-It's useful to know that the `<Link>` component returns an `<a>` element. Knowing this we can apply styles to any `<a>` elements with our styled `<nav>` element.
+It's useful to know that the `<Link>` component returns an `<a>` element. Knowing this we can apply styles to any `<a>` elements inside our styled `<nav>` element.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -44,7 +44,7 @@ We now have a more pleasing looking header.
 
 Next we'll improve the appearance of our `<List>` component by having the links in our list rendered in the same style as the menu.
 
-So far we've added all our styled components to the `index.js` file for use in the `<Root>` component. Now we'll open `list.js` and add an `<Items>` component and use it within `<List>`.
+So far we've added all our styled components to the `index.js` file for use in the `<Root>` component. Now we'll open `list.js` and add an `<Items>` component which will be a styled `<div>` element. We'll then use it within the `<List>` component as a wrapper around all the post title links.
 
 {% hint style="info" %}
 ☝️ Remember also to import `styled` from `frontity` into `list.js`.
