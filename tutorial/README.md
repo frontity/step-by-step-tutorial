@@ -32,6 +32,8 @@ If you need to get up to speed, or if you need a refresher, we have introduction
 
 An understanding of HTML and CSS is also assumed, as is a familiarity with the command line.
 
+You will need to have [node.js](https://nodejs.org/) installed on your development machine.
+
 ### The project
 
 Frontity provides two themes to get you started, `mars-theme` and `twentytwenty`, and there are a host of third party themes on [_npmjs.com_](https://www.npmjs.com/) that you can install into your Frontity project. One of these could well fit your needs, but the best way to really gain an understanding of Frontity and how it works is to build your own theme.
