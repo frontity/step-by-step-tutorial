@@ -1,16 +1,17 @@
 # Global Styles
 
-The first thing we will do is create global styles. These apply site-wide and should be added to the root component of your theme. We'll change the font to be sans-serif. To do this import the `<Global>` component and the `css` function from Frontity into our root component.
+The first thing we will do is create global styles. These are styles that apply site-wide. They should be added to the root component of your theme.
+
+We'll change the font to be sans-serif throughout our site. To do this let's import the `<Global>` component and the `css` function from Frontity into our root component file.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
 
 // ...
-import { connect, Global, css } from "frontity";
+import { connect, Global, css } from "frontity"
 
 const Root = ({ state }) => {
-
-  const data = state.source.get(state.router.link);
+  const data = state.source.get(state.router.link)
 
   return (
     <>
@@ -23,10 +24,14 @@ const Root = ({ state }) => {
       />
       {/* ... */}
     </>
-  );
-};
+  )
+}
 ```
 
-The `css` function takes as it's argument a [tagged template literal](https://wesbos.com/tagged-template-literals), which in this case consists of standard CSS contained within backticks. These styles are applied to the `styles` attribute on the `Global` component. When you save the file you should notice that the fonts on your site have changed automatically.
+The `<Global>` component has an attribute, `styles`, which in turn takes a `css` function as it's value.
+
+The `css` function takes as it's argument a [tagged template literal](https://wesbos.com/tagged-template-literals), which in this case consists of standard CSS contained within backticks. You can put any CSS here that you want to be applied site wide.
+
+When you save the file you should notice that the fonts on your site have now changed automatically to be sans-serif.
 
 Next we'll look at the power and flexibility that styled components give us.
