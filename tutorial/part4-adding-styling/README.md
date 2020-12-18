@@ -11,9 +11,9 @@ Frontity uses [Emotion](https://emotion.sh/docs/introduction), a CSS-in-JS libra
 - you don't have to worry about vendor prefixing so you can write your CSS based on the current standard and Frontity handles the rest for you
 - you can use all the power of JavaScript to style your components and create dynamic styles with ease
 
-In this section we'll look at the `<Global>` component which enables you to apply styles site wide and at the `styled` function which enables you to create styled components for use within the components that we've already created.
+In this section we'll look at the `<Global>` component which enables you to apply styles site wide, and at the `styled` function which enables you to create styled components for use within the components that we've already created.
 
-We'll then go on to look at how we can use styled components to apply styling to components we've already used, such as the `<Link>` component, and finish off this section by looking at dynamic styling.
+We'll then go on to look at how we can use styled components to apply styling to components we've already imported and used, such as the `<Link>` component, and finish off this section by looking at dynamic styling.
 
 Dynamic styling is styling that is applied conditionally and is one of the great advantages of the CSS-in-JS approach.
 
