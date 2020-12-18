@@ -1,6 +1,8 @@
 # Styled components
 
-In this section we're going to create some CSS components, also known as styled components. These components are created using `styled`, which like `css` is a function. However the HTML tag that you want to style is appended with dot notation and then, again like `css`, the function takes a tagged template literal containing CSS as it's argument.
+In this section we're going to create some CSS components, also known as styled components. These components are created using `styled`, which like `css` is a function provided by Emotion.
+
+The HTML tag that you want to style is appended with dot notation and then, again like `css`, the function takes a tagged template literal containing CSS as it's argument.
 
 As a basic example let's start by creating a `<Header>` component in our root component file and give it a background colour, though first we need to import `styled` from Frontity.
 
