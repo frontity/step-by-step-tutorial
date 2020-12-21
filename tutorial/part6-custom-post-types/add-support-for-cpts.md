@@ -1,8 +1,8 @@
 # Add support for custom post types
 
-> *__[TO DO]__ new content to be written.*
+> _**[TO DO]** new content to be written._
 
-As you will already be aware, our example source data is a travel blog. We have implemented a Custom Post Type (CPT) for our favourite destinations. This CPT is called... "destinations" - what else?!
+As you will already be aware, our example source data is a travel blog. We have implemented a Custom Post Type (CPT) in WordPress for our favourite destinations. This CPT is called... "destinations" - what else?!
 
 The first thing we need to do is to add support for our custom post type in`frontity.settings.js`. Add the `postTypes` property to `state.source`. This takes an array of objects as it's value, with each object in the array defining a post type. We're only defining one post type, namely `destinations` so we only add one object to the array.
 
