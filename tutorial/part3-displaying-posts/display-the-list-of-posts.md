@@ -69,6 +69,8 @@ Great! Now we can see some information about each of the posts on the `Home` pag
 
 Now let's change the `<List>` component to get the information about each of the posts and show the title and turn it into a link.
 
+## The two step process revisited
+
 You will recall that getting data in Frontity is a two step process. Let's illustrate this process to help you to fully understand it.
 
 Above we performed the first step and got the data about the URL and worked with each of the items in the `items` array.
@@ -127,7 +129,9 @@ const List = ({ state }) => {
 }
 ```
 
-> ☝️ As we're going to make each post title a clickable link remember that we have to import the `<Link>` component into `list.js`!
+{% hint style="info" %}
+☝️ As we're going to make each post title a clickable link remember that we have to import the `<Link>` component into `list.js`!
+{% endhint %}
 
 Now our list page is a series of links to individual posts.
 

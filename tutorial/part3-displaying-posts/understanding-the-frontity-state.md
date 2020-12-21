@@ -2,13 +2,17 @@
 
 In this lesson we're going to look at the structure of Frontity's "state". An understanding of how the state is structured is crucial when it comes to developing themes and other packages for Frontity.
 
+## The state manager
+
 Frontity has it's own state manager, which works similarly to Redux or MobX which you may already be familiar with if you have already had some experience working with React. All the data and settings associated with our project are stored in the state.
 
 {% hint style="info" %}
 Frontity's state manager is called "Frontity Connect" and it is based on [react-easy-state](https://github.com/RisingStack/react-easy-state).
 {% endhint %}
 
-To start understanding Frontity's state first access `http://localhost:3000/about-us/` in the browser. The simplest way is to click the link in the menu we've just created. Then, and this is important, refresh the page to clear out the state. This gives us a "blank canvas" version of the state so we can see how it works.
+## Understanding the Frontity state
+
+To start understanding Frontity's state first access `http://localhost:3000/about-us/` in the browser. The simplest way is to click the link in the menu we've just created. Then - _and this is important_ - refresh the page to clear out the state. This gives us a "blank canvas" version of the state so we can see how it works.
 
 When you've done that [open the browser console](https://webmasters.stackexchange.com/a/77337). In the console type `frontity.state` in order to see the Frontity state.
 
@@ -30,6 +34,8 @@ Let’s take a look at `frontity.state.source.data` in the console. This is wher
   <img alt="Frontity in the console" src="../assets/part3img2.png" width="600">
 </p>
 
+## The two step process
+
 Because Frontity works with the same permalinks that WordPress uses there's a two step process to getting data from the state.
 
 We first get the data about the URL from `state.source.data`. Then armed with the information provided there, crucially the content `type` and the `id` (though we can also check whether the data is ready for retrieval with `isReady`, amongst other things), we can retrieve the actual content.
@@ -43,6 +49,8 @@ With the information from the first step that the URL `/about-us/` is a page and
 </p>
 
 Now we can get such things as the `title` and the `content` to use in our components so that they get rendered in the browser. We also have access to the author ID and the post date. We will look at how we can use these in our components in later lessons.
+
+## Populating the state
 
 Let's now take a look at how the state gets populated.
 
@@ -69,6 +77,8 @@ So now let’s inspect the information about the homepage using `frontity.state.
 As you can see there are several interesting properties such as `isHome`, `isArchive`, and an array of `items`. If the homepage were a category it would have an `isCategory` property. If it were a post it would have an `isPost` property, etc... These are boolean values so we just need to check for their truthiness.
 
 That's enough theory for now. To wrap up this section let's use this new knowledge in our code.
+
+## The Frontity state in practice
 
 In this step we will use the `get` helper function to get the information about the current link (stored in `state.router.link`) and use it inside a `<main>` element to see whether it’s a `list`, a `post`, or a `page`.
 

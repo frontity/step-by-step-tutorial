@@ -9,53 +9,55 @@ Open `index.js` at the root of our theme and add a new field called `isUrlVisibl
 ```jsx
 // File: /packages/my-first-theme/src/index.js
 
-import Root from "./components";
+import Root from "./components"
 
 const myFirstTheme = {
   name: "my-first-theme",
   roots: {
-    theme: Root
+    theme: Root,
   },
   state: {
     theme: {
-      isUrlVisible: false
-    }
+      isUrlVisible: false,
+    },
   },
   actions: {
-    theme: {}
-  }
-};
+    theme: {},
+  },
+}
 
 export default myFirstTheme
 ```
 
 Then we'll add an action - this is a function that will toggle the value of `isUrlVisible`. We'll use the state of this variable to determine whether the URL is visible or not.
 
-> **NOTE:** This is the proper way to mutate state. You should never mutate the state directly from your components. You should, instead, create actions to mutate state and call those actions from your components.
+{% hint style="info" %}
+**NOTE:** This is the proper way to mutate state. You should never mutate the state directly from your components. You should, instead, create actions to mutate state and call those actions from your components.
+{% endhint %}
 
 ```jsx
 // File: /packages/my-first-theme/src/index.js
 
-import Root from "./components";
+import Root from "./components"
 
 const myFirstTheme = {
   name: "my-first-theme",
   roots: {
-    theme: Root
+    theme: Root,
   },
   state: {
     theme: {
-      isUrlVisible: false
-    }
+      isUrlVisible: false,
+    },
   },
   actions: {
     theme: {
       toggleUrl: ({ state }) => {
         state.theme.isUrlVisible = !state.theme.isUrlVisible
-      }
-    }
-  }
-};
+      },
+    },
+  },
+}
 
 export default myFirstTheme
 ```
@@ -80,7 +82,7 @@ Now in the root component we'll add some conditional logic to check the value of
 </Main>
 ```
 
-You will find that the URL has disappeared, but if you change the value of `isUrlVisible` in `index.js` to `true` it will reappear. Try it now! *(note: you may have to manually refresh the browser)*
+You will find that the URL has disappeared, but if you change the value of `isUrlVisible` in `index.js` to `true` it will reappear. Try it now! _(**note**: you may have to manually refresh the browser)_
 
 Let's add some buttons that use the `toggleUrl` action we added earlier to change the value of `isUrlVisible` from the front end.
 
@@ -98,7 +100,11 @@ const Root = ({ state, actions }) => {
 }
 ```
 
-Note that we have to wrap the `button` element and "Current URL" string in enclosing empty tags `<> ... </>`. Remember too that we need to pass `actions` to the `Root` component.
+Note that we have to wrap the `button` element and "Current URL" string in enclosing empty tags `<> ... </>`.
+
+{% hint style="info" %}
+☝️ Remember too that we need to pass `actions` to the `Root` component.
+{% endhint %}
 
 Finally let's create a styled `<Button>` component and use it in order to improve the appearance.
 
@@ -106,9 +112,15 @@ Finally let's create a styled `<Button>` component and use it in order to improv
 // File: /packages/my-first-theme/src/components/index.js
 
 // ...
-{ state.theme.isUrlVisible
-  ? <>Current URL: {state.router.link} <Button onClick={actions.theme.toggleUrl}>&#x3c; Hide URL</Button></>
-  : <Button onClick={actions.theme.toggleUrl}>Show URL &#x3e;</Button>
+{
+  state.theme.isUrlVisible ? (
+    <>
+      Current URL: {state.router.link}{" "}
+      <Button onClick={actions.theme.toggleUrl}>&#x3c; Hide URL</Button>
+    </>
+  ) : (
+    <Button onClick={actions.theme.toggleUrl}>Show URL &#x3e;</Button>
+  )
 }
 // ...
 const Button = styled.button`
