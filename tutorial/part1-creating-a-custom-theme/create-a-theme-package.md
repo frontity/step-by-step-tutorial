@@ -16,7 +16,7 @@ You will be prompted to specify the namespace to use. Since you are creating a t
   <img alt="Creating a package" src="../assets/part1img2.png">
 </p>
 
-When the process is complete you will have a new folder called `/packages/my-first-theme`. This is where we will be doing most of our work to build the theme.
+When the process is complete you will have a new directory called `/packages/my-first-theme`. This is where we will be doing most of our work to build the theme.
 
 <p>
   <img alt="Structure of a newly created package" src="../assets/part1img3.png">

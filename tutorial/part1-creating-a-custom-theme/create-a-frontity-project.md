@@ -20,6 +20,14 @@ When the install process finishes, you will have a new sub-directory called `hel
   <img alt="Frontity project structure" src="../assets/part1img1.png">
 </p>
 
+{% hint style="info" %}
+Apart from defining the configurion of our project almost all of our time will be spent working in the `packages` directory.
+
+The `node_modules` directory is where all our dependencies are stored. You won't need to modify or open any of the files inside this directory. The `build` folder is where the final deployment build of our project will live.
+
+Other files such as `package.json` and `package-lock.json` are project configuration files and you shouldn't have any need to touch them either.
+{% endhint %}
+
 Let's take a look at the file `frontity.settings.js`. This is the configuration file for our project and can be found in the root directory of the project. One of the elements that you'll see here is an array of `packages`. In Frontity everything is a package, including the theme, so one of the packages in the array is `@frontity/mars-theme`. We'll be replacing this in the next lesson.
 
 Another package in the array is `@frontity/wp-source`. This has a property: `state.source.url`. This is where you define the WordPress site that you want to connect to in order to get data from the REST API. Changing this is one of the first things you would normally do when configuring a Frontity project, but let's leave this as it is since this is the source for the data that we are going to be working with during this tutorial.

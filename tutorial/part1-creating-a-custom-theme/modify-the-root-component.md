@@ -16,6 +16,8 @@ const Root = () => {
 }
 ```
 
+Once you save the file you should see the content in the browser change.
+
 {% hint style="info" %}
 Webpack watches for changes in the `/packages` directory and refreshes the browser if it detects any changes. Since we have changed the content of a file within the `/packages` directory the content in the browser should automatically update.
 {% endhint %}

@@ -4,7 +4,7 @@ In this lesson we're going to look at the structure of Frontity's "state". An un
 
 ## The state manager
 
-Frontity has it's own state manager, which works similarly to Redux or MobX which you may already be familiar with if you have already had some experience working with React. All the data and settings associated with our project are stored in the state.
+Frontity has it's own state manager, which functions similarly to Redux or MobX which you may already be familiar with if you have already had some experience working with React. All the data and settings associated with our project are stored in the state.
 
 {% hint style="info" %}
 Frontity's state manager is called "Frontity Connect" and it is based on [react-easy-state](https://github.com/RisingStack/react-easy-state).
@@ -26,7 +26,7 @@ Frontity uses [ES2015 Proxies](https://developer.mozilla.org/en-US/docs/Web/Java
 
 You will see Frontity's global state, which as we mentioned earlier includes all the data fetched from WordPress and all the settings and properties of your Frontity project. All the components and actions in our project will have access to this state.
 
-You can see information about the `router`, including the `state.router.link` that we used earlier, which as we now know stores the current URL. You can also see data contained in `state.source`, this is the data fetched by `wp-source` which is the package that connects Frontity to your WordPress site.
+You can see information about the `router`, including the `state.router.link` that we used earlier, which as we now know stores the current URL. You can also see data contained in `state.source`, this is the data fetched by `@frontity/wp-source` which is the package that connects Frontity to your WordPress site.
 
 Let’s take a look at `frontity.state.source.data` in the console. This is where the information for each URL is stored. If you inspect `/about-us/`, you can see that it’s of type `page`, and that it has the `id` 184. Note also that the `isReady` property is set to 'true'. This means the data is ready for use in our application.
 

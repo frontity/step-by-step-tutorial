@@ -1,14 +1,14 @@
 # Add pagination
 
-> *__[TO DO]__ modify this text to suit new context.*
-
-> *__[TO DO]__ images may need updating.*
+A key feature of any traditional, i.e. PHP-based, WordPress theme is the ability to paginate through the post listing. In this lesson we will look at implementing this feature in Frontity.
 
 Click on the `More posts` link in the menu to navigate to `/page/2` and examine `frontity.state` in the console. You will notice that the data for the page has both `previous` and `next` properties.
 
 <p>
   <img alt="Frontity in the console" src="../assets/part5img1.png" width="700">
 </p>
+
+> _If you do the same for the home path, i.e. '/', you will notice that it doesn't have a `previous` property._
 
 We can use these properties to add pagination to our `<List>` component. We will add a `<PrevNextNav>` component to style two buttons that enable us to page through the lists of posts.
 
@@ -17,16 +17,16 @@ Change `list.js` as follows. Note that we need to pass `actions` into the `<List
 ```jsx
 // File: /packages/my-first-theme/src/components/list.js
 
-import React from "react";
-import { connect, styled } from "frontity";
-import Link from "@frontity/components/link";
+import React from "react"
+import { connect, styled } from "frontity"
+import Link from "@frontity/components/link"
 
 const List = ({ state, actions }) => {
   const data = state.source.get(state.router.link)
 
   return (
     <Items>
-      { data.items.map( item => {
+      {data.items.map((item) => {
         const post = state.source[item.type][item.id]
         return (
           <Link key={item.id} link={post.link}>
@@ -35,20 +35,24 @@ const List = ({ state, actions }) => {
         )
       })}
       <PrevNextNav>
-        {
-          data.previous && <button onClick={ () => {
-            actions.router.set(data.previous)
-          } }>
+        {data.previous && (
+          <button
+            onClick={() => {
+              actions.router.set(data.previous)
+            }}
+          >
             &#171; Prev
           </button>
-        }
-        {
-          data.next && <button onClick={ () => {
-            actions.router.set(data.next)
-          } }>
+        )}
+        {data.next && (
+          <button
+            onClick={() => {
+              actions.router.set(data.next)
+            }}
+          >
             Next &#187;
           </button>
-        }
+        )}
       </PrevNextNav>
     </Items>
   )
@@ -58,15 +62,14 @@ export default connect(List)
 
 const Items = styled.div`
   & > a {
-  display: block;
-  margin: 6px 0;
-  font-size: 1.2em;
-  color: steelblue;
-  text-decoration: none;
+    display: block;
+    margin: 6px 0;
+    font-size: 1.2em;
+    color: steelblue;
+    text-decoration: none;
   }
 `
 const PrevNextNav = styled.div`
-
   padding-top: 1.5em;
 
   & > button {
