@@ -1,6 +1,6 @@
 # Creating a custom theme
 
-We'll start our journey to Frontity mastery by setting Frontity up from the command line. We'll then create a theme package and take our first baby steps in customising our new theme.
+We'll start our journey to Frontity mastery by setting Frontity up from the command line. We'll then create a theme package and take our first baby steps in customising our new theme. 👶
 
 In this first section we will:
 

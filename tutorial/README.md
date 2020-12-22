@@ -36,7 +36,7 @@ An understanding of HTML and CSS is also assumed, as is a familiarity with the c
 
 You will need to have [node.js](https://nodejs.org/) installed on your development machine. You will, of course, also need a web browser and a code editor/IDE.
 
-No previous knowledge or understanding of Frontity is required. This step-by-step tutorial starts with the very basics.
+No previous knowledge or understanding of Frontity is required. This step-by-step tutorial starts you off with the very basics.
 
 ### The project
 
