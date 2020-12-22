@@ -8,3 +8,7 @@ In this first section we will:
 - [Create a Theme Package](./create-a-theme-package.md)
 - [Modify the `<Root>` component](./modify-the-root-component.md)
 - [Connect the `<Root>` component to the state](./connect-the-root-component-to-the-state.md)
+
+{% hint style="info" %}
+☝️ Remember this step-by-step tutorial is progressive and each lesson builds on what was learned before. You should therefore work through the tutorial in the order in which it is presented.
+{% endhint %}
