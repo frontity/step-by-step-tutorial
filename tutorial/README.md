@@ -16,11 +16,11 @@ Meanwhile, if you want an introductory guide to Frontity please follow [this tut
 
 > _**[TO DO]** Remove warning banner above._
 
-Allow us to welcome you to the Frontity step-by-step tutorial. We're thrilled that you're interested in learning Frontity.
+👋 Hi, and a very warm welcome to the Frontity step-by-step tutorial. We're thrilled that you're interested in learning Frontity.
 
-This tutorial is a progressive sequence of lessons that will take you from first steps to mastery.
+The tutorial that you're about to embark on is a progressive sequence of lessons that will take you from first steps to mastery.
 
-It will provide you with a solid foundation in developing websites with Frontity and will prepare you to better understand the rest of the [Frontity documentation](https://docs.frontity.org/).
+Via a practical example project it will provide you with a solid foundation in developing websites with Frontity and give you the knowledge you need to work with Frontity on your own projects. It will also arm you with the concepts and knowledge you need to better understand the rest of the [Frontity documentation](https://docs.frontity.org/).
 
 Since this is a progressive tutorial we recommend that you follow the lessons in sequence, as each lesson builds on what was learned earlier.
 
