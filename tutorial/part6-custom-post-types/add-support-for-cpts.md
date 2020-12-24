@@ -37,6 +37,7 @@ The properties of this object are:
 | `endpoint` | this will usually be the same as `type` unless the `args` array passed to `register_post_type()` specifies something different                                                        |
 | `archive`  | this is needed if you want to list all the posts of that post type, note that the `args` array passed to `register_post_type()` must include `'has_archive' => true` for this to work |
 
+Learn more in [the docs for @frontity/wp-source](https://docs.frontity.org/api-reference-1/wordpress-source#custom-post-types).
 {% endhint %}
 
 Frontity now knows about this CPT and will just work with it. Try it! Enter `localhost:3000/destinations` into your browser's address bar and you should see a listing of our favourite travel destinations. Click on one and it displays using the `<Post>` component.
