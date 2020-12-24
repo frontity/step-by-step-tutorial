@@ -62,7 +62,7 @@ const myFirstTheme = {
 export default myFirstTheme
 ```
 
-Now in the root component we'll add some conditional logic to check the value of `isUrlVisible` and either display the URL or not. Again we have to use the ternary conditional operator here.
+Now in the `<HeaderContent>` component within the `<Root>` component we'll add some conditional logic to check the value of `isUrlVisible` and either display the URL or not. Again we have to use the ternary conditional operator here.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -83,6 +83,18 @@ Now in the root component we'll add some conditional logic to check the value of
 ```
 
 You will find that the URL has disappeared, but if you change the value of `isUrlVisible` in `index.js` to `true` it will reappear. Try it now! _(**note**: you may have to manually refresh the browser)_
+
+```jsx
+// File: /packages/my-first-theme/src/index.js
+
+//...
+  state: {
+    theme: {
+      isUrlVisible: true,
+    },
+  },
+//...
+```
 
 Let's add some buttons that use the `toggleUrl` action we added earlier to change the value of `isUrlVisible` from the front end.
 
@@ -105,6 +117,8 @@ Note that we have to wrap the `button` element and "Current URL" string in enclo
 {% hint style="info" %}
 ☝️ Remember too that we need to pass `actions` to the `Root` component.
 {% endhint %}
+
+Great, now we can show or hide the URL with user actions in the browser.
 
 Finally let's create a styled `<Button>` component and use it in order to improve the appearance.
 
