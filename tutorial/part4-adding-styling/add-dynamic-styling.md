@@ -56,7 +56,15 @@ const Header = styled.header`
 
 Now if we navigate to `Home` the header has a maroon border (as it's a listing page), if we click on one of the posts the post page has a green border, and if we navigate to `About Us`, (which is a page rather than a post) the header has a blue border.
 
-The styling for the border is applied dynamically depending on the type of page that we're on.
+The styling for the border is applied dynamically depending on the type of page that we're on, which is determined by the `isPostType` and `isPage` boolean properties found in the data for the current URL.
+
+<p>
+  <img alt="The 'isPostType' property is true for posts" src="../assets/part4img3.png">
+</p>
+
+<p>
+  <img alt="The 'isPage' property is true for a pages" src="../assets/part4img4.png">
+</p>
 
 Awesome, our site is starting to look pretty good now! 👌
 
@@ -65,9 +73,9 @@ Awesome, our site is starting to look pretty good now! 👌
 </p>
 
 <p>
-  <img alt="Frontity in the browser - post" src="../assets/part4img3.png">
+  <img alt="Frontity in the browser - post" src="../assets/part4img5.png">
 </p>
 
 <p>
-  <img alt="Frontity in the browser - page" src="../assets/part4img4.png">
+  <img alt="Frontity in the browser - page" src="../assets/part4img6.png">
 </p>

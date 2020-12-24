@@ -1,6 +1,6 @@
 # Styling the post info
 
-In this section we'll highlight the author and date info in our `<Post>` component so that they stand out from the rest of the post content.
+In this lesson we'll highlight the author and date info in our `<Post>` component so that they stand out from the rest of the post content.
 
 Import `styled` into `post.js` and create and use a `<PostInfo>` component.
 
