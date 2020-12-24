@@ -40,7 +40,7 @@ Learn more in [the docs for @frontity/wp-source](https://docs.frontity.org/api-r
 
 Frontity now knows about this CPT and will just work with it. Try it! Enter `localhost:3000/destinations` into your browser's address bar and you should see a listing of our favourite travel destinations. Click on one and it displays using the `<Post>` component.
 
-And that's it - that's all we need to do to have our project use WordPress CPTs!
+**And that's it** - that's all we need to do to have our project use WordPress CPTs!
 
 However, in the case of this CPT we don't want to display the author and date information so let's tell our `<Root>` component to use the `<Page>` component instead for this post type.
 
