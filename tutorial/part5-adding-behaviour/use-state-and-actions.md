@@ -115,7 +115,7 @@ const Root = ({ state, actions }) => {
 Note that we have to wrap the `button` element and "Current URL" string in enclosing empty tags `<> ... </>`.
 
 {% hint style="info" %}
-☝️ Remember too that we need to pass `actions` to the `Root` component.
+☝️ Remember too that we need to pass `actions` to the `<Root>` component in order to use the `toggleUrl` function that we defined earlier.
 {% endhint %}
 
 Great, now we can show or hide the URL with user actions in the browser.
