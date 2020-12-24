@@ -50,6 +50,8 @@ If we take a look at the data for one of the CPT URLs we can see that it has a b
   <img alt="Frontity in the console" src="../assets/part6img1.png">
 </p>
 
+So let's extend our `<Switch>` component to tell it to use the `<Page>` component if this value is `true`.
+
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
 
