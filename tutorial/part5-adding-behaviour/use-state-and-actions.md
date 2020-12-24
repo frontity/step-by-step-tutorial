@@ -4,7 +4,7 @@ Now let's learn how we can use `state` and `actions` within our theme to develop
 
 We're going to add the option to show/hide the URL that sits just under our main header. We originally used this to display the value of `state.router.link` when we first connected our `<Root>` component to the state in an [earlier lesson](part1-creating-a-custom-theme/connect-the-root-component-to-the-state.md).
 
-Open `index.js` at the root of our theme and add a new field called `isUrlVisible` in `state.theme`. We'll set its default value to `false`.
+Open `index.js` at the root of our theme and add a new boolean property called `isUrlVisible` in `state.theme`. We'll set its default value to `false`.
 
 ```jsx
 // File: /packages/my-first-theme/src/index.js
@@ -29,7 +29,41 @@ const myFirstTheme = {
 export default myFirstTheme
 ```
 
-Then we'll add an action - this is a function that will toggle the value of `isUrlVisible`. We'll use the state of this variable to determine whether the URL is visible or not.
+Now in the `<HeaderContent>` component within the `<Root>` component we'll add some conditional logic to check the value of `isUrlVisible` and either display the URL or not. Again we have to use the ternary conditional operator here.
+
+```jsx
+// File: /packages/my-first-theme/src/components/index.js
+
+// ...
+<Header isPostType={data.isPostType} isPage={data.isPage}>
+  <HeaderContent>
+    <h1>Hello Frontity</h1>
+    { state.theme.isUrlVisible ? <p>Current URL: {state.router.link}</p> : null }
+    <Menu>
+      // ...
+    </Menu>
+  </HeaderContent>
+</Header>
+<Main>
+  // ...
+</Main>
+```
+
+When you save the file you will find that the URL has disappeared, but if you change the value of `isUrlVisible` in `index.js` to `true` it will reappear. Try it now! _(**note**: you may have to manually refresh the browser)_
+
+```jsx
+// File: /packages/my-first-theme/src/index.js
+
+//...
+  state: {
+    theme: {
+      isUrlVisible: true,
+    },
+  },
+//...
+```
+
+Next we'll add an action - this is a function, which we'll call `toggleUrl`, that will toggle the value of `isUrlVisible` between true and false. The state of the `isUrlVisible` variable will determine whether the URL is visible or not.
 
 {% hint style="info" %}
 **NOTE:** This is the proper way to mutate state. You should never mutate the state directly from your components. You should, instead, create actions to mutate state and call those actions from your components.
@@ -62,41 +96,7 @@ const myFirstTheme = {
 export default myFirstTheme
 ```
 
-Now in the `<HeaderContent>` component within the `<Root>` component we'll add some conditional logic to check the value of `isUrlVisible` and either display the URL or not. Again we have to use the ternary conditional operator here.
-
-```jsx
-// File: /packages/my-first-theme/src/components/index.js
-
-// ...
-<Header isPostType={data.isPostType} isPage={data.isPage}>
-  <HeaderContent>
-    <h1>Hello Frontity</h1>
-    { state.theme.isUrlVisible ? <p>Current URL: {state.router.link}</p> : null }
-    <Menu>
-      // ...
-    </Menu>
-  </HeaderContent>
-</Header>
-<Main>
-  // ...
-</Main>
-```
-
-You will find that the URL has disappeared, but if you change the value of `isUrlVisible` in `index.js` to `true` it will reappear. Try it now! _(**note**: you may have to manually refresh the browser)_
-
-```jsx
-// File: /packages/my-first-theme/src/index.js
-
-//...
-  state: {
-    theme: {
-      isUrlVisible: true,
-    },
-  },
-//...
-```
-
-Let's add some buttons that use the `toggleUrl` action we added earlier to change the value of `isUrlVisible` from the front end.
+Let's add some buttons that use the `toggleUrl` action we just added to change the value of `isUrlVisible` from the front end.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
@@ -120,7 +120,7 @@ Note that we have to wrap the `button` element and "Current URL" string in enclo
 
 Great, now we can show or hide the URL with user actions in the browser.
 
-Finally let's create a styled `<Button>` component and use it in order to improve the appearance.
+Finally let's create a styled `<Button>` component and use it in place of the `<button>` element in order to improve the appearance.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
