@@ -1,8 +1,6 @@
 # Add support for custom post types
 
-As you will already be aware, our example source data is a travel blog. We have implemented a Custom Post Type (CPT) in WordPress for our favourite destinations. This CPT is called... "destinations" - what else?!
-
-The first thing we need to do is to add support for our custom post type in`frontity.settings.js`. We can do this by locating the object for `@frontity/wp-source` in the `packages` array and adding the `postTypes` property to `state.source`.
+In order to use custom post types in our project the first thing we need to do is to add support for our custom post type in `frontity.settings.js`. We can do this by locating the object for `@frontity/wp-source` in the `packages` array and adding the `postTypes` property to `state.source`.
 
 The `postTypes` property takes an array of objects as it's value, with each object in the array defining a distinct post type. We're only defining one post type, namely `destinations`, so we only add one object to the array.
 
@@ -42,7 +40,9 @@ Learn more in [the docs for @frontity/wp-source](https://docs.frontity.org/api-r
 
 Frontity now knows about this CPT and will just work with it. Try it! Enter `localhost:3000/destinations` into your browser's address bar and you should see a listing of our favourite travel destinations. Click on one and it displays using the `<Post>` component.
 
-In the case of this CPT we don't want to display the author and date information so let's tell our `<Root>` component to use the `<Page>` component instead for this post type.
+And that's it - that's all we need to do to have our project use WordPress CPTs!
+
+However, in the case of this CPT we don't want to display the author and date information so let's tell our `<Root>` component to use the `<Page>` component instead for this post type.
 
 If we take a look at the data for one of the CPT URLs we can see that it has a boolean `isDestinations` property that we can utilise for this purpose.
 
