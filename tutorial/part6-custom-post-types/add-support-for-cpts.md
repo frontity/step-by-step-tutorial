@@ -1,6 +1,6 @@
 # Add support for custom post types
 
-In order to use custom post types in our project the first thing we need to do is to add support for our custom post type in `frontity.settings.js`. We can do this by locating the object for `@frontity/wp-source` in the `packages` array and adding the `postTypes` property to `state.source`.
+In order to use custom post types in our project we need to add support for our custom post type in `frontity.settings.js`. We can do this by locating the object for `@frontity/wp-source` in the `packages` array and adding the `postTypes` property to `state.source`.
 
 The `postTypes` property takes an array of objects as it's value, with each object in the array defining a distinct post type. We're only defining one post type, namely `destinations`, so we only add one object to the array.
 
