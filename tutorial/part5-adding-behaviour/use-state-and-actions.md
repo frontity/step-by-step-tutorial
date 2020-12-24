@@ -2,7 +2,7 @@
 
 Now let's learn how we can use `state` and `actions` within our theme to develop a bit of interactivity.
 
-We're going to add the option to show/hide the URL that sits just under our main header. We originally used this to display the value of `state.router.link` when we first connected our `<Root>` component to the state in an [earlier lesson](part1-creating-a-custom-theme/connect-the-root-component-to-the-state.md).
+We're going to add the option to show/hide the URL that sits just under our main heading. We originally used this to display the value of `state.router.link` when we first connected our `<Root>` component to the state in an [earlier lesson](part1-creating-a-custom-theme/connect-the-root-component-to-the-state.md).
 
 Open `index.js` at the root of our theme and add a new boolean property called `isUrlVisible` in `state.theme`. We'll set its default value to `false`.
 
@@ -63,7 +63,9 @@ When you save the file you will find that the URL has disappeared, but if you ch
 //...
 ```
 
-Next we'll add an action - this is a function, which we'll call `toggleUrl`, that will toggle the value of `isUrlVisible` between true and false. The state of the `isUrlVisible` variable will determine whether the URL is visible or not.
+As we've just seen, the state of the `isUrlVisible` variable determines whether the URL is visible or not.
+
+Next we'll add an action - this is a function, which we'll call `toggleUrl`, that will toggle the value of `isUrlVisible` between true and false.
 
 {% hint style="info" %}
 **NOTE:** This is the proper way to mutate state. You should never mutate the state directly from your components. You should, instead, create actions to mutate state and call those actions from your components.
