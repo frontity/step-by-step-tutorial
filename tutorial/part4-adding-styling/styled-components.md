@@ -16,6 +16,7 @@ import { connect, Global, css, styled } from "frontity"
 const Root = ({ state }) => {
   // ...
 }
+export default connect(Root)
 
 const Header = styled.header`
   background-color: #e5edee;
