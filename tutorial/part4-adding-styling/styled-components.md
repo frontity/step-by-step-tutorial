@@ -13,10 +13,18 @@ As a basic example let's start by creating a `<Header>` component in our root co
 import { connect, Global, css, styled } from "frontity"
 // ...
 
+const Root = ({ state }) => {
+  // ...
+}
+
 const Header = styled.header`
   background-color: #e5edee;
 `
 ```
+
+{% hint style="info" %}
+It doesn't really matter whereabouts in the file you add your styled components, but it makes some sense to put the main exported component as the first item in the file, so we suggest that you add this new `<Header>` component below the `<Root>` component.
+{% endhint %}
 
 Once the `<Header>` component has been created let's use it in our `<Root>` component to wrap all the elements that we want contained in the header section of our site.
 
@@ -84,8 +92,6 @@ CSS reset can be [much more elaborate](https://meyerweb.com/eric/tools/css/reset
 
 Let's continue styling our header by adding a border to the bottom, and making the `<h1>` element within it a little less starkly black!
 
-Notice how we can use the LESS/SASS type syntax of including child elements. Although this is not valid CSS, Emotion will nevertheless parse this and apply the styles correctly. It enables us to be more concise in defining the styles for our styled components.
-
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
 
@@ -102,6 +108,10 @@ const Header = styled.header`
   }
 `
 ```
+
+{% hint style="info" %}
+Notice how we can use the LESS/SASS type syntax of including child elements. Although this is not valid CSS, Emotion will nevertheless parse this and apply the styles correctly. It enables us to be more concise in defining the styles for our styled components.
+{% endhint %}
 
 We also want to constrain our page width to 800px. To do that we will need to add a couple of extra components, `<HeaderContent>` and `<Main>`. Let's add these, and we'll also style some elements within Main.
 
