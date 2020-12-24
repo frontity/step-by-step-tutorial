@@ -8,11 +8,17 @@ Click on the `More posts` link in the menu to navigate to `/page/2` and examine 
   <img alt="Frontity in the console" src="../assets/part5img1.png" width="700">
 </p>
 
-> _If you do the same for the home path, i.e. '/', you will notice that it doesn't have a `previous` property._
+{% hint style="info" %}
+_If you do the same for the home path, i.e. '/', you will notice that it doesn't have a `previous` property._
+{% endhint %}
 
 We can use these properties to add pagination to our `<List>` component. We will add a `<PrevNextNav>` component to style two buttons that enable us to page through the lists of posts.
 
-Change `list.js` as follows. Note that we need to pass `actions` into the `<List>` component.
+Change `list.js` as follows. We're adding a `<PrevNextNav>` component which we use within the `<List>` component, and including buttons for the navigation.
+
+{% hint style="info" %}
+Note that we need to pass `actions` into the `<List>` component.
+{% endhint %}
 
 ```jsx
 // File: /packages/my-first-theme/src/components/list.js
