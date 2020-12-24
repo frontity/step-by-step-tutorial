@@ -57,7 +57,7 @@ const Root = ({ state }) => {
 }
 ```
 
-Now our header is contained within a nice light grey background. But notice the rather unsightly white border around it. Let's fix that by applying a basic CSS reset to our `<Global>` component back in our root component file. This will ensure that the styles in the reset apply anywhere in the site.
+Now our header is contained within a nice light grey background. But notice the rather unsightly white border around it. Let's fix that by applying a basic CSS reset to our `<Global>` component. This will ensure that the styles in the reset apply anywhere in the site.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
