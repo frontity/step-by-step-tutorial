@@ -9,7 +9,7 @@ Click on the `More posts` link in the menu to navigate to `/page/2` and examine 
 </p>
 
 {% hint style="info" %}
-_If you do the same for the home path, i.e. '/', you will notice that it doesn't have a `previous` property._
+If you do the same for the home path, i.e. '/', you will notice that it doesn't have a `previous` property.
 {% endhint %}
 
 We can use these properties to add pagination to our `<List>` component. We will add a `<PrevNextNav>` component to style two buttons that enable us to page through the lists of posts.
