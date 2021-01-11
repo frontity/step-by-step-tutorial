@@ -28,11 +28,19 @@ Currently the destination CPT lists posts in the same way as the normal posts. S
 
 #### Create a destination component to display the custom post type differently
 
-> _**TODO**: provide hints and tips and links to the docs_
+The destination CPT currently uses the `<Page>` component to render it's content. Create a new component that displays destinations differently.
 
-#### Show the featured image on the single post page/on the listing page
+{% hint style="info" %}
+**HINT** &mdash; Remember that you will need to change `index.js` to load your new component when `data.isDestinations` is true.
+{% endhint %}
 
-> _**TODO**: provide hints and tips and links to the docs_
+#### Show the featured image
+
+At the moment we're not showing any featured images in our site, so our site lacks some visual interest. Try showing the featured image on the single post page or even on the listing page.
+
+{% hint style="info" %}
+**HINT** &mdash; The post data has a `featured_media` property. This contains the ID of the featured image for that post. You can then retrieve the data pertaining to the image in `state.source.attachment[{id}]`, including the `link` and `source_url` properties.
+{% endhint %}
 
 #### Display the destination listing using the 'regions' custom taxonomy
 
