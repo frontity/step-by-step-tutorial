@@ -42,9 +42,9 @@ At the moment we're not showing any featured images in our site, so our site lac
 **HINT** &mdash; The post data has a `featured_media` property. This contains the ID of the featured image for that post. You can then retrieve the data pertaining to the image in `state.source.attachment[{id}]`, including the `link` and `source_url` properties.
 {% endhint %}
 
-#### 5. Display the destination listing using the 'regions' custom taxonomy
+#### 5. Display the destination listing by region
 
-The destinations CPT has a custom taxonomy called 'regions'. Display the destinations by region using this custom taxonomy. Currently the values available are 'Africa', 'Americas' and 'Europe'
+The destinations CPT has a custom taxonomy called 'regions'. Display the destinations by region using this custom taxonomy. Currently the values available are 'Africa', 'Americas' and 'Europe'.
 
 {% hint style="info" %}
 **HINT** &mdash; You will need to add the configuration for the custom taxonomy to `frontity.settings.js` - see [the documentation here](https://docs.frontity.org/api-reference-1/wordpress-source#state-source-taxonomies). You should then update `list.js`, or at least the part of it that you implemented in 2 above.
