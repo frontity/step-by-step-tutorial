@@ -10,7 +10,7 @@ We'll provide you with an overview of the documentation so you can find your way
 
 In addition we'll tell you about our amazing community forum where you can ask for help, and help others too.
 
-Fontity is open source and free, so we'll also tell you how you can give back by contributing to the Frontity community.
+Frontity is open source and free, so we'll also tell you how you can give back by contributing to the Frontity community.
 
 And finally we'll let you know about our showcases section where you can get inspiration for your future projects. Who knows, maybe one of your projects built with Frontity will be featured there one day!
 
