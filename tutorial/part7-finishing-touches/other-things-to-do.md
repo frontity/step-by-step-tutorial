@@ -10,7 +10,7 @@ You're undoubtedly keen to try out your new Frontity dev skills, so here are som
 ☝️ Remember that you can always ask in the [Frontity community forum](https://community.frontity.org/) if you get stuck whilst working on any of these ideas. You'll find a friendly community of developers who are happy to help out and answer any questions you might have.
 {% endhint %}
 
-#### Show the post excerpt on the listing pages
+#### 1. Show the post excerpt on the listing pages
 
 At the moment the listing pages just show the title of the post as a clickable link. Why not show the excerpt below each post title and style it to suit the rest of the site. How about adding a 'Read more...' link after each excerpt.
 
@@ -18,7 +18,7 @@ At the moment the listing pages just show the title of the post as a clickable l
 **HINT** &mdash; The excerpt can be retrieved from the state in the same way that the post content is. It is available at _`{post}`_`.excerpt.rendered`.
 {% endhint %}
 
-#### Display the destination CPT listing differently from the standard posts
+#### 2. Display the destination CPT listing differently from the standard posts
 
 Currently the destination CPT lists posts in the same way as the normal posts. Since it's a different type of content it would be nice if the listing displayed differently. Bear in mind that this list will always be limited so you don't need the pagination.
 
@@ -26,7 +26,7 @@ Currently the destination CPT lists posts in the same way as the normal posts. S
 **HINT** &mdash; You will need to modify `list.js`. You could check for the truthiness of the `isDestinationsArchive` property and return different content, or differently styled content, if it's true.
 {% endhint %}
 
-#### Create a destination component to display the custom post type differently
+#### 3. Create a destination component to display the custom post type differently
 
 The destination CPT currently uses the `<Page>` component to render it's content. Create a new component that displays destinations differently.
 
@@ -34,7 +34,7 @@ The destination CPT currently uses the `<Page>` component to render it's content
 **HINT** &mdash; Remember that you will need to change `index.js` to load your new component when `data.isDestinations` is true.
 {% endhint %}
 
-#### Show the featured image
+#### 4. Show the featured image
 
 At the moment we're not showing any featured images in our site, so our site lacks some visual interest. Try showing the featured image on the single post page or even on the listing page.
 
@@ -42,6 +42,6 @@ At the moment we're not showing any featured images in our site, so our site lac
 **HINT** &mdash; The post data has a `featured_media` property. This contains the ID of the featured image for that post. You can then retrieve the data pertaining to the image in `state.source.attachment[{id}]`, including the `link` and `source_url` properties.
 {% endhint %}
 
-#### Display the destination listing using the 'regions' custom taxonomy
+#### 5. Display the destination listing using the 'regions' custom taxonomy
 
 > _**TODO**: provide hints and tips and links to the docs_
