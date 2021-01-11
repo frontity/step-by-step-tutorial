@@ -12,10 +12,11 @@ You're undoubtedly keen to try out your new Frontity dev skills, so here are som
 
 #### Show the post excerpt on the listing pages
 
-At the moment the listing pages just show the title of the post as a clickable link. Why not show the excerpt below the post title and style it to suit the rest of the site. How about adding a 'Read more...' link after each excerpt.
+At the moment the listing pages just show the title of the post as a clickable link. Why not show the excerpt below each post title and style it to suit the rest of the site. How about adding a 'Read more...' link after each excerpt.
 
 {% hint style="info" %}
-**HINT** The excerpt can be retrieved from the state in the same way that the post content is. It is available at _`{post}`_`.excerpt.rendered`.
+**HINT**
+The excerpt can be retrieved from the state in the same way that the post content is. It is available at _`{post}`_`.excerpt.rendered`.
 {% endhint %}
 
 #### Display the destination CPT listing differently from the standard posts
@@ -23,7 +24,8 @@ At the moment the listing pages just show the title of the post as a clickable l
 Currently the destination CPT lists posts in the same way as the normal posts. Since it's a different type of content it would be nice if the listing displayed differently. Bear in mind that this list will always be limited so you don't need the pagination.
 
 {% hint style="info" %}
-**HINT** You will need to modify `list.js`. You could check for the truthiness of the `isDestinationsArchive` property and return different content, or differently styled content, if it's true.
+**HINT**
+You will need to modify `list.js`. You could check for the truthiness of the `isDestinationsArchive` property and return different content, or differently styled content, if it's true.
 {% endhint %}
 
 #### Create a destination component to display the custom post type differently
