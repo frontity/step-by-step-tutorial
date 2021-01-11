@@ -16,6 +16,7 @@ At the moment the listing pages just show the title of the post as a clickable l
 
 {% hint style="info" %}
 **HINT**
+
 The excerpt can be retrieved from the state in the same way that the post content is. It is available at _`{post}`_`.excerpt.rendered`.
 {% endhint %}
 
@@ -25,6 +26,7 @@ Currently the destination CPT lists posts in the same way as the normal posts. S
 
 {% hint style="info" %}
 **HINT**
+
 You will need to modify `list.js`. You could check for the truthiness of the `isDestinationsArchive` property and return different content, or differently styled content, if it's true.
 {% endhint %}
 
