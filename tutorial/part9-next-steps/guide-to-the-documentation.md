@@ -2,7 +2,7 @@
 
 There are three parts to the Frontity documentation.
 
-**[tutorial.frontity.org](https://tutorial.frontity.org/)** is the introductory step-by-step tutorial which you've just completed. 🙌
+**[tutorial.frontity.org](https://tutorial.frontity.org/)** is the introductory step-by-step tutorial which you've just completed. Yay! 🙌
 
 **[docs.frontity.org](https://docs.frontity.org/)** is our generic documentation with the Getting Started and other guides, articles introducing core concepts, description of the framework architecture, etc...
 
