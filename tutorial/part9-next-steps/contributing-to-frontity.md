@@ -4,7 +4,7 @@ As you're already aware, Frontity is open source and freely available for everyo
 
 We believe that open source is one of the most powerful ideas of our generation. It allows everyone to do things that otherwise they couldn't. Besides this, we believe that collaboration leads to a better development of technology.
 
-There are many reasons to contribute to open source, one of which is that it will help make you a better developer. Check out our list of good reasons to contribute [here](https://docs.frontity.org/contributing#why-to-contribute).
+There are many reasons to contribute to open source, one of which is that it will help make you a better developer. Check out our list of [good reasons to contribute](https://docs.frontity.org/contributing#why-to-contribute).
 
 ## How you can contribute
 
@@ -12,7 +12,7 @@ You can contribute in many ways:
 
 - contribute code to the Frontity framework
 - testing and bug-fixing
-- create themes/packages and share them on npmjs.com or github
+- create themes/packages and share them on npmjs.com or GitHub
 - improve our docs (including this step-by-step tutorial!)
 - help the community
 - spread the word
@@ -27,15 +27,15 @@ To keep up to date with developments in Frontity and to see what's currently in 
 
 ### Testing and bug-fixing
 
-See the [repo](https://github.com/frontity/frontity) if you want to actively test the codebase or go bug-hunting. If you find a bug in your project development or use of Frontity you can [raise an issue](https://github.com/frontity/frontity/issues) or ask about it in the [community forum](https://community.frontity.org/).
+See the [repo](https://github.com/frontity/frontity) if you want to actively test the codebase or go bug-hunting. If you find a bug in the course of your project development or in your use of Frontity you can [raise an issue](https://github.com/frontity/frontity/issues) or ask about it in the [community forum](https://community.frontity.org/).
 
 ### Create themes and packages
 
-Frontity is designed to be modular in that packages can add new functionality, in the way that plugins do in WordPress, and themes can add a new presentation layer.
+Frontity is designed to be modular in that packages can add new functionality, in much the same way that plugins do in WordPress, and themes can add a new presentation layer.
 
 You've seen during this step-by-step tutorial how a new theme can be built from scratch.
 
-There is already a good variety of themes and packages available on [npmjs.com](https://www.npmjs.com/search?q=frontity). If you are creating your own theme or package you can upload it to npmjs.com and make it available for the benefit of the whole Frontity development community. Plaudits and good karma will surely come your way!
+There is already a good variety of themes and packages available on [npmjs.com](https://www.npmjs.com/search?q=frontity). If you are creating your own theme or package you can upload it to _npmjs.com_ and make it available for the benefit of the whole Frontity development community. Plaudits and good karma will surely come your way!
 
 ### Improve the documentation
 
@@ -59,9 +59,9 @@ You can do this in several ways:
 
 #### Tweeting
 
-The preferred social media platform for developers worldwide. Tweet about things you've built or shared or written (see below) related to Frontity. You could even tweet about a Frontity related article you've read, or a new release or new feature. It all helps to spread the word about Frontity.
+Twitter is the preferred social media platform for developers worldwide. Tweet about things you've built or shared or written (see below) related to Frontity. You could even tweet about a Frontity related article you've read, or a new release or new feature. It all helps to spread the word about Frontity.
 
-Be sure to use the #frontity hashtag or mention @frontity if tweeting about Frontity.
+Be sure to use the _#frontity_ hashtag or mention _@frontity_ if tweeting about Frontity.
 
 #### Blogging
 
@@ -71,7 +71,7 @@ Remember to tweet (see above) about your article.
 
 #### Speaking
 
-Talk about Frontity, a particular technical aspect of working with Frontity, or even your own experience of working with Frontity such as a project you've built or a technical problem you've overcome. Tech conferences (such as [WordCamps](https://central.wordcamp.org/)) and local MeetUp groups are always looking for speakers to talk on interesting topics.
+Talk about Frontity, a particular technical aspect of working with Frontity, or even your own experience of working with Frontity such as a project you've built or a technical problem you've overcome. Tech conferences (such as [WordCamps](https://central.wordcamp.org/)) and local [MeetUp](https://www.meetup.com/) groups are always looking for speakers to talk on interesting topics.
 
 As before remember to tweet about your talk.
 
@@ -81,4 +81,4 @@ Do let us know about any articles you write or talks that you present. We'd love
 
 ## In conclusion
 
-We look forward to your contributions, however you choose to contribute. For more information about ways to contribute see our [How to contribute](https://docs.frontity.org/contributing/how-to-contribute) page.
+We look forward to your contributions, in whichever way you choose to contribute. For more information about ways to contribute see our [How to contribute](https://docs.frontity.org/contributing/how-to-contribute) page.
