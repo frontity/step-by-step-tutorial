@@ -79,6 +79,8 @@ As before remember to tweet about your talk.
 
 Do let us know about any articles you write or talks that you present. We'd love to hear about them and perhaps feature them in our newsletter.
 
+You can share your contributions by opening a new topic in the [Community -> Resources category](https://community.frontity.org/c/community/resources/15) of the forum and mention @Reyes.
+
 ## In conclusion
 
 We look forward to your contributions, in whichever way you choose to contribute. For more information about ways to contribute see our [How to contribute](https://docs.frontity.org/contributing/how-to-contribute) page.
