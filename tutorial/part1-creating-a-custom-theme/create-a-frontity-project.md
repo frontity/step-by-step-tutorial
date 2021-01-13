@@ -21,7 +21,7 @@ When the install process finishes, you will have a new sub-directory called `hel
 </p>
 
 {% hint style="info" %}
-Apart from defining the configurion of our project almost all of our time will be spent working in the `packages` directory.
+Apart from defining the configuration of our project almost all of our time will be spent working in the `packages` directory.
 
 The `node_modules` directory is where all our dependencies are stored. You won't need to modify or open any of the files inside this directory. The `build` folder is where the final deployment build of our project will live.
 
