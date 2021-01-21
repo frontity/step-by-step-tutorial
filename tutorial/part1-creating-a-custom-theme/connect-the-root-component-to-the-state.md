@@ -10,7 +10,7 @@ This also ensures that the component is re-rendered whenever any value from the 
 We'll be covering the Frontity state in detail shortly in the section entitled [Understanding the Frontity state](../part3-displaying-posts/understanding-the-frontity-state.md).
 {% endhint %}
 
-We need to `import { connect } from "frontity"`, pass `state` as a (destructured) prop to our component, and finally export the connected component with `export default connect(Root)`.
+In order to connect our component to the Frontity state we need to `import { connect } from "frontity"`, pass `state` as a (destructured) prop to our component, and finally export the connected component with `export default connect(Root)`.
 
 We can check that our `<Root>` component is connected to the state by adding a `<p>` element to our component to display the URL we are currently in. We can do this by using `state.router.link`.
 
