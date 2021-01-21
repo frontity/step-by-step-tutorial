@@ -23,7 +23,7 @@ When the install process finishes, you will have a new sub-directory called `hel
 {% hint style="info" %}
 Apart from defining the configuration of our project almost all of our time will be spent working in the `packages` directory.
 
-The `node_modules` directory is where all our dependencies are stored. You won't need to modify or open any of the files inside this directory. The `build` folder is where the final deployment build of our project will live.
+The `node_modules` directory is where all our dependencies are stored. You won't need to modify or open any of the files inside this directory. The `build` directory is where the final deployment build of our project will live.
 
 Other files such as `package.json` and `package-lock.json` are project configuration files and you shouldn't have any need to touch them either.
 {% endhint %}
@@ -37,7 +37,7 @@ Another package in the array is `@frontity/wp-source`. This has a property: `sta
 
 // ...
 {
-  name: "@frontity/wp-source",
+  name: "@frontity/wp-source",dir
   state: {
     source: {
       url: "https://test.frontity.org",
