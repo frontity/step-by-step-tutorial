@@ -2,7 +2,7 @@
 
 At the moment we have a list of clickable post links, but when we click them we simply see the text "This is a post". However you will notice that the URL is changing. This then is a good place to display the content of each post.
 
-Let's create a new file called `post.js` inside the `components` folder. This will contain the `<Post>` component which we will use to display the title and the content of the posts.
+Let's create a new file called `post.js` inside the `components` directory. This will contain the `<Post>` component which we will use to display the title and the content of the posts.
 
 Note the use of the two step data retrieval process in this code. We first use `state.source.get`, the helper function, to get the relevant item from `state.source.data`, and then we use the `data.type` property to determine where in the state we should fetch the item from, i.e. whether it's a post or a page.
 

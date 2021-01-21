@@ -2,7 +2,7 @@
 
 And now we come to a nice easy step. All we need to do here is create a component to inform the user that the page can't be found and then use it in our `<Root>` component.
 
-First create a new file in the `components` folder. Call it `error.js` and put this code in the file:
+First create a new file in the `components` directory. Call it `error.js` and put this code in the file:
 
 ```jsx
 // File: /packages/my-first-theme/src/components/error.js

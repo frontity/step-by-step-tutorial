@@ -2,7 +2,7 @@
 
 In the last lesson we saw that when we got the data for the homepage with `frontity.state.source.get('/')` that there was an array of `items` which were the posts to display on the homepage. Let's now use that array to display some basic information about each of the posts in our browser.
 
-In order to display the list of posts, let's create a new file in the `components` folder and call it `list.js`.
+In order to display the list of posts, let's create a new file in the `components` directory and call it `list.js`.
 
 This will contain a component called `<List>` which will first get the data for the current URL (remember that this is stored in `state.router.link`) using the `get` helper function. It will then use JavaScript's [`array.map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) method to iterate over the `items` array and display the `type`, `id` and `link` of each post.
 

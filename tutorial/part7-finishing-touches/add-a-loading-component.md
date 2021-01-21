@@ -12,17 +12,17 @@ Also don't forget to reload the home page so that the state is cleared and refre
 
 Whenever there's a delay such as occurs while data is being fetched it's a good idea to indicate to the user that something is actually happening, so let's add a `<Loading>` component.
 
-Create a new file in the `components` folder and call it `loading.js`. Add the following code:
+Create a new file in the `components` directory and call it `loading.js`. Add the following code:
 
 ```jsx
 // File: /packages/my-first-theme/src/components/loading.js
 
-import React from "react";
-import { styled, keyframes } from "frontity";
+import React from "react"
+import { styled, keyframes } from "frontity"
 
 const Loading = () => <Spinner />
 
-export default Loading;
+export default Loading
 
 const spin = keyframes`
   0% { transform: rotate(0deg); }

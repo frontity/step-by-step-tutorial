@@ -10,7 +10,7 @@ We can create a production version of our project by running the following comma
 > npx frontity build
 ```
 
-This command will generate a `build` folder containing both your (isomorphic) React app and your Frontity (Node.js) server. You can then run the following command to serve the site from your local Node.js installation:
+This command will generate a `build` directory containing both your (isomorphic) React app and your Frontity (Node.js) server. You can then run the following command to serve the site from your local Node.js installation:
 
 ```bash
 > npx frontity serve
@@ -18,6 +18,6 @@ This command will generate a `build` folder containing both your (isomorphic) Re
 
 The site can then be visited from the browser using the address that the output from the command tells you it is listening on - this is likely to be http://localhost:3000.
 
-The `build` folder can be deployed to any hosting that provides Node.js and can serve a Node.js app in order to make thse site publicly available.
+The `build` directory can be deployed to any hosting that provides Node.js and can serve a Node.js app in order to make thse site publicly available.
 
 In the next section we will look at deploying our site to one particular hosting service, namely Vercel.
