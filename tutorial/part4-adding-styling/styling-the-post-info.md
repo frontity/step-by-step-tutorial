@@ -9,6 +9,7 @@ Import `styled` into `post.js` and create and use a `<PostInfo>` component.
 
 import React from "react"
 import { connect, styled } from "frontity"
+import dayjs from "dayjs"
 
 const Post = ({ state }) => {
   const data = state.source.get(state.router.link)
