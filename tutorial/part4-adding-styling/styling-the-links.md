@@ -31,8 +31,8 @@ Now we can replace the `nav` element in our `Root` component with the new `Menu`
     <h1>Frontity Workshop</h1>
     <p>Current URL: {state.router.link}</p>
     <Menu>
-      <Link href="/">Home</Link>
-      <Link href="/page/2">More posts</Link>
+      <Link link="/">Home</Link>
+      <Link link="/page/2">More posts</Link>
       <Link link="/about-us">About Us</Link>
     </Menu>
   </HeaderContent>
@@ -65,7 +65,7 @@ const List = ({ state }) => {
       {data.items.map((item) => {
         const post = state.source.post[item.id]
         return (
-          <Link href={post.link} key={post.id}>
+          <Link link={post.link} key={post.id}>
             {post.title.rendered}
           </Link>
         )
