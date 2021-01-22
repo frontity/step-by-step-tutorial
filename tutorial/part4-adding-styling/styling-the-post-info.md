@@ -15,13 +15,15 @@ const Post = ({ state }) => {
   const post = state.source[data.type][data.id]
   const author = state.source.author[post.author]
 
+  const formattedDate = dayjs(post.date).format("DD MMMM YYYY")
+
   return (
     <div>
       <h2>{post.title.rendered}</h2>
       <PostInfo>
         <p>
           <strong>Posted: </strong>
-          {post.date}
+          {formattedDate}
         </p>
         <p>
           <strong>Author: </strong>
