@@ -80,8 +80,8 @@ If you get stuck at any point you can compare your code at the relevant stage to
 
 The changes made in this step are [here](https://github.com/frontity-demos/tutorial-hello-frontity/commit/7733a6c3d9886cf4a86397e8ba1a668fcd3cb928).
 
-> Lines with a red background marked with a minus sign [-] are removed at that step.
+> Lines with a <span style="color:red">red background</span> marked with a minus sign [-] are removed at that step.
 
-> Lines with a green background marked with a plus sign [+] are added at that step.
+> Lines with a <span style="color:red">green background</span> marked with a plus sign [+] are added at that step.
 
 {% endhint %}
