@@ -31,7 +31,7 @@ You will recall that during the tutorial we created separate `<Post>` and `<Page
 Refactor that part of the project to dispense with the `<Page>` component, and so that the `<Post>` component handles both posts and pages.
 
 {% hint style="info" %}
-**HINT** &mdash; The `<Post>` component should conditionally check the `isPost` property and displays the posted date and author information only if it is true. If it is not true but `isPage` is true then this additional information should not be displayed.
+**HINT** &mdash; The `<Post>` component should conditionally check the `isPost` property and display the posted date and author information only if it is true. If it is not true but `isPage` is true then this additional information should not be displayed.
 
 You will also need to modify the `<Switch>` in the root component as the `<Page>` component will no longer exist.
 {% endhint %}
