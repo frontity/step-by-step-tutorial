@@ -70,3 +70,9 @@ export default myFirstTheme
 ```
 
 Save both files and make a quick check to see that everything is still working in the browser.
+
+{% hint style="info" %}
+**Check you're on the right track**
+
+Compare your changes [with these](https://github.com/frontity-demos/tutorial-hello-frontity/commit/7ba7b0879bb02240c6bf627a4f15c50ba249726b).
+{% endhint %}

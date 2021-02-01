@@ -70,3 +70,13 @@ If you see this in your browser then everything is working. Hooray! 🙌
 <p>
   <img alt="Frontity in the browser" src="../assets/part1img4.png">
 </p>
+
+{% hint style="info" %}
+**Check you're on the right track**
+
+For each step in this tutorial we have created a commit in [this repo](https://github.com/frontity-demos/tutorial-hello-frontity/commits/main).
+
+If you get stuck at any point you can compare your code at the relevant stage to the commits in the repo.
+
+The changes made in this step are [here](https://github.com/frontity-demos/tutorial-hello-frontity/commit/7733a6c3d9886cf4a86397e8ba1a668fcd3cb928).
+{% endhint %}
