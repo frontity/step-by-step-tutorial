@@ -24,7 +24,7 @@ Currently the destination CPT lists posts in the same way as the normal posts. S
 **HINT** &mdash; You will need to modify `list.js`. You could check for the truthiness of the `isDestinationsArchive` property and return different content, or differently styled content, if it's true.
 {% endhint %}
 
-### 3. Use a single component for both posts and pages
+#### 3. Use a single component for both posts and pages
 
 You will recall that during the tutorial we created separate `<Post>` and `<Page>` components in separate `post.js` and `page.js` files so that posts and pages can be displayed differently. This was useful for learning purposes, but is not optimal. A single component can handle both cases.
 
