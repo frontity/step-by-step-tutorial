@@ -54,3 +54,7 @@ const Root = ({ state }) => {
 Note that for now we are using the `<Post>` component whether `data.isPost` or `data.isPage` is true - so this component will be used whether you click on a post link or on the 'About Us' link in the menu.
 
 Now we can see the post title and the content. 🙌
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/a054b5acaaf1b0d23e2f5742e54c1072f07916f5).
+{% endhint %}

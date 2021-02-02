@@ -120,3 +120,7 @@ const Root = ({ state }) => {
 ```
 
 Since we don't yet have any links to any posts the second condition will never be satisfied, so we won't ever see the text "This is a post" come up. Let's go on to address that.
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/08388ad9bbd6213ae921909ebfc030bd563458eb).
+{% endhint %}

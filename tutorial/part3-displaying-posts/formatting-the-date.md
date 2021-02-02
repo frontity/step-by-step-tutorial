@@ -91,3 +91,7 @@ Our date is now formatted in a much more pleasing way.
 <p>
   <img alt="Frontity in the browser" src="../assets/part3img16.png">
 </p>
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/e43cb65d00fe8c3e56a7d1271c3b94f0a655210b).
+{% endhint %}

@@ -108,3 +108,7 @@ Now as you navigate around the site and view posts and pages a different compone
 <p>
   <img alt="Frontity in the browser" src="../assets/part3img13.png" width="565" height="161">
 </p>
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/cfcb5aa1e18d30cf4d2250bb262569a571ee7217).
+{% endhint %}

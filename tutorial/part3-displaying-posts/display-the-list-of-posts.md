@@ -35,6 +35,11 @@ const List = ({ state }) => {
 export default connect(List)
 ```
 
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes so far with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/749af7e2ba7cdb0da9d61e6865332be0c971bfb8).
+{% endhint %}
+
+
 Next we need to import the `<List>` component into our root component file and use it.
 
 ```jsx
@@ -146,3 +151,7 @@ And if we click a link we can finally see the text "This is a post".
 </p>
 
 However, what we really want to see is the post content. Let's do that next.
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/92457d024ad6307669c410e71d0ca90f55f1ff0c).
+{% endhint %}

@@ -59,3 +59,7 @@ When you save the file the browser should update and the menu will now be visibl
 {% hint style="info" %}
 Here we've used the `<Link>` component in the simplest possible way. To learn more about what you can do with the `<Link>` component, including pre-fetching strategies to make your site more responsive, [see this page](https://docs.frontity.org/api-reference-1/frontity-components#link) in our documentation.
 {% endhint %}
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/b39ec137650bc32b9b08d2dd2832599acc3841e3).
+{% endhint %}
