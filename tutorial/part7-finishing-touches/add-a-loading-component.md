@@ -72,6 +72,11 @@ Now as we transition between pages our loading spinner is displayed whenever dat
   <img alt="Frontity in the browser" src="../assets/part7img1.png" width="800">
 </p>
 
+<video width="320" height="240" autoplay loop>
+  <source src="../assets/loader.mov" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 {% hint style="info" %}
 By the way, our loader was based on [the one described here](https://www.w3schools.com/howto/howto_css_loader.asp).
 {% endhint %}
