@@ -78,10 +78,10 @@ For each step in this tutorial we have created a commit in [this repo](https://g
 
 If you get stuck at any point you can compare your code at the relevant stage to the commits in the repo.
 
+> Lines with a 🔴 red background marked with a minus sign ➖ are removed at that step.
+
+> Lines with a 🟢 green background marked with a plus sign ➕ are added at that step.
+
 The changes made in this step are [here](https://github.com/frontity-demos/tutorial-hello-frontity/commit/7733a6c3d9886cf4a86397e8ba1a668fcd3cb928).
-
-> Lines with a red background marked with a minus sign [-] are removed at that step.
-
-> Lines with a green background marked with a plus sign [+] are added at that step.
 
 {% endhint %}
