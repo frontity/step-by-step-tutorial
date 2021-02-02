@@ -79,3 +79,7 @@ Awesome, our site is starting to look pretty good now! 👌
 <p>
   <img alt="Frontity in the browser - page" src="../assets/part4img6.png">
 </p>
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/a1a31f9bc77e97d1b02e3bbfb3fcd4330bb85e96).
+{% endhint %}

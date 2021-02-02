@@ -209,3 +209,7 @@ const Root = ({ state, actions }) => {
 Have a browse around the content and notice how the styles are being applied.
 
 Our layout is looking quite pleasing now, but the links in our menu and on our listing pages could do with being spruced up a bit. We'll address this in our next section.
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/f60108be7953ec63ce8fe16b7c2c4da922f12978).
+{% endhint %}

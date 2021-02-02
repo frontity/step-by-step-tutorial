@@ -121,3 +121,8 @@ const Root = ({ state, actions }) => {
     // ...
 };
 ```
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/b6b2374a787c728a80acbc4c72052d0284ce1834).
+{% endhint %}
+å

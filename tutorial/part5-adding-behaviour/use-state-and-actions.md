@@ -150,3 +150,8 @@ const Button = styled.button`
   }
 `
 ```
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/ca3eab93896b8eba9d00620e3c53c60db5e8b595).
+{% endhint %}
+å

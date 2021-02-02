@@ -86,3 +86,7 @@ const Items = styled.div`
 ```
 
 Great, things are starting to look pretty good! 🎉
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/0f8ed3e17c0daaf151935bdf72ad04cbc6be9bd6).
+{% endhint %}

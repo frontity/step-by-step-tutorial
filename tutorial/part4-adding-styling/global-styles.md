@@ -39,3 +39,7 @@ The `css` function takes as it's argument a [tagged template literal](https://we
 When you save the file you should notice that the fonts on your site have now changed automatically to be sans-serif.
 
 Next we'll look at the power and flexibility that styled components give us.
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/6ae98d9e25dbb706b9dff447955a3379ed1d17d0).
+{% endhint %}

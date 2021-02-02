@@ -62,3 +62,7 @@ For reference, this is what your site should be looking like now:
 <p>
   <img alt="Frontity in the browser - post" src="../assets/part4img2.png">
 </p>
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/efa2d467cc7b89a949b3102f340f52bfa8a21362).
+{% endhint %}
