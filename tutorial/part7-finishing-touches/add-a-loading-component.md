@@ -72,8 +72,8 @@ Now as we transition between pages our loading spinner is displayed whenever dat
   <img alt="Frontity in the browser" src="../assets/part7img1.png" width="800">
 </p>
 
-<video width="320" height="240" autoplay loop>
-  <source src="../assets/loader.mov" type="video/mp4" />
+<video autoplay loop>
+  <source src="../assets/loader.mov" />
   Your browser does not support the video tag.
 </video>
 
