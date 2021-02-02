@@ -69,10 +69,6 @@ import Loading from "./loading"
 Now as we transition between pages our loading spinner is displayed whenever data is being fetched in the background. Sweet! 👌
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part7img1.png" width="800">
-</p>
-
-<p>
   <img alt="Frontity in the browser" src="../assets/loader.gif">
 </p>
 
