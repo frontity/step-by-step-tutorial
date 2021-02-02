@@ -47,21 +47,22 @@ Note that the `<Loading>` component doesn't need to access the state so we don't
 
 Now we need to display it. Let's add it as the first item in the `<Switch>` component that's within our `<Root>` component. Remember that we also need to import the component.
 
-```jsx
+```js
 // File: /packages/my-first-theme/src/components/index.js
+
+// ...
 import Loading from "./loading"
 
 // ...
-;<Main>
-  <Switch>
-    <Loading when={data.isFetching} />
-    <List when={data.isArchive} />
-    <Page when={data.isPage} />
-    <Post when={data.isPost} />
-    <Page when={data.isDestinations} />
-  </Switch>
-</Main>
-
+  <Main>
+    <Switch>
+      <Loading when={data.isFetching} />
+      <List when={data.isArchive} />
+      <Page when={data.isPage} />
+      <Post when={data.isPost} />
+      <Page when={data.isDestinations} />
+    </Switch>
+  </Main>
 // ...
 ```
 
