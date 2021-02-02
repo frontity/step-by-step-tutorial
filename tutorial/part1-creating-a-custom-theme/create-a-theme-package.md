@@ -82,6 +82,6 @@ If you get stuck at any point you can compare your code at the relevant stage to
 
 > Lines with a 🟢 green background marked with a plus sign ➕ are added at that step.
 
-The changes made in this step are [here](https://github.com/frontity-demos/tutorial-hello-frontity/commit/7733a6c3d9886cf4a86397e8ba1a668fcd3cb928).
+The changes made in this step [can be seen here](https://github.com/frontity-demos/tutorial-hello-frontity/commit/7733a6c3d9886cf4a86397e8ba1a668fcd3cb928).
 
 {% endhint %}
