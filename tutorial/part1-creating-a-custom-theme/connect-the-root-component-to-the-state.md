@@ -44,9 +44,6 @@ You can try changing the URL in the browser's address bar to something like http
   <img alt="Frontity in the browser" src="../assets/part1img6.png">
 </p>
 
-{% hint style="info" %}
-**🧐 Check you're on the right track**
-
-Compare the changes you made in this lesson [with these](https://github.com/frontity-demos/tutorial-hello-frontity/commit/eebb495ba16ede2d310bc838396aca662df5f3bc).
-
+{% hint style="success" %}
+**🧐 Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/eebb495ba16ede2d310bc838396aca662df5f3bc).
 {% endhint %}

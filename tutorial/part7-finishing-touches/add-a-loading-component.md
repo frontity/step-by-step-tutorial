@@ -45,13 +45,14 @@ Here we're passing in the animation frames that we want, and assigning it to a v
 
 Note that the `<Loading>` component doesn't need to access the state so we don't need to pass it to the `connect` higher order component when we export it.
 
-Now we need to display it. Let's add it as the first item in the `<Switch>` component that's within our `<Root>` component.
+Now we need to display it. Let's add it as the first item in the `<Switch>` component that's within our `<Root>` component. Remember that we also need to import the component.
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
+import Loading from "./loading"
 
 // ...
-<Main>
+;<Main>
   <Switch>
     <Loading when={data.isFetching} />
     <List when={data.isArchive} />
