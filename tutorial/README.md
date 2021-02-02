@@ -1,4 +1,4 @@
-# Frontity step-by-step tutorial
+# Learn Frontity step-by-step
 
 ## Welcome to the Frontity step-by-step tutorial
 
