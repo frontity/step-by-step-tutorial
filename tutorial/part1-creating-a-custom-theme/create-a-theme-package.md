@@ -74,9 +74,9 @@ If you see this in your browser then everything is working. Hooray! 🙌
 {% hint style="success" %}
 **Check you're on the right track**
 
-For each step in this tutorial we have created a commit in [this repo](https://github.com/frontity-demos/tutorial-hello-frontity/commits/main).
+For each step in this tutorial we have created a commit in [this repo](https://github.com/frontity-demos/tutorial-hello-frontity).
 
-If you get stuck at any point you can compare your code at the relevant stage to the commits in the repo.
+If you get stuck at any point you can compare your code at the relevant stage to [the commits in the repo](https://github.com/frontity-demos/tutorial-hello-frontity/commits/main).
 
 > Lines with a 🔴 red background marked with a minus sign ➖ are removed at that step.
 
