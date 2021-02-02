@@ -80,5 +80,5 @@ Save both files and make a quick check to see that everything is still working i
 {% hint style="info" %}
 **🧐 Check you're on the right track**
 
-Compare your changes [with these](https://github.com/frontity-demos/tutorial-hello-frontity/commit/88e834628e3e4a66676425b45314f98e0046c3c2).
+Compare your changes so far [with these](https://github.com/frontity-demos/tutorial-hello-frontity/commit/88e834628e3e4a66676425b45314f98e0046c3c2).
 {% endhint %}

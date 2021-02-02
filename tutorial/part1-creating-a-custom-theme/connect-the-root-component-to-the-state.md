@@ -47,6 +47,6 @@ You can try changing the URL in the browser's address bar to something like http
 {% hint style="info" %}
 **🧐 Check you're on the right track**
 
-Compare your changes [with these](https://github.com/frontity-demos/tutorial-hello-frontity/commit/eebb495ba16ede2d310bc838396aca662df5f3bc).
+Compare the changes you made in this lesson [with these](https://github.com/frontity-demos/tutorial-hello-frontity/commit/eebb495ba16ede2d310bc838396aca662df5f3bc).
 
 {% endhint %}
