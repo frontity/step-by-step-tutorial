@@ -74,7 +74,7 @@ Now as we transition between pages our loading spinner is displayed whenever dat
 
 <video autoplay loop>
   <source src="../assets/loader.mov" />
-  Your browser does not support the video tag.
+  Your browser does not support the video tag!
 </video>
 
 {% hint style="info" %}
