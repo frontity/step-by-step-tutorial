@@ -43,3 +43,10 @@ You can try changing the URL in the browser's address bar to something like http
 <p>
   <img alt="Frontity in the browser" src="../assets/part1img6.png">
 </p>
+
+{% hint style="info" %}
+**🧐 Check you're on the right track**
+
+Compare your changes [with these](https://github.com/frontity-demos/tutorial-hello-frontity/commit/eebb495ba16ede2d310bc838396aca662df5f3bc).
+
+{% endhint %}
