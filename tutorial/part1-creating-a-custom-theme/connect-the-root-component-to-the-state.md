@@ -45,5 +45,5 @@ You can try changing the URL in the browser's address bar to something like http
 </p>
 
 {% hint style="success" %}
-**🧐 Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/eebb495ba16ede2d310bc838396aca662df5f3bc).
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/eebb495ba16ede2d310bc838396aca662df5f3bc).
 {% endhint %}

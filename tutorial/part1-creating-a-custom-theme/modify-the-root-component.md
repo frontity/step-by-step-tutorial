@@ -23,7 +23,7 @@ Webpack watches for changes in the `/packages` directory and refreshes the brows
 {% endhint %}
 
 {% hint style="success" %}
-**🧐 Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/7ba7b0879bb02240c6bf627a4f15c50ba249726b).
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/7ba7b0879bb02240c6bf627a4f15c50ba249726b).
 {% endhint %}
 
 It would be convenient, and make our codebase cleaner and more logical, and hence our future development much easier, if all our React components were placed together in a single directory. So, let's move the `<Root>` component into its own file which we'll put in a separate directory.
@@ -76,5 +76,5 @@ export default myFirstTheme
 Save both files and make a quick check to see that everything is still working in the browser.
 
 {% hint style="success" %}
-**🧐 Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/88e834628e3e4a66676425b45314f98e0046c3c2).
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/88e834628e3e4a66676425b45314f98e0046c3c2).
 {% endhint %}
