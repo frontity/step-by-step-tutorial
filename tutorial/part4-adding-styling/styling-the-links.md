@@ -1,5 +1,7 @@
 # Styling the links
 
+In this lesson we're going to style all the links in our site. We have links in the header menu and on the post listing pages.
+
 First let's turn our attention to the header section and style the menu. We'll make our links a consistent colour and remove the underlines so that it looks a bit cleaner. To do this we'll add a `Menu` component which will be a styled `<nav>` element.
 
 It's useful to know that the `<Link>` component returns an `<a>` element. Knowing this we can apply styles to any `<a>` elements inside our styled `<nav>` element.
