@@ -75,3 +75,7 @@ Now if you check in your browser devtools you'll see the title and meta descript
 </p>
 
 Why not try the same exercise for `page.js` and then test the results using the `About Us` page.
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/c40da42a1d3efd72eaae18ac2c4245d780b297df).
+{% endhint %}

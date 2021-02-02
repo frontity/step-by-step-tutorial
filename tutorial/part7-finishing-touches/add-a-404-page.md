@@ -51,3 +51,7 @@ And that's it! As we said earlier, this was a nice easy step. Now if you try nav
 <p>
   <img alt="Frontity in the browser" src="../assets/part7img2.png" width="400">
 </p>
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/34e875c1baa77881b1430511eec8096b3a394bbf).
+{% endhint %}

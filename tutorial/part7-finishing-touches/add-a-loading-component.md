@@ -75,3 +75,7 @@ Now as we transition between pages our loading spinner is displayed whenever dat
 {% hint style="info" %}
 By the way, our loader was based on [the one described here](https://www.w3schools.com/howto/howto_css_loader.asp).
 {% endhint %}
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/dd7463b3b3d79c23cba7a1763d5fb23af64936fd).
+{% endhint %}

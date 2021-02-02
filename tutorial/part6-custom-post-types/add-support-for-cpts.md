@@ -82,3 +82,7 @@ To finish off let's make this accessible from our menu.
 
 // ...
 ```
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/a9b130e010a5d08859aa7e76e431c4e3dde977f4).
+{% endhint %}
