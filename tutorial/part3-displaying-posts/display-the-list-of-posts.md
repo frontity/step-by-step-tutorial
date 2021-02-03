@@ -35,11 +35,6 @@ const List = ({ state }) => {
 export default connect(List)
 ```
 
-{% hint style="success" %}
-**Check you're on the right track** by comparing your changes so far with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/749af7e2ba7cdb0da9d61e6865332be0c971bfb8).
-{% endhint %}
-
-
 Next we need to import the `<List>` component into our root component file and use it.
 
 ```jsx
@@ -71,6 +66,10 @@ Great! Now we can see some information about each of the posts on the `Home` pag
 <p>
   <img alt="Frontity in the browser" src="../assets/part3img6.png">
 </p>
+
+{% hint style="success" %}
+**Check you're on the right track** by comparing your changes so far with [the ones in this commit](https://github.com/frontity-demos/tutorial-hello-frontity/commit/749af7e2ba7cdb0da9d61e6865332be0c971bfb8).
+{% endhint %}
 
 Now let's change the `<List>` component to get the information about each of the posts and show the title and turn it into a link.
 
