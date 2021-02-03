@@ -103,7 +103,7 @@ You might think that since they're all of type `post` that we could instead use:
 state.source.post[item.id]
 ```
 
-And you'd be right, that would also work. However it's good practice to use the `type` property stored in the data rather than hard code the type. In this case all the items are indeed of type `post`, but that's not necessarily always the case - sometimes we'll work with pages, or attachment images, or authors, etc...
+And you'd be right, that would also work. However it's good practice to use the `type` property stored in the data rather than hard code the type. In this case all the items are indeed of type `post`, but that's not necessarily always the case - sometimes we'll work with pages, or attachment images, or even custom post types, etc...
 
 So here's what our `list.js` file is going to look like:
 
