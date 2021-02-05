@@ -44,7 +44,17 @@ The destination CPT currently uses the `<Page>` component to render it's content
 **HINT** &mdash; Remember that you will need to change `index.js` to load your new component when `data.isDestinations` is true.
 {% endhint %}
 
-#### 5. Show the featured image
+#### 5. Put the `<Header>` in it's own component
+
+The `<Header>` component is currently part of the main `<Root>` component in `index.js`. This makes the `index.js` file rather long.
+
+Separate the `<Header>` component into it's own file along with the related CSS-in-JS styling.
+
+{% hint style="info" %}
+**HINT** &mdash; Remember that you will need to import the `<Header>` component into `index.js`. As the header contains data from the state and action methods you will also need to connect your new component with the `connect` HOC.
+{% endhint %}
+
+#### 6. Show the featured image
 
 At the moment we're not showing any featured images in our site, so our site lacks some visual interest. Try showing the featured image on the single post page or even on the listing page.
 
@@ -52,7 +62,7 @@ At the moment we're not showing any featured images in our site, so our site lac
 **HINT** &mdash; The post data has a `featured_media` property. This contains the ID of the featured image for that post. You can then retrieve the data pertaining to the image in `state.source.attachment[{id}]`, including the `link` and `source_url` properties.
 {% endhint %}
 
-#### 6. Display the destination listing by region
+#### 7. Display the destination listing by region
 
 The destinations CPT has a custom taxonomy called 'regions'. Display the destinations by region using this custom taxonomy. Currently the values available are 'Africa', 'Americas' and 'Europe'.
 
