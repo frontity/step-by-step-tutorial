@@ -57,7 +57,7 @@ So far we've added all our styled components to the `index.js` file for use in t
 
 import React from "react"
 import { connect, styled } from "frontity"
-import Link from "./link"
+import Link from "@frontity/components/link"
 
 const List = ({ state }) => {
   const data = state.source.get(state.router.link)
