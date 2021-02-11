@@ -37,24 +37,22 @@ Now, for our `<Post>` component in `post.js` let's pass `libraries` in as a prop
 
 // ...
 const Post = ({ state, libraries }) => {
-
   // ...
-  const Html2React = libraries.html2react.Component;
+  const Html2React = libraries.html2react.Component
   // ...
-
 }
 ```
 
 Finally, replace this:
 
 ```jsx
-  <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+<div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
 ```
 
 with this:
 
 ```jsx
-  <Html2React html={post.content.rendered} />
+<Html2React html={post.content.rendered} />
 ```
 
 And now the internal links in our posts will update from the state and not force an HTTP request and hence a page reload.
@@ -64,26 +62,24 @@ You should also do the same for the `<Page>` component in `page.js`, which shoul
 ```jsx
 // File: /packages/my-first-theme/src/components/page.js
 
-import React from "react";
-import { connect } from "frontity";
+import React from "react"
+import { connect } from "frontity"
 
 const Page = ({ state, libraries }) => {
+  const data = state.source.get(state.router.link)
+  const page = state.source[data.type][data.id]
 
-  const data = state.source.get(state.router.link);
-  const post = state.source[data.type][data.id];
-
-  const Html2React = libraries.html2react.Component;
+  const Html2React = libraries.html2react.Component
 
   return (
     <div>
-      <h2>{post.title.rendered}</h2>
-      <Html2React html={post.content.rendered} />
+      <h2>{page.title.rendered}</h2>
+      <Html2React html={page.content.rendered} />
     </div>
-  );
+  )
+}
 
-};
-
-export default connect(Page);
+export default connect(Page)
 ```
 
 And now the links on the _"About Us"_ page should work as expected as well.
