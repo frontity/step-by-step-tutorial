@@ -12,7 +12,7 @@ Check the file `frontity.settings.js`. You should find that `"@frontity/html2rea
 
 First we need to import the link processor into our `<Root>` component, and also add it to the array of `html2react` processors on the `libraries` object.
 
-Add this to the root level `index.js` file..
+Add this to the root level `index.js` file.
 
 ```jsx
 // File: /packages/my-first-theme/src/index.js
