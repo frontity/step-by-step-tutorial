@@ -8,7 +8,7 @@ The tutorial that you're about to embark on is a progressive sequence of lessons
 
 Via a practical example project it will provide you with a solid foundation in developing websites with Frontity and give you the knowledge you need to work with Frontity on your own projects. It will also arm you with the concepts and knowledge you need to better understand the rest of the [Frontity documentation](https://docs.frontity.org/).
 
-Since this is a progressive tutorial we recommend that you follow the lessons in sequence, as each lesson builds on what was learned earlier.
+Since this is a progressive tutorial we recommend that you follow the lessons in sequence, as each lesson builds on what was learned earlier..
 
 ### Prerequisites
 
