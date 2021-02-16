@@ -10,6 +10,10 @@ To create a package run the following command in the terminal:
 > npx frontity create-package my-first-theme
 ```
 
+{% hint style="info" %}
+The command above will not work with the latest npm version 7. Please make sure to use npm 6.
+{% endhint %}
+
 You will be prompted to specify the namespace to use. Since you are creating a theme you can use the default `theme`, so you can just press _Enter_ at this point.
 
 <p>
