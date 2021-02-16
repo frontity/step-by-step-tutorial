@@ -59,6 +59,24 @@ And replace it with:
 },
 ```
 
+Since we will not be using the mars-theme installed on package.json, we should remove it from the dependencies list.
+
+```json
+// File: /package.json
+
+{
+  "dependencies": {
+    "@frontity/core": "^1.10.1",
+    "@frontity/html2react": "^1.6.1",
+    "@frontity/mars-theme": "./packages/mars-theme", // <-- Remove this line
+    "@frontity/tiny-router": "^1.3.2",
+    "@frontity/wp-source": "^1.11.1",
+    "frontity": "^1.14.1",
+    "starter-theme": "file:packages/starter-theme"
+  }
+}
+```
+
 We've now told Frontity to use our new theme rather than "mars-theme". Save the file and then run this command again:
 
 ```bash
