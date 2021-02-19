@@ -1,5 +1,9 @@
 # Create a Frontity Project
 
+{% hint style="info" %}
+☝️ Remember this step-by-step tutorial is progressive and each lesson builds on what was learned before. You should therefore work through the tutorial in the order in which it is presented.
+{% endhint %}
+
 The first thing we are going to do is create a new Frontity project. As it's our first time exploring Frontity let's call our project "hello-frontity".
 
 To create the project, open up your terminal, navigate to the directory where you want to install your new project, and run this command:
