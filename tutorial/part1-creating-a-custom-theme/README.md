@@ -2,7 +2,7 @@
 
 We'll start our journey to Frontity mastery by setting Frontity up from the command line. Later in this section we'll create a theme package and take our first baby steps in customising our new theme. 👶
 
-But before we get started properly on the tutorial we just want to draw your attention to a small number of preliminary things.
+But before we get going with the tutorial let's just pause for a moment to cover a small number of preliminary things.
 
 ### Check you're on the right track
 
