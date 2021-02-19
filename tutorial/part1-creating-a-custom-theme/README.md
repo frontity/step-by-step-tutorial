@@ -39,4 +39,6 @@ Other resources such as guides, core concepts, and reference resources can be fo
 - [**docs.frontity.org**](https://docs.frontity.org) - Introduction, concepts and guides
 - [**api.frontity.org**](https://api.frontity.org) - API Reference
 
+### Let's get started...
+
 With these few preliminaries out of the way, we're ready to get started with learning Frontity. 👉
