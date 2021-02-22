@@ -11,7 +11,7 @@ If you get stuck at any point then you can compare your code at the relevant sta
 In case you're not familiar with viewing [diffs](https://en.wikipedia.org/wiki/Diff) in a repo, you'll see something like this.
 
 <p>
-  <img alt="Viewing the diffs in a commit on GitHub" src="../assets/part0img1.png">
+  <img alt="Viewing the diffs in a commit on GitHub" src="./assets/part0img1.png">
 </p>
 
 > Lines with a 🔴 red background marked with a minus sign ➖ are removed at that step.
