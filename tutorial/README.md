@@ -6,7 +6,10 @@
 
 The tutorial that you're about to embark on is a progressive sequence of lessons that will take you from first steps to mastery.
 
-Via a practical example project it will provide you with a solid foundation in developing websites with Frontity and give you the knowledge you need to work with Frontity on your own projects. It will also arm you with the concepts and knowledge you need to better understand the rest of the [Frontity documentation](https://docs.frontity.org/).
+Via a practical example project it will provide you with a solid foundation in developing websites with Frontity and give you the knowledge you need to work with Frontity on your own projects. It will also arm you with the concepts and knowledge you need to better understand our other documentation resources:
+
+- [**docs.frontity.org**](https://docs.frontity.org) - Introduction, concepts and guides
+- [**api.frontity.org**](https://api.frontity.org) - API Reference
 
 Since this is a progressive tutorial we recommend that you follow the lessons in sequence, as each lesson builds on what was learned earlier.
 
@@ -40,6 +43,10 @@ Along the way we'll cover a number of different topics, from listing posts, to d
 
 We will be there by your side guiding you through every step, right through to ultimately deploying our finished project to a live server.
 
-By the end you'll be a Frontity ninja! 🥷
+{% hint style="info" %}
+👀 We'd really like you to see the project develop as you progress through the tutorial, so we're certainly not encouraging you to do this, but if you really **do** want to take a sneak peak at the finished project the final version can be seen in [this CodeSandbox](https://codesandbox.io/s/github/frontity-demos/tutorial-hello-frontity).
+{% endhint %}
+
+By the end of this tutorial you'll be a Frontity ninja! 🥷
 
 Let's go! 👉
