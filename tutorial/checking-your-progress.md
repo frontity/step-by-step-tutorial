@@ -18,6 +18,8 @@ In case you're not familiar with viewing [diffs](https://en.wikipedia.org/wiki/D
 
 > Lines with a 🟢 green background marked with a plus sign ➕ are added at that step.
 
+> Sometimes lines are newly added or totally removed, but quite often an added line is a modified version of the removed line. For example, in the screengrab above, the line 2 and line 8 are new but all other added lines replace the removed line above it.
+
 At the end of each lesson (and sometimes within a lesson) you will see a box like this linking directly to the commit that has the changes in that lesson (or that part of the lesson).
 
 {% hint style="success" %}
