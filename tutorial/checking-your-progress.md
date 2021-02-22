@@ -20,7 +20,7 @@ In case you're not familiar with viewing [diffs](https://en.wikipedia.org/wiki/D
 
 > Sometimes lines are newly added or totally removed, but quite often an added line is a modified version of the removed line. For example, in the screengrab above, line 2 and line 8 are new but all other added lines replace the removed line above it.
 
-At the end of each lesson (and sometimes within a lesson) you will see a box like this linking directly to the commit that has the changes in that lesson (or that part of the lesson).
+At the end of each lesson (and sometimes within a lesson) you will see a box like this one with a link going directly to the commit that has the changes in that lesson (or that part of the lesson):
 
 {% hint style="success" %}
 Check you're on the right track by comparing your changes with [the ones in this commit](#).
