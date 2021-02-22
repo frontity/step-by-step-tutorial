@@ -1,6 +1,6 @@
 # Checking your progress
 
-We wanted to make the learning experience as straightforward and frictionaless as possible for you, so we've included a way for you to check that your version of the project is correct at each and every stage of the tutorial as you work through it.
+We wanted to make the learning experience as straightforward and frictionless as possible for you, so we've included a way for you to check that your version of the project is correct at each and every stage of the tutorial as you work through it.
 
 We've already drawn your attention to the finished project on CodeSandBox, but the final version of the code is not necessarily the best resource to refer to if at any particular stage your code isn't working as expected, or if you're getting errors in the terminal or in the browser console.
 
