@@ -1,7 +1,7 @@
 # Table of contents
 
 * [👋 Welcome](README.md)
-* [✓ Checking your progress](checking-your-progress.md)
+* [✓  Checking your progress](checking-your-progress.md)
 * [1️⃣ Creating a custom theme](part1-creating-a-custom-theme/README.md)
   * [Create a Frontity Project](part1-creating-a-custom-theme/create-a-frontity-project.md)
   * [Create a Theme Package](part1-creating-a-custom-theme/create-a-theme-package.md)
