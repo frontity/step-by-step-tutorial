@@ -30,6 +30,6 @@ If you are on a tag page you can compare the changes between that step and any o
 
 At the end of each lesson (and sometimes within a lesson) you will see a box like this one with a link going directly to the commit that has the changes in that lesson (or that part of the lesson):
 
-{% hint style="success" %}
-Check you're on the right track by comparing your changes with [the ones in this commit](#).
-{% endhint %}
+<p>
+  <img alt="Check your code at the end of each step." src="./assets/part0img3.png">
+</p>
