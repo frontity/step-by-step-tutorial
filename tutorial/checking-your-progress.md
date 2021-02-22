@@ -18,7 +18,15 @@ In case you're not familiar with viewing [diffs](https://en.wikipedia.org/wiki/D
 
 > Lines with a 🟢 green background marked with a plus sign ➕ are added at that step.
 
-> Sometimes lines are newly added or totally removed, but quite often an added line is a modified version of the removed line. For example, in the screengrab above, line 2 and line 8 are new but all other added lines replace the removed line above it.
+Sometimes lines are newly added or totally removed, but quite often an added line is a modified version of the removed line. For example, in the screengrab above, line 2 and line 8 are new but all other added lines replace the removed line above it.
+
+You can also download the code completed up to a particular step by using [these tags in the repo](https://github.com/frontity-demos/tutorial-hello-frontity/tags).
+
+If you are on a tag page you can compare the changes between that step and any other arbitrarily selected step by using the 'Compare' button.
+
+<p>
+  <img alt="The 'Compare' button allows you to compare this step with any other" src="./assets/part0img2.png">
+</p>
 
 At the end of each lesson (and sometimes within a lesson) you will see a box like this one with a link going directly to the commit that has the changes in that lesson (or that part of the lesson):
 
