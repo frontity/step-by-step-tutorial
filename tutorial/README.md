@@ -2,7 +2,7 @@
 
 ## Welcome to the Frontity step-by-step tutorial
 
-👋 Hi, and a very warm welcome to the Frontity step-by-step tutorial. We're thrilled that you're interested in learning Frontity.
+Hi, and a very warm welcome to the Frontity step-by-step tutorial. We're thrilled that you're interested in learning Frontity.
 
 The tutorial that you're about to embark on is a progressive sequence of lessons that will take you from first steps to mastery.
 
