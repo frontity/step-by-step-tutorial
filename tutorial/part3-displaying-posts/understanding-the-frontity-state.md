@@ -90,6 +90,9 @@ You can learn more about the `<Switch>` component [in our docs](https://docs.fro
 
 ```jsx
 // File: /packages/my-first-theme/src/components/index.js
+import React from "react"
+import { connect } from "frontity"
+import Link from "@frontity/components/link"
 import Switch from "@frontity/components/switch"
 
 const Root = ({ state }) => {
@@ -117,6 +120,8 @@ const Root = ({ state }) => {
     </>
   )
 }
+
+export default connect(Root)
 ```
 
 Since we don't yet have any links to any posts the second condition will never be satisfied, so we won't ever see the text "This is a post" come up. Let's go on to address that.
