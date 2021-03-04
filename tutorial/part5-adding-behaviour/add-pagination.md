@@ -2,7 +2,7 @@
 
 A key feature of any traditional, i.e. PHP-based, WordPress theme is the ability to paginate through the post listing. In this lesson we will look at implementing this feature in Frontity.
 
-Click on the `More posts` link in the menu to navigate to `/page/2` and examine `frontity.state` in the console. You will notice that the data for the page has both `previous` and `next` properties.
+Click on the `More posts` link in the menu to navigate to `/page/2` and examine `frontity.state.source.get('/page/2')` in the console. You will notice that the data for the page has both `previous` and `next` properties.
 
 <p>
   <img alt="Frontity in the console" src="../assets/part5img1.png" width="700">
