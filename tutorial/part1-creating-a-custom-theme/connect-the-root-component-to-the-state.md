@@ -2,7 +2,7 @@
 
 Let’s now connect the `<Root>` component to the Frontity state using `connect`.
 
-`connect` is a higher order component that takes a React component as an argument. It passes the Frontity object to the React component specified in the argument via props. The Frontity object has amongst it's properties `state`, `actions` and `libraries`. `connect` therefore enables a component in our theme to access data stored in the `state`, or functions available in `actions`.
+`connect` is a higher order component that takes a React component as an argument. It passes the Frontity object to the React component specified in the argument via props. The Frontity object has amongst its properties `state`, `actions` and `libraries`. `connect` therefore enables a component in our theme to access data stored in the `state`, or functions available in `actions`.
 
 This also ensures that the component is re-rendered whenever any value from the state which the component is using is changed.
 
