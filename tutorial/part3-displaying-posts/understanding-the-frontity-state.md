@@ -4,7 +4,7 @@ In this lesson we're going to look at the structure of Frontity's "state". An un
 
 ## The state manager
 
-Frontity has it's own state manager, which functions similarly to Redux or MobX which you may already be familiar with if you have already had some experience working with React. All the data and settings associated with our project are stored in the state.
+Frontity has its own state manager, which functions similarly to Redux or MobX which you may already be familiar with if you have already had some experience working with React. All the data and settings associated with our project are stored in the state.
 
 {% hint style="info" %}
 Frontity's state manager is called "Frontity Connect" and it is based on [react-easy-state](https://github.com/RisingStack/react-easy-state).
