@@ -47,7 +47,7 @@ Let's extend this to get a different colour for pages to further distinguish the
 
 // ...
 const Header = styled.header`
-  background-color: #E5EDEE;
+  background-color: #e5edee;
   border-width: 0 0 8px 0;
   border-style: solid;
   border-color: ${ props => props.isPostType ? ( props.isPage ? 'lightsteelblue' : 'lightseagreen' ) : 'maroon'};
