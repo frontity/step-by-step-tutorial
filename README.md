@@ -19,7 +19,7 @@ In other words, it allows to build a **React frontend** for a headless WordPress
 
 This repository contains:
 
-- [Documentation](https://github.com/frontity/step-by-step-tutorial/tree/master) - the source docs of the [Step by Step Tutorial for Frontity](https://tutorial.frontity.org/)
+- [Tutorial Documentation](https://github.com/frontity/step-by-step-tutorial/tree/master/tutorial) - the source docs of the [Step by Step Tutorial for Frontity](https://tutorial.frontity.org/)
 
 ## How to Contribute
 
