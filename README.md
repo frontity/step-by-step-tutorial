@@ -1,19 +1,39 @@
-# Frontity - Step by step tutorial
+# Frontity Documentation: Step by Step Tutorial
 
-If you're interesting in learning Frontity you can find the step-by-step tutorial at: https://tutorial.frontity.org/
+Our documentation is distributed across three separate sites:
 
-If you find any errors or have suggestions for modifying or improving this tutorial please [raise an issue](https://github.com/frontity/step-by-step-tutorial/issues/new). Alternatively create a [pull request](https://github.com/frontity/step-by-step-tutorial/pulls) with your suggested changes.
+| Docs Site                                              | Repository                                        | Description                       |
+| ------------------------------------------------------ | ------------------------------------------------- | --------------------------------- |
+| [docs.frontity.org](https://docs.frontity.org)         | https://github.com/frontity/docs                  | Introduction, concepts and guides |
+| [api.frontity.org](https://api.frontity.org)       | https://github.com/frontity/api-reference         | API Reference                     |
+| [**tutorial.frontity.org**](https://tutorial.frontity.org) | https://github.com/frontity/step-by-step-tutorial | Step by Step guide                |
 
----
+This repo corresponds to the step-by-step tutorial available at [**tutorial.frontity.org**](https://tutorial.frontity.org)
 
-### » Frontity Channels 🌎
+## What is Frontity?
 
-We'd love for you to be part of our ever-growing community. There are a variety of different ways in which you can find information about the project, discuss about it, and contribute to it.
+[Frontity](https://frontity.org/) is a free and [open source framework](https://github.com/frontity/frontity) to develop WordPress themes based on React.
+In other words, it allows to build a **React frontend** for a headless WordPress site, which serves its data via the WordPress REST API.
 
-* **📖  [Docs](https://docs.frontity.org):** this is the place to learn how to build amazing sites with Frontity.
-* **👨‍👩‍👧‍👦  [Community forum]((https://community.frontity.org/)):** join our forum and ask questions, share your knowledge, give us feedback and tell us how we're doing, and meet other cool Frontity people. We'd also love to know about what you're building with Frontity, so please do swing by the [forum](https://community.frontity.org/) and tell us about your projects.
-* **🐞  Contribute:** we use [GitHub](https://github.com/frontity/frontity) for bugs and pull requests. See our [Contributing](https://docs.frontity.org/contributing) section to find out how you can help develop Frontity, or improve the documentation.
-* **🗣  Social media**: interact with other Frontity users. Reach out to us on [Twitter](https://twitter.com/frontity). Mention us in your tweets about Frontity and what you're building by using **`@frontity`** or **`#frontity`**.
-* 💌  **Newsletter:** do you want to receive the latest news about Frontity and find out as soon as there's an update to the framework? Subscribe to our [newsletter](https://frontity.org/#newsletter).
+## What Does this Repository Contain?
 
-Wondering why should get involved? Read [**this article**](https://opensource.guide/how-to-contribute/#why-contribute-to-open-source) about contributing to open source software.
+This repository contains:
+
+- [Documentation](https://github.com/frontity/api-reference/tree/master) - the source docs of the [Step by Step Tutorial for Frontity](https://tutorial.frontity.org/)
+
+## How to Contribute
+
+Contributing to the Frontity documentation should be an enjoyable experience, as such we have created a set of [contributing guidelines](https://github.com/frontity/docs/tree/master/CONTRIBUTING.md) to help you do so.
+
+We have tried to make contributing to the Frontity documentation as easy as possible, especially for those new to Open Source.
+If anything is unclear or you have any questions then please use our [community forum](https://community.frontity.org/c/docs-and-tutorials/29) to discuss your contribution and how best to make it.
+
+## License
+
+The Frontity documentation is an open source project released under the [Apache License 2.0](https://github.com/frontity/docs/tree/master/LICENSE.md).
+
+## Get In Touch
+
+If you'd like to share your feedback or have any questions or suggestions regarding this documentation, feel free to reach out to us on our [community forum](https://community.frontity.org/c/docs-and-tutorials/29)
+
+There you will find both members of the community and staff who are happy to help answer questions on anything Frontity related.
