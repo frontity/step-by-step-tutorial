@@ -5,7 +5,7 @@ Our documentation is distributed across three separate sites:
 | Docs Site                                              | Repository                                        | Description                       |
 | ------------------------------------------------------ | ------------------------------------------------- | --------------------------------- |
 | [docs.frontity.org](https://docs.frontity.org)         | https://github.com/frontity/docs                  | Introduction, concepts and guides |
-| [api.frontity.org](https://api.frontity.org)       | https://github.com/frontity/api-reference         | API Reference                     |
+| [api.frontity.org](https://api.frontity.org)       | https://github.com/frontity/step-by-step-tutorial         | API Reference                     |
 | [**tutorial.frontity.org**](https://tutorial.frontity.org) | https://github.com/frontity/step-by-step-tutorial | Step by Step guide                |
 
 This repo corresponds to the step-by-step tutorial available at [**tutorial.frontity.org**](https://tutorial.frontity.org)
@@ -19,7 +19,7 @@ In other words, it allows to build a **React frontend** for a headless WordPress
 
 This repository contains:
 
-- [Documentation](https://github.com/frontity/api-reference/tree/master) - the source docs of the [Step by Step Tutorial for Frontity](https://tutorial.frontity.org/)
+- [Documentation](https://github.com/frontity/step-by-step-tutorial/tree/master) - the source docs of the [Step by Step Tutorial for Frontity](https://tutorial.frontity.org/)
 
 ## How to Contribute
 
