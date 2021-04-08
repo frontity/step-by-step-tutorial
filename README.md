@@ -5,7 +5,7 @@ Our documentation is distributed across three separate sites:
 | Docs Site                                              | Repository                                        | Description                       |
 | ------------------------------------------------------ | ------------------------------------------------- | --------------------------------- |
 | [docs.frontity.org](https://docs.frontity.org)         | https://github.com/frontity/docs                  | Introduction, concepts and guides |
-| [api.frontity.org](https://api.frontity.org)       | https://github.com/frontity/step-by-step-tutorial         | API Reference                     |
+| [api.frontity.org](https://api.frontity.org)       | https://github.com/frontity/api-reference         | API Reference                     |
 | [**tutorial.frontity.org**](https://tutorial.frontity.org) | https://github.com/frontity/step-by-step-tutorial | Step by Step guide                |
 
 This repo corresponds to the step-by-step tutorial available at [**tutorial.frontity.org**](https://tutorial.frontity.org)
