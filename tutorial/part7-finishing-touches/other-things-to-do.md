@@ -38,17 +38,17 @@ You will also need to modify the `<Switch>` in the root component as the `<Page>
 
 #### 4. Create a destination component to display the custom post type differently
 
-The destination CPT currently uses the `<Page>` component to render it's content. Create a new component that displays destinations differently.
+The destination CPT currently uses the `<Page>` component to render its content. Create a new component that displays destinations differently.
 
 {% hint style="info" %}
 **HINT** &mdash; Remember that you will need to change `index.js` to load your new component when `data.isDestinations` is true.
 {% endhint %}
 
-#### 5. Put the `<Header>` in it's own component
+#### 5. Put the `<Header>` in its own component
 
 The `<Header>` component is currently part of the main `<Root>` component in `index.js`. This makes the `index.js` file rather long.
 
-Separate the `<Header>` component into it's own file along with the related CSS-in-JS styling.
+Separate the `<Header>` component into its own file along with the related CSS-in-JS styling.
 
 {% hint style="info" %}
 **HINT** &mdash; Remember that you will need to import the `<Header>` component into `index.js`. As the header contains data from the state and action methods you will also need to connect your new component with the `connect` HOC.
