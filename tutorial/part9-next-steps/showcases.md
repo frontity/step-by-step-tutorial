@@ -1,7 +1,7 @@
 # Showcases
 
 <p>
-  <img alt="Frontity showcases" src="../assets/part9img1.png" width="800">
+  <img alt="Frontity showcases" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part9img1.png" width="800">
 </p>
 
 We have a [showcases](https://frontity.org/showcase/) page where we feature interesting or attractive projects built with Frontity. These projects are created by the community of developers that use Frontity, developers such as yourself.

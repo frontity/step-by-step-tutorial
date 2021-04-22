@@ -47,7 +47,7 @@ However, in the case of this CPT we don't want to display the author and date in
 If we take a look at the data for one of the CPT URLs we can see that it has a boolean `isDestinations` property that we can utilise for this purpose.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part6img1.png">
+  <img alt="Frontity in the console" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part6img1.png">
 </p>
 
 So let's extend our `<Switch>` component to tell it to use the `<Page>` component if this value is `true`.

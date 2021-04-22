@@ -17,7 +17,7 @@ We won't be using `mars-theme`, we will instead be using the custom theme that w
 When the install process finishes, you will have a new sub-directory called `hello-frontity` containing your project’s code. The structure of the project will look something like this:
 
 <p>
-  <img alt="Frontity project structure" src="../assets/part1img1.png">
+  <img alt="Frontity project structure" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part1img1.png">
 </p>
 
 {% hint style="info" %}

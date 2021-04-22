@@ -69,7 +69,7 @@ import Loading from "./loading"
 Now as we transition between pages our loading spinner is displayed whenever data is being fetched in the background. Sweet! 👌
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/loader.gif">
+  <img alt="Frontity in the browser" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-loader.gif">
 </p>
 
 {% hint style="info" %}

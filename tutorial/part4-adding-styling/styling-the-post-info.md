@@ -56,11 +56,11 @@ Visit one of the posts now and the date and author info are pleasingly highlight
 For reference, this is what your site should be looking like now:
 
 <p>
-  <img alt="Frontity in the browser - listing" src="../assets/part4img1.png">
+  <img alt="Frontity in the browser - listing" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part4img1.png">
 </p>
 
 <p>
-  <img alt="Frontity in the browser - post" src="../assets/part4img2.png">
+  <img alt="Frontity in the browser - post" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part4img2.png">
 </p>
 
 {% hint style="success" %}

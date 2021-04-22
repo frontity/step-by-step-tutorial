@@ -64,7 +64,7 @@ const Root = ({ state }) => {
 Great! Now we can see some information about each of the posts on the `Home` page and on the `More posts` page.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part3img6.png">
+  <img alt="Frontity in the browser" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img6.png">
 </p>
 
 {% hint style="success" %}
@@ -80,7 +80,7 @@ You will recall that getting data in Frontity is a two step process. Let's illus
 Above we performed the first step and got the data about the URL and worked with each of the items in the `items` array.
 
 <p>
-  <img alt="The list of items stored in: state.source.data('/')" src="../assets/part3img7.png">
+  <img alt="The list of items stored in: state.source.data('/')" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img7.png">
 </p>
 
 So here we can see that the `items` array for the homepage has a number of posts, the first of which is of type `post` and has the `id` 60.
@@ -88,7 +88,7 @@ So here we can see that the `items` array for the homepage has a number of posts
 We can therefore use this information to perform the second step and access the content at `state.source.post[60]` where we can get the title and the link for that post.
 
 <p>
-  <img alt="The content stored in: state.source.post[60]" src="../assets/part3img8.png">
+  <img alt="The content stored in: state.source.post[60]" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img8.png">
 </p>
 
 So the second step involves getting the content related to each item in the `items` array, and as we iterate over each item in the array (using `array.map`) we get the post content for each post with:
@@ -140,13 +140,13 @@ const List = ({ state }) => {
 Now our list page is a series of links to individual posts.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part3img9.png">
+  <img alt="Frontity in the browser" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img9.png">
 </p>
 
 And if we click a link we can finally see the text "This is a post".
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part3img10.png">
+  <img alt="Frontity in the browser" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img10.png">
 </p>
 
 However, what we really want to see is the post content. Let's do that next.

@@ -49,7 +49,7 @@ import Error from "./error"
 And that's it! As we said earlier, this was a nice easy step. Now if you try navigating to a path that doesn't exist the `<Error>` component will display informing the user of the error.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part7img2.png" width="400">
+  <img alt="Frontity in the browser" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part7img2.png" width="400">
 </p>
 
 {% hint style="success" %}

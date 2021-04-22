@@ -59,25 +59,25 @@ Now if we navigate to `Home` the header has a maroon border (as it's a listing p
 The styling for the border is applied dynamically depending on the type of page that we're on, which is determined by the `isPostType` and `isPage` boolean properties found in the data for the current URL.
 
 <p>
-  <img alt="The 'isPostType' property is true for posts" src="../assets/part4img3.png">
+  <img alt="The 'isPostType' property is true for posts" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part4img3.png">
 </p>
 
 <p>
-  <img alt="The 'isPage' property is true for a pages" src="../assets/part4img4.png">
+  <img alt="The 'isPage' property is true for a pages" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part4img4.png">
 </p>
 
 Awesome, our site is starting to look pretty good now! 👌
 
 <p>
-  <img alt="Frontity in the browser - listing" src="../assets/part4img1.png">
+  <img alt="Frontity in the browser - listing" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part4img1.png">
 </p>
 
 <p>
-  <img alt="Frontity in the browser - post" src="../assets/part4img5.png">
+  <img alt="Frontity in the browser - post" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part4img5.png">
 </p>
 
 <p>
-  <img alt="Frontity in the browser - page" src="../assets/part4img6.png">
+  <img alt="Frontity in the browser - page" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part4img6.png">
 </p>
 
 {% hint style="success" %}

@@ -17,7 +17,7 @@ To start understanding Frontity's state first access `http://localhost:3000/abou
 When you've done that [open the browser console](https://webmasters.stackexchange.com/a/77337). In the console type `frontity.state` in order to see the Frontity state.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part3img1.png">
+  <img alt="Frontity in the console" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img1.png">
 </p>
 
 {% hint style="info" %}
@@ -31,7 +31,7 @@ You can see information about the `router`, including the `state.router.link` th
 Let’s take a look at `frontity.state.source.data` in the console. This is where the information for each URL is stored. If you inspect `/about-us/`, you can see that it’s of type `page`, and that it has the `id` 184. Note also that the `isReady` property is set to 'true'. This means the data is ready for use in our application.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part3img2.png" width="600">
+  <img alt="Frontity in the console" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img2.png" width="600">
 </p>
 
 ## The two step process
@@ -45,7 +45,7 @@ Let's run through an example to better understand this two step process.
 With the information from the first step that the URL `/about-us/` is a page and has the ID 184, we can take the second step and access the data of that page with `frontity.state.source.page[184]`:
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part3img3.png">
+  <img alt="Frontity in the console" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img3.png">
 </p>
 
 Now we can get such things as the `title` and the `content` to use in our components so that they get rendered in the browser. We also have access to the author ID and the post date. We will look at how we can use these in our components in later lessons.
@@ -59,7 +59,7 @@ As you navigate from one URL to another, the package `@frontity/wp-source` autom
 If we open the Network tab (in the browser's devtools) and click on the menu to go to 'Home', we can see that a call to the REST API is made to get the latest posts.
 
 <p>
-  <img alt="Browser developer tools network tab showing fetch" src="../assets/part3img4.png" width="700">
+  <img alt="Browser developer tools network tab showing fetch" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img4.png" width="700">
 </p>
 
 Take another look at `frontity.state.source.data`. You will notice that it's now populated with rather more data than before.
@@ -71,7 +71,7 @@ So, instead of using `state.source.data[url]` you should use the `get` helper fu
 So now let’s inspect the information about the homepage using `frontity.state.source.get('/')`:
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part3img5.png">
+  <img alt="Frontity in the console" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img5.png">
 </p>
 
 As you can see there are several interesting properties such as `isHome`, `isArchive`, and an array of `items`. If the homepage were a category it would have an `isCategory` property. If it were a post it would have an `isPost` property, etc... These are boolean values so we just need to check for their truthiness.

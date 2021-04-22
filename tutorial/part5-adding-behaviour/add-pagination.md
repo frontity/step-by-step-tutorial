@@ -5,7 +5,7 @@ A key feature of any traditional, i.e. PHP-based, WordPress theme is the ability
 Click on the `More posts` link in the menu to navigate to `/page/2` and examine `frontity.state` in the console. You will notice that the data for the page has both `previous` and `next` properties.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part5img1.png" width="700">
+  <img alt="Frontity in the console" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part5img1.png" width="700">
 </p>
 
 {% hint style="info" %}
