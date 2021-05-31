@@ -6,7 +6,7 @@ Hi, and a very warm welcome to the Frontity step-by-step tutorial. We're thrille
 
 The tutorial that you're about to embark on is a progressive sequence of lessons that will take you from first steps to mastery.
 
-Via a practical example project it will provide you with a solid foundation in developing websites with Frontity and give you the knowledge you need to work with Frontity on your own projects. It will also arm you with the concepts and knowledge you need to better understand our other documentation resources:
+Via a practical example project it will provide you with a solid foundation in developing websites with Frontity and give you the knowledge you need to work with Frontity on your own projects. It will also arm you with the concepts and knowledge you need to better understand the other documentation resources:
 
 - [**docs.frontity.org**](https://docs.frontity.org) - Introduction, concepts and guides
 - [**api.frontity.org**](https://api.frontity.org) - API Reference
@@ -18,7 +18,7 @@ Since this is a progressive tutorial we recommend that you follow the lessons in
 Frontity is built on React. You should therefore feel comfortable working with JavaScript, and have at least some familiarity with React and also with ES6.
 
 {% hint style="info" %}
-If you need to get up to speed, or if you need a refresher, we have introductions to the basics of both **[JavaScript](https://docs.frontity.org/guides/javascript-basics)** and **[React](https://docs.frontity.org/guides/react-basic)** in our documentation. If you've worked through those guides, or if you're already comfortable with the concepts explained there, then you're good to go. 👌
+If you need to get up to speed, or if you need a refresher, there are introductions to the basics of both **[JavaScript](https://docs.frontity.org/guides/javascript-basics)** and **[React](https://docs.frontity.org/guides/react-basic)** in the documentation. If you've worked through those guides, or if you're already comfortable with the concepts explained there, then you're good to go. 👌
 {% endhint %}
 
 An understanding of HTML and CSS is also assumed, as is a familiarity with the command line.
@@ -32,7 +32,7 @@ No previous knowledge or understanding of Frontity is required. This step-by-ste
 Our project for this step-by-step tutorial will be to build a fully working Frontity theme, starting from scratch.
 
 {% hint style="info" %}
-Frontity provides two themes to get you started, `mars-theme` and `twentytwenty`, and there are a host of third party themes on [_npmjs.com_](https://www.npmjs.com/) that you can install into your Frontity project.
+Frontity provides two themes to get you started, `mars-theme` and `twentytwenty`, and there are a host of third party themes on [_npmjs.com_](https://www.npmjs.com/search?q=keywords:frontity-theme) that you can install into your Frontity project.
 
 One of these could well fit your needs, but the best way to really gain an understanding of Frontity and how it works is to build your own theme.
 {% endhint %}
