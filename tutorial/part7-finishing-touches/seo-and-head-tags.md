@@ -36,7 +36,7 @@ const Root = ({ state, actions }) => {
 With this code added you should already see the title appearing in the tab of you browser, and if you check your document with the browser devtools you should see the title and the description showing up.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part7img3.png" width="664">
+  <img alt="Frontity in the console" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part7img3.png" width="664">
 </p>
 
 You can include the `<Head>` component wherever you like, there’s no need for it to be in the `<Root>` component of the theme. Additionally you can use variables so that the tags change dynamically according to the content.
@@ -67,11 +67,11 @@ const Post = ({ state, libraries }) => {
 Now if you check in your browser devtools you'll see the title and meta description for each post corresponds to the title and excerpt that is held in the state for that post. Also the browser tab helpfully shows the title of the post rather than the previous generic title.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part7img4.png" width="664">
+  <img alt="Frontity in the console" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part7img4.png" width="664">
 </p>
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part7img5.png" width="659">
+  <img alt="Frontity in the browser" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part7img5.png" width="659">
 </p>
 
 Why not try the same exercise for `page.js` and then test the results using the `About Us` page.

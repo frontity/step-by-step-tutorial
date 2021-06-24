@@ -38,13 +38,13 @@ At the moment `page.js` and `post.js` are pretty much identical, so let's now di
 If we take a look at the data about a post, so for example `frontity.state.source.post[60]`, we can see that the only information we have about the author is the ID.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part3img11.png">
+  <img alt="Frontity in the console" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img11.png">
 </p>
 
 We can use this ID to get the actual author information from `state.source.author[ID]`.
 
 <p>
-  <img alt="Frontity in the console" src="../assets/part3img12.png">
+  <img alt="Frontity in the console" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img12.png">
 </p>
 
 Let's modify the `<Post>` component in `post.js` to get the author information and display both it and the post date.
@@ -106,7 +106,7 @@ const Root = ({ state }) => {
 Now as you navigate around the site and view posts and pages a different component is used for each case and you'll notice that posts, e.g. _"The Beauties of Gullfoss"_, have the author and date info, but pages, e.g. _"About Us"_, do not.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part3img13.png" width="565" height="161">
+  <img alt="Frontity in the browser" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part3img13.png" width="565" height="161">
 </p>
 
 {% hint style="success" %}

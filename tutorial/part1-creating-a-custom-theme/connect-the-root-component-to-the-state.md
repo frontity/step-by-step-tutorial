@@ -35,13 +35,13 @@ export default connect(Root)
 Now when you save the file we can see that we are in the root of our site: `/`.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part1img5.png">
+  <img alt="Frontity in the browser" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part1img5.png">
 </p>
 
 You can try changing the URL in the browser's address bar to something like http://localhost:3000/about-us to see how the value of `state.router.link` changes.
 
 <p>
-  <img alt="Frontity in the browser" src="../assets/part1img6.png">
+  <img alt="Frontity in the browser" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part1img6.png">
 </p>
 
 {% hint style="success" %}

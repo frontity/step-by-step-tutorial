@@ -5,7 +5,7 @@ The first thing we are going to do is create a new Frontity project. As it's our
 To create the project, open up your terminal, navigate to the directory where you want to install your new project, and run this command:
 
 ```bash
-> npx frontity create hello-frontity
+npx frontity create hello-frontity
 ```
 
 When prompted select the `mars-theme` - it's the basic starter theme that we recommend for beginners.
@@ -17,7 +17,7 @@ We won't be using `mars-theme`, we will instead be using the custom theme that w
 When the install process finishes, you will have a new sub-directory called `hello-frontity` containing your project’s code. The structure of the project will look something like this:
 
 <p>
-  <img alt="Frontity project structure" src="../assets/part1img1.png">
+  <img alt="Frontity project structure" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part1img1.png">
 </p>
 
 {% hint style="info" %}
@@ -51,8 +51,8 @@ Now that we have our Frontity project set up and we've had a good old poke aroun
 Change into the project directory and start a development server:
 
 ```bash
-> cd hello-frontity
-> npx frontity dev
+cd hello-frontity
+npx frontity dev
 ```
 
 {% hint style="info" %}

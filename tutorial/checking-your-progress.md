@@ -11,13 +11,13 @@ If you get stuck at any point then you can compare your code at the relevant sta
 To view the differences ([diffs](https://en.wikipedia.org/wiki/Diff)) at that stage you can click the link as highlighted in the screengrab below:
 
 <p>
-  <img alt="A tagged commit on GitHub" src="./assets/part0img1.png">
+  <img alt="A tagged commit on GitHub" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part0img1.png">
 </p>
 
 In case you're not familiar with viewing diffs in a repo, you'll see something like this:
 
 <p>
-  <img alt="Viewing the diffs in a commit on GitHub" src="./assets/part0img2.png">
+  <img alt="Viewing the diffs in a commit on GitHub" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part0img2.png">
 </p>
 
 > Lines with a 🔴 red background marked with a minus sign ➖ are removed at that step.
@@ -29,17 +29,17 @@ In case you're not familiar with viewing diffs in a repo, you'll see something l
 You can also download the code completed up to a particular step by using the `zip` or `tar.gz` links for that tagged commit.
 
 <p>
-  <img alt="Download links for a tagged commit on GitHub" src="./assets/part0img3.png">
+  <img alt="Download links for a tagged commit on GitHub" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part0img3.png">
 </p>
 
 If you are on a tag page you can compare the changes between that step and any other arbitrarily selected step by using the 'Compare' button.
 
 <p>
-  <img alt="The 'Compare' button allows you to compare this step with any other" src="./assets/part0img4.png">
+  <img alt="The 'Compare' button allows you to compare this step with any other" src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part0img4.png">
 </p>
 
 At the end of each lesson (and sometimes within a lesson) you will see a box like this one with a link going directly to the commit that has the changes in that lesson (or that part of the lesson):
 
 <p>
-  <img alt="Check your code at the end of each step." src="./assets/part0img5.png">
+  <img alt="Check your code at the end of each step." src="https://frontity.org/wp-content/uploads/2021/04/frontity-tutorial-part0img5.png">
 </p>
