@@ -6,6 +6,8 @@ But we're not about to leave you **by yourself**! We have plenty of resources an
 
 In this final section we'll introduce you to these.
 
+---
+
 We'll provide you with an overview of the documentation so you can find your way round.
 
 In addition we'll tell you about our amazing community forum where you can ask for help, and help others too.
