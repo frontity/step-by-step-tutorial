@@ -6,7 +6,7 @@ We've already drawn your attention to the finished project on CodeSandBox, but t
 
 So, for each step in this tutorial we have created a commit in [this repo](https://github.com/frontity-demos/tutorial-hello-frontity) with just the changes made in that step.
 
-If you get stuck at any point then you can compare your code at the relevant stage to [the tagged commits in the repo](https://github.com/frontity-demos/tutorial-hello-frontity/releases).
+If you get stuck at any point then you can compare your code at the relevant stage to [the tagged commits in the repo](https://github.com/frontity-demos/tutorial-hello-frontity/tags).
 
 To view the differences ([diffs](https://en.wikipedia.org/wiki/Diff)) at that stage you can click the link as highlighted in the screengrab below:
 
